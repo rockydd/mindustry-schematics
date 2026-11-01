@@ -63,8 +63,11 @@
   position: relative;
   width: 100%;
   overflow: auto;
-  background: #1a1a1a;
+  background: #141414;
   border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0 4px;
+  box-sizing: border-box;
 }
 
 .schematic-canvas {
@@ -73,6 +76,7 @@
   height: auto;
   max-width: 100%;
   image-rendering: pixelated;
+  border-radius: 4px;
 }
 
 .schematic-tooltip {
@@ -137,5 +141,10 @@
 
   .prompt-row button {
     width: 100%;
+  }
+
+  .schematic-canvas-wrap {
+    padding: 10px;
+    margin: 6px 0 2px;
   }
 }

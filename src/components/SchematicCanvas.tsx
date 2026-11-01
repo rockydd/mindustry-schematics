@@ -9,6 +9,8 @@ import {
 } from '../lib/sprites/resolve';
 
 const TEAM = { r: 255, g: 211, b: 127 }; // default Sharded team tint
+/** Empty schematic-background tiles around the build so it isn't flush to the edge. */
+export const CANVAS_PAD_TILES = 2;
 
 export interface SchematicCanvasProps {
   tiles: Tile[];
@@ -25,7 +27,7 @@ export function SchematicCanvas({ tiles, maxPixelSize = 640 }: SchematicCanvasPr
     const keys = new Set<string>();
     for (const t of tiles) {
       const l = layersForBlock(t.block);
-      for (const k of [l.bottom, l.main, l.top, l.team]) if (k) keys.add(k);
+      for (const k of [l.bottom, l.main, l.top, l.dir, l.team]) if (k) keys.add(k);
     }
     void Promise.all([loadBackground(), ...[...keys].map((k) => loadSpriteImage(k))]).then(() => {
       if (!cancelled) setReady((n) => n + 1);
@@ -46,11 +48,14 @@ export function SchematicCanvas({ tiles, maxPixelSize = 640 }: SchematicCanvasPr
     if (!canvas || !tiles.length) return;
     const bounds = schematicWorldBounds(tiles);
     const scale = Number(canvas.dataset.scale ?? '32');
+    const pad = Number(canvas.dataset.pad ?? String(CANVAS_PAD_TILES));
     const rect = canvas.getBoundingClientRect();
     const px = ((e.clientX - rect.left) / rect.width) * canvas.width;
     const py = ((e.clientY - rect.top) / rect.height) * canvas.height;
-    const tx = Math.floor(px / scale) + bounds.minX;
-    const ty = bounds.maxY - Math.floor(py / scale);
+    const col = Math.floor(px / scale) - pad;
+    const rowFromTop = Math.floor(py / scale) - pad;
+    const tx = col + bounds.minX;
+    const ty = bounds.maxY - rowFromTop;
     const hit = [...tiles].reverse().find((t) => {
       const f = tileFootprint(t);
       return tx >= f.x0 && tx <= f.x1 && ty >= f.y0 && ty <= f.y1;
@@ -79,10 +84,15 @@ async function paint(canvas: HTMLCanvasElement, tiles: Tile[], maxPixelSize: num
   const bounds = schematicWorldBounds(tiles);
   const cols = Math.max(1, bounds.width);
   const rows = Math.max(1, bounds.height);
-  const scale = Math.max(8, Math.min(32, Math.floor(maxPixelSize / Math.max(cols, rows))));
-  canvas.width = cols * scale;
-  canvas.height = rows * scale;
+  const pad = CANVAS_PAD_TILES;
+  const scale = Math.max(
+    8,
+    Math.min(32, Math.floor(maxPixelSize / Math.max(cols + pad * 2, rows + pad * 2))),
+  );
+  canvas.width = (cols + pad * 2) * scale;
+  canvas.height = (rows + pad * 2) * scale;
   canvas.dataset.scale = String(scale);
+  canvas.dataset.pad = String(pad);
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
   ctx.imageSmoothingEnabled = false;
@@ -103,14 +113,14 @@ async function paint(canvas: HTMLCanvasElement, tiles: Tile[], maxPixelSize: num
   ctx.fillStyle = 'rgba(0,0,0,0.45)';
   for (const t of tiles) {
     const f = tileFootprint(t);
-    const x = (f.x0 - bounds.minX) * scale;
-    const y = (bounds.maxY - f.y1) * scale;
+    const x = (f.x0 - bounds.minX + pad) * scale;
+    const y = (bounds.maxY - f.y1 + pad) * scale;
     const s = getBlockSize(t.block) * scale;
     ctx.fillRect(x, y, s, s);
   }
 
   for (const t of tiles) {
-    await drawTile(ctx, t, bounds, scale);
+    await drawTile(ctx, t, bounds, scale, pad);
   }
 }
 
@@ -119,24 +129,26 @@ async function drawTile(
   tile: Tile,
   bounds: ReturnType<typeof schematicWorldBounds>,
   scale: number,
+  pad: number,
 ) {
   const size = getBlockSize(tile.block);
   const f = tileFootprint(tile);
-  const dx = (f.x0 - bounds.minX) * scale;
-  const dy = (bounds.maxY - f.y1) * scale;
+  const dx = (f.x0 - bounds.minX + pad) * scale;
+  const dy = (bounds.maxY - f.y1 + pad) * scale;
   const dw = size * scale;
   const dh = size * scale;
   const layers = layersForBlock(tile.block);
   const spec = getBlockSpec(tile.block);
-  const rotatable = Boolean(spec?.rotate);
+  const rotatable = Boolean(spec?.rotate) || Boolean(layers.dir);
   const rot = rotatable ? tile.rotation & 3 : 0;
 
   const bottom = layers.bottom ? await loadSpriteImage(layers.bottom) : null;
   const main = layers.main ? await loadSpriteImage(layers.main) : null;
   const top = layers.top ? await loadSpriteImage(layers.top) : null;
+  const dir = layers.dir ? await loadSpriteImage(layers.dir) : null;
   const team = layers.team ? await loadSpriteImage(layers.team) : null;
 
-  if (!bottom && !main && !top) {
+  if (!bottom && !main && !top && !dir) {
     ctx.fillStyle = '#5c5c5c';
     ctx.fillRect(dx + 1, dy + 1, dw - 2, dh - 2);
     ctx.strokeStyle = '#222';
@@ -166,6 +178,7 @@ async function drawTile(
   if (bottom) drawImg(bottom, rotateAll);
   if (main) drawImg(main, rotateAll);
   if (top) drawImg(top, true);
+  if (dir) drawImg(dir, true);
   if (team) {
     const oc = document.createElement('canvas');
     oc.width = Math.max(1, dw);

@@ -25,4 +25,17 @@ describe('sprite layer lookup', () => {
     expect(layers.top).toBe('duct-top-0');
     expect(layers.rotate).toBe('top');
   });
+
+  it('overlays a rotated dir arrow on DirectionBridge blocks', () => {
+    const duct = layersForBlock('duct-bridge');
+    expect(duct.main).toBe('duct-bridge');
+    expect(duct.dir).toBe('duct-bridge-dir');
+    expect(duct.rotate).toBe('top');
+
+    const liquid = layersForBlock('reinforced-bridge-conduit');
+    expect(liquid.main).toBe('reinforced-bridge-conduit');
+    expect(liquid.bottom).toBe('reinforced-bridge-conduit-bottom');
+    expect(liquid.dir).toBe('reinforced-bridge-conduit-dir');
+    expect(liquid.rotate).toBe('top');
+  });
 });

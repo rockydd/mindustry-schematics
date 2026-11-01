@@ -6,6 +6,8 @@ export interface SpriteLayers {
   bottom?: string;
   main?: string;
   top?: string;
+  /** DirectionBridge-style overlay (e.g. duct-bridge-dir). Always rotated. */
+  dir?: string;
   team?: string;
   /** Which layers to rotate with the tile facing. */
   rotate: 'all' | 'top';
@@ -21,17 +23,17 @@ export function publicSpriteUrl(relPath: string): string {
 }
 
 export function layersForBlock(block: string): SpriteLayers {
+  let layers: SpriteLayers;
   // Conveyor / armored-conveyor style: name-frame-connection
   if (spriteIndex[`${block}-0-0`]) {
-    return { main: `${block}-0-0`, rotate: 'all' };
-  }
-  // Duct / conduit style: bottom sheet + directional top-N
-  if (
+    layers = { main: `${block}-0-0`, rotate: 'all' };
+  } else if (
+    // Duct / conduit style: bottom sheet + directional top-N
     spriteIndex[`${block}-top-0`] ||
     spriteIndex[`${block}-bottom`] ||
     spriteIndex[`${block}-bottom-0`]
   ) {
-    return {
+    layers = {
       bottom: spriteIndex[`${block}-bottom`]
         ? `${block}-bottom`
         : spriteIndex[`${block}-bottom-0`]
@@ -45,23 +47,31 @@ export function layersForBlock(block: string): SpriteLayers {
           : undefined,
       rotate: 'top',
     };
+  } else {
+    layers = {
+      bottom: spriteIndex[`${block}-bottom`] ? `${block}-bottom` : undefined,
+      main: spriteIndex[block]
+        ? block
+        : spriteIndex[`${block}-icon`]
+          ? `${block}-icon`
+          : undefined,
+      top: spriteIndex[`${block}-top`] ? `${block}-top` : undefined,
+      team: spriteIndex[`${block}-team`] ? `${block}-team` : undefined,
+      rotate: 'all',
+    };
   }
-  return {
-    bottom: spriteIndex[`${block}-bottom`] ? `${block}-bottom` : undefined,
-    main: spriteIndex[block]
-      ? block
-      : spriteIndex[`${block}-icon`]
-        ? `${block}-icon`
-        : undefined,
-    top: spriteIndex[`${block}-top`] ? `${block}-top` : undefined,
-    team: spriteIndex[`${block}-team`] ? `${block}-team` : undefined,
-    rotate: 'all',
-  };
+
+  // DirectionBridge / DuctBridge: unrotated base + rotated dir arrow.
+  if (spriteIndex[`${block}-dir`]) {
+    layers.dir = `${block}-dir`;
+    layers.rotate = 'top';
+  }
+  return layers;
 }
 
 export function hasAnySprite(block: string): boolean {
   const l = layersForBlock(block);
-  return Boolean(l.main || l.bottom || l.top);
+  return Boolean(l.main || l.bottom || l.top || l.dir);
 }
 
 const imageCache = new Map<string, Promise<HTMLImageElement | null>>();

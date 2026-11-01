@@ -20,9 +20,11 @@ describe('sprite layer lookup', () => {
     expect(hasAnySprite('not-a-real-block-xyz')).toBe(false);
   });
 
-  it('uses a directional top layer for ducts', () => {
+  it('uses autotile top/bottom-0 for ducts, not the square icon', () => {
     const layers = layersForBlock('duct');
     expect(layers.top).toBe('duct-top-0');
+    expect(layers.bottom).toBe('duct-bottom-0');
+    expect(layers.main).toBeUndefined();
     expect(layers.rotate).toBe('top');
   });
 
@@ -34,7 +36,7 @@ describe('sprite layer lookup', () => {
 
     const liquid = layersForBlock('reinforced-bridge-conduit');
     expect(liquid.main).toBe('reinforced-bridge-conduit');
-    expect(liquid.bottom).toBe('reinforced-bridge-conduit-bottom');
+    expect(liquid.bottom).toBeUndefined();
     expect(liquid.dir).toBe('reinforced-bridge-conduit-dir');
     expect(liquid.rotate).toBe('top');
   });

@@ -1,18 +1,25 @@
 export type SchematicTagMap = Record<string, string>;
 
+export type SchematicConfig =
+  | null
+  | number
+  | bigint
+  | boolean
+  | string
+  | { kind: string; [k: string]: unknown };
+
 export interface Tile {
-  block: string; // content name, e.g., "silicon-arc-furnace"
-  x: number; // center tile coordinates
+  block: string;
+  x: number;
   y: number;
-  rotation: number; // 0..3
-  // config is serialized via TypeIO-like tags; for MVP we use null
-  config?: null | number | string;
+  rotation: number;
+  config?: SchematicConfig;
 }
 
 export interface Schematic {
-  width: number; // bounding box width in tiles
-  height: number; // bounding box height in tiles
+  width: number;
+  height: number;
   tiles: Tile[];
   tags: SchematicTagMap;
+  version?: number;
 }
-

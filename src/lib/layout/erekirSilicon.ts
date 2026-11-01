@@ -1,5 +1,5 @@
 import type { Schematic, Tile } from '../schematic/types';
-import { estimatePowerUsage, getBlockSpec, sumCosts } from '../blocks/blocks';
+import { estimatePowerUsage, getBlockSpec, sumCosts } from '../blocks/catalog';
 
 export interface SiliconRequest {
   planet: 'erekir';

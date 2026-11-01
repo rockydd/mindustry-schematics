@@ -1,0 +1,28 @@
+import { describe, expect, it } from 'vitest';
+import { hasAnySprite, layersForBlock } from './resolve';
+
+describe('sprite layer lookup', () => {
+  it('finds Erekir silicon layout sprites', () => {
+    expect(hasAnySprite('duct')).toBe(true);
+    expect(hasAnySprite('duct-router')).toBe(true);
+    expect(hasAnySprite('silicon-arc-furnace')).toBe(true);
+    expect(hasAnySprite('beam-node')).toBe(true);
+  });
+
+  it('finds common Serpulo blocks from community schematics', () => {
+    expect(hasAnySprite('conveyor')).toBe(true);
+    expect(hasAnySprite('pulverizer')).toBe(true);
+    expect(hasAnySprite('sorter')).toBe(true);
+    expect(hasAnySprite('overflow-gate')).toBe(true);
+  });
+
+  it('falls back for unknown blocks', () => {
+    expect(hasAnySprite('not-a-real-block-xyz')).toBe(false);
+  });
+
+  it('uses a directional top layer for ducts', () => {
+    const layers = layersForBlock('duct');
+    expect(layers.top).toBe('duct-top-0');
+    expect(layers.rotate).toBe('top');
+  });
+});

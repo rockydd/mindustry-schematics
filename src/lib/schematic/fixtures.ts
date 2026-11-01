@@ -1,0 +1,13 @@
+/** Public schematic base64 strings used in decoder tests. */
+
+/** Chained overflow gates — from Anuke/Mindustry issue #4359 */
+export const OVERFLOW_GATES =
+  'bXNjaAF4nD2OfQ7CIAzFH5TNmMU/NB5gF9ihlq0aEkcNMIy3lw+VpvT15UcLehw0jJs3xkUS+9tDXmMKYxAf2WNYOSzePqMVB3QYbORtCrL7hXGONs7O7tu0iEv8Fo/+++5YuSR2xek3drrPkQFcUU6XUxVhqlKtKcUAOkclcquLSdVSJl85i9k1s4fSoD9MDaYGU4OpwVTgOh51SxbUvlGKgfoAVsclnA==';
+
+/** README example from JeanJPNM/mindustry-schematic-parser */
+export const PARSER_README =
+  'bXNjaAF4nE2N227CMAyGf9KjhrRpSNznBXqFtBfhCUJjUBEklUkH7NG5oDhppWHH+Rwf/iBDqZA7cyZ8b24/emuc1cHrbcumx9LSpeWuD513WL899MFrvWOxGh/9cPol7v6IJfdX4sZ5S/jqnJQD2ebiBYzPwVni/clfm4MJhPo4uDZJl/NEyX6IrHYmCO8AVvi3RTpQdQWMT6hxlBBKVYlLZ3zMo9mEHKleFDHN0vYiQjxPW6koUQjyNFVKVsSOmiSiOqr5A7myCUlZzcovD0488Q==';
+
+/** Base schematic bundled in Anuke/HexedPlugin */
+export const HEXED_BASE =
+  'bXNjaAF4nE1S226cMBA9mIuNoZu0/4HUvuYf8tLXqg8OOAkS2MiwiVZRPr3dznjaKoD3eDxzjuey6HBToQpu9aj359GvsGMMhw/HvdvQv329e1u8m+6+vb+jm/w+pnk75hgANIt78MsO9ePnDb4czzHN53V4dcsyLC49efQfz3Dr0hqTnwbSf/GXmFC6NKLbI0UPmwt+QZ/85may4hwO2C2++jSEOHnofXTH4RP6kUSGcB4Xf97x+QP7763N6sNEgeYcluh417HkoxuPmC7QD1nnAvM/D+A7LRT5Q4n8VIDiIgW0gBFfK5GdWD1bbBO14KUIMq8QXsE89nUoOPLEBCVk9tJdivxlTUBb9tXsUaKiREWxSkPQGnW9ZgbrK1iWUJKGEvFSKij5ZaBlSFOLL4dUUgjfqSxZFYqOfkisp8O+gFRVSXTN0Z8ISInBouTD7GuQe9Ggqtm0tLNcaCNuLYVqzlLTS2lXBJYz08QrTwQ9p6vphkzIvNzrhqA2RLn+vv6iqpETNtwHBi1guGmGx1ITWL7AsDJDVjaibES5/TfFgsfS5kYS5Im3It2KdMvS7GslspPIXlROUm6JPITMs8KzkpLlv8gfnoxifw==';

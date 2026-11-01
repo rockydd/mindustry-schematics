@@ -1,0 +1,4954 @@
+{
+  "source": "Anuken/Mindustry core/src/mindustry/content/Blocks.java",
+  "blocks": {
+    "air": {
+      "name": "air",
+      "id": "air",
+      "className": "AirBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "spawn": {
+      "name": "spawn",
+      "id": "spawn",
+      "className": "SpawnBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "remove-wall": {
+      "name": "remove-wall",
+      "id": "removeWall",
+      "className": "RemoveWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "remove-ore": {
+      "name": "remove-ore",
+      "id": "removeOre",
+      "className": "RemoveOre",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "cliff": {
+      "name": "cliff",
+      "id": "cliff",
+      "className": "Cliff",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "deep-water": {
+      "name": "deep-water",
+      "id": "deepwater",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shallow-water": {
+      "name": "shallow-water",
+      "id": "water",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tainted-water": {
+      "name": "tainted-water",
+      "id": "taintedWater",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "deep-tainted-water": {
+      "name": "deep-tainted-water",
+      "id": "deepTaintedWater",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "darksand-tainted-water": {
+      "name": "darksand-tainted-water",
+      "id": "darksandTaintedWater",
+      "className": "ShallowLiquid",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "sand-water": {
+      "name": "sand-water",
+      "id": "sandWater",
+      "className": "ShallowLiquid",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "darksand-water": {
+      "name": "darksand-water",
+      "id": "darksandWater",
+      "className": "ShallowLiquid",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tar": {
+      "name": "tar",
+      "id": "tar",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "pooled-cryofluid": {
+      "name": "pooled-cryofluid",
+      "id": "cryofluid",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "molten-slag": {
+      "name": "molten-slag",
+      "id": "slag",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "space": {
+      "name": "space",
+      "id": "space",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "empty": {
+      "name": "empty",
+      "id": "empty",
+      "className": "EmptyFloor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "stone": {
+      "name": "stone",
+      "id": "stone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crater-stone": {
+      "name": "crater-stone",
+      "id": "craters",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "char": {
+      "name": "char",
+      "id": "charr",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "basalt": {
+      "name": "basalt",
+      "id": "basalt",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "hotrock": {
+      "name": "hotrock",
+      "id": "hotrock",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "magmarock": {
+      "name": "magmarock",
+      "id": "magmarock",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "sand-floor": {
+      "name": "sand-floor",
+      "id": "sand",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "darksand": {
+      "name": "darksand",
+      "id": "darksand",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dirt": {
+      "name": "dirt",
+      "id": "dirt",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "mud": {
+      "name": "mud",
+      "id": "mud",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dacite": {
+      "name": "dacite",
+      "id": "dacite",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rhyolite": {
+      "name": "rhyolite",
+      "id": "rhyolite",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rhyolite-crater": {
+      "name": "rhyolite-crater",
+      "id": "rhyoliteCrater",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rough-rhyolite": {
+      "name": "rough-rhyolite",
+      "id": "roughRhyolite",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "regolith": {
+      "name": "regolith",
+      "id": "regolith",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "yellow-stone": {
+      "name": "yellow-stone",
+      "id": "yellowStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbon-stone": {
+      "name": "carbon-stone",
+      "id": "carbonStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ferric-stone": {
+      "name": "ferric-stone",
+      "id": "ferricStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ferric-craters": {
+      "name": "ferric-craters",
+      "id": "ferricCraters",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beryllic-stone": {
+      "name": "beryllic-stone",
+      "id": "beryllicStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystalline-stone": {
+      "name": "crystalline-stone",
+      "id": "crystallineStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystal-floor": {
+      "name": "crystal-floor",
+      "id": "crystalFloor",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "yellow-stone-plates": {
+      "name": "yellow-stone-plates",
+      "id": "yellowStonePlates",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-stone": {
+      "name": "red-stone",
+      "id": "redStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dense-red-stone": {
+      "name": "dense-red-stone",
+      "id": "denseRedStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-ice": {
+      "name": "red-ice",
+      "id": "redIce",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "arkycite-floor": {
+      "name": "arkycite-floor",
+      "id": "arkyciteFloor",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "arkyic-stone": {
+      "name": "arkyic-stone",
+      "id": "arkyicStone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rhyolite-vent": {
+      "name": "rhyolite-vent",
+      "id": "rhyoliteVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbon-vent": {
+      "name": "carbon-vent",
+      "id": "carbonVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "arkyic-vent": {
+      "name": "arkyic-vent",
+      "id": "arkyicVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "yellow-stone-vent": {
+      "name": "yellow-stone-vent",
+      "id": "yellowStoneVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-stone-vent": {
+      "name": "red-stone-vent",
+      "id": "redStoneVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystalline-vent": {
+      "name": "crystalline-vent",
+      "id": "crystallineVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "stone-vent": {
+      "name": "stone-vent",
+      "id": "stoneVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "basalt-vent": {
+      "name": "basalt-vent",
+      "id": "basaltVent",
+      "className": "SteamVent",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "redmat": {
+      "name": "redmat",
+      "id": "redmat",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "bluemat": {
+      "name": "bluemat",
+      "id": "bluemat",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "grass": {
+      "name": "grass",
+      "id": "grass",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "salt": {
+      "name": "salt",
+      "id": "salt",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "snow": {
+      "name": "snow",
+      "id": "snow",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ice": {
+      "name": "ice",
+      "id": "ice",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ice-snow": {
+      "name": "ice-snow",
+      "id": "iceSnow",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shale": {
+      "name": "shale",
+      "id": "shale",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "moss": {
+      "name": "moss",
+      "id": "moss",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "core-zone": {
+      "name": "core-zone",
+      "id": "coreZone",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "spore-moss": {
+      "name": "spore-moss",
+      "id": "sporeMoss",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "stone-wall": {
+      "name": "stone-wall",
+      "id": "stoneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "spore-wall": {
+      "name": "spore-wall",
+      "id": "sporeWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dirt-wall": {
+      "name": "dirt-wall",
+      "id": "dirtWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dacite-wall": {
+      "name": "dacite-wall",
+      "id": "daciteWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ice-wall": {
+      "name": "ice-wall",
+      "id": "iceWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "snow-wall": {
+      "name": "snow-wall",
+      "id": "snowWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dune-wall": {
+      "name": "dune-wall",
+      "id": "duneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "regolith-wall": {
+      "name": "regolith-wall",
+      "id": "regolithWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "yellow-stone-wall": {
+      "name": "yellow-stone-wall",
+      "id": "yellowStoneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rhyolite-wall": {
+      "name": "rhyolite-wall",
+      "id": "rhyoliteWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbon-wall": {
+      "name": "carbon-wall",
+      "id": "carbonWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ferric-stone-wall": {
+      "name": "ferric-stone-wall",
+      "id": "ferricStoneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beryllic-stone-wall": {
+      "name": "beryllic-stone-wall",
+      "id": "beryllicStoneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "arkyic-wall": {
+      "name": "arkyic-wall",
+      "id": "arkyicWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystalline-stone-wall": {
+      "name": "crystalline-stone-wall",
+      "id": "crystallineStoneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-ice-wall": {
+      "name": "red-ice-wall",
+      "id": "redIceWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-stone-wall": {
+      "name": "red-stone-wall",
+      "id": "redStoneWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-diamond-wall": {
+      "name": "red-diamond-wall",
+      "id": "redDiamondWall",
+      "className": "StaticTree",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "sand-wall": {
+      "name": "sand-wall",
+      "id": "sandWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "salt-wall": {
+      "name": "salt-wall",
+      "id": "saltWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shrubs": {
+      "name": "shrubs",
+      "id": "shrubs",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shale-wall": {
+      "name": "shale-wall",
+      "id": "shaleWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "spore-pine": {
+      "name": "spore-pine",
+      "id": "sporePine",
+      "className": "StaticTree",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "snow-pine": {
+      "name": "snow-pine",
+      "id": "snowPine",
+      "className": "StaticTree",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "pine": {
+      "name": "pine",
+      "id": "pine",
+      "className": "StaticTree",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "white-tree-dead": {
+      "name": "white-tree-dead",
+      "id": "whiteTreeDead",
+      "className": "TreeBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "white-tree": {
+      "name": "white-tree",
+      "id": "whiteTree",
+      "className": "TreeBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "spore-cluster": {
+      "name": "spore-cluster",
+      "id": "sporeCluster",
+      "className": "Prop",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "redweed": {
+      "name": "redweed",
+      "id": "redweed",
+      "className": "Seaweed",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "pur-bush": {
+      "name": "pur-bush",
+      "id": "purbush",
+      "className": "SeaBush",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "yellowcoral": {
+      "name": "yellowcoral",
+      "id": "yellowCoral",
+      "className": "SeaBush",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "boulder": {
+      "name": "boulder",
+      "id": "boulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "snow-boulder": {
+      "name": "snow-boulder",
+      "id": "snowBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shale-boulder": {
+      "name": "shale-boulder",
+      "id": "shaleBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "sand-boulder": {
+      "name": "sand-boulder",
+      "id": "sandBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dacite-boulder": {
+      "name": "dacite-boulder",
+      "id": "daciteBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "basalt-boulder": {
+      "name": "basalt-boulder",
+      "id": "basaltBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbon-boulder": {
+      "name": "carbon-boulder",
+      "id": "carbonBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ferric-boulder": {
+      "name": "ferric-boulder",
+      "id": "ferricBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beryllic-boulder": {
+      "name": "beryllic-boulder",
+      "id": "beryllicBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "yellow-stone-boulder": {
+      "name": "yellow-stone-boulder",
+      "id": "yellowStoneBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "arkyic-boulder": {
+      "name": "arkyic-boulder",
+      "id": "arkyicBoulder",
+      "className": "Prop",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystal-cluster": {
+      "name": "crystal-cluster",
+      "id": "crystalCluster",
+      "className": "TallBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "vibrant-crystal-cluster": {
+      "name": "vibrant-crystal-cluster",
+      "id": "vibrantCrystalCluster",
+      "className": "TallBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystal-blocks": {
+      "name": "crystal-blocks",
+      "id": "crystalBlocks",
+      "className": "TallBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystal-orbs": {
+      "name": "crystal-orbs",
+      "id": "crystalOrbs",
+      "className": "TallBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "crystalline-boulder": {
+      "name": "crystalline-boulder",
+      "id": "crystallineBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-ice-boulder": {
+      "name": "red-ice-boulder",
+      "id": "redIceBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rhyolite-boulder": {
+      "name": "rhyolite-boulder",
+      "id": "rhyoliteBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "red-stone-boulder": {
+      "name": "red-stone-boulder",
+      "id": "redStoneBoulder",
+      "className": "StaticProp",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "dark-metal": {
+      "name": "dark-metal",
+      "id": "darkMetal",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-1": {
+      "name": "metal-tiles-1",
+      "id": "metalTiles1",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-2": {
+      "name": "metal-tiles-2",
+      "id": "metalTiles2",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-3": {
+      "name": "metal-tiles-3",
+      "id": "metalTiles3",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-4": {
+      "name": "metal-tiles-4",
+      "id": "metalTiles4",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-5": {
+      "name": "metal-tiles-5",
+      "id": "metalTiles5",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-6": {
+      "name": "metal-tiles-6",
+      "id": "metalTiles6",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-7": {
+      "name": "metal-tiles-7",
+      "id": "metalTiles7",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-8": {
+      "name": "metal-tiles-8",
+      "id": "metalTiles8",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-9": {
+      "name": "metal-tiles-9",
+      "id": "metalTiles9",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-10": {
+      "name": "metal-tiles-10",
+      "id": "metalTiles10",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-11": {
+      "name": "metal-tiles-11",
+      "id": "metalTiles11",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-12": {
+      "name": "metal-tiles-12",
+      "id": "metalTiles12",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-tiles-13": {
+      "name": "metal-tiles-13",
+      "id": "metalTiles13",
+      "className": "Floor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-wall-1": {
+      "name": "metal-wall-1",
+      "id": "metalWall1",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-wall-2": {
+      "name": "metal-wall-2",
+      "id": "metalWall2",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "metal-wall-3": {
+      "name": "metal-wall-3",
+      "id": "metalWall3",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "colored-floor": {
+      "name": "colored-floor",
+      "id": "coloredFloor",
+      "className": "ColoredFloor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "colored-wall": {
+      "name": "colored-wall",
+      "id": "coloredWall",
+      "className": "ColoredWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "character-overlay": {
+      "name": "character-overlay",
+      "id": "characterOverlayGray",
+      "className": "CharacterOverlay",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "character-overlay-white": {
+      "name": "character-overlay-white",
+      "id": "characterOverlayWhite",
+      "className": "CharacterOverlay",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rune-overlay": {
+      "name": "rune-overlay",
+      "id": "runeOverlay",
+      "className": "RuneOverlay",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rune-overlay-crux": {
+      "name": "rune-overlay-crux",
+      "id": "cruxRuneOverlay",
+      "className": "RuneOverlay",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "pebbles": {
+      "name": "pebbles",
+      "id": "pebbles",
+      "className": "OverlayFloor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tendrils": {
+      "name": "tendrils",
+      "id": "tendrils",
+      "className": "OverlayFloor",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "graphitic-wall": {
+      "name": "graphitic-wall",
+      "id": "graphiticWall",
+      "className": "StaticWall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "graphite-press": {
+      "name": "graphite-press",
+      "id": "graphitePress",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 75,
+        "lead": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "multi-press": {
+      "name": "multi-press",
+      "id": "multiPress",
+      "className": "GenericCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 100,
+        "silicon": 25,
+        "lead": 100,
+        "graphite": 50
+      },
+      "powerUse": 1.8,
+      "powerProd": 0.0
+    },
+    "silicon-smelter": {
+      "name": "silicon-smelter",
+      "id": "siliconSmelter",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 30,
+        "lead": 25
+      },
+      "powerUse": 0.5,
+      "powerProd": 0.0
+    },
+    "silicon-crucible": {
+      "name": "silicon-crucible",
+      "id": "siliconCrucible",
+      "className": "AttributeCrafter",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "titanium": 120,
+        "metaglass": 80,
+        "plastanium": 35,
+        "silicon": 60
+      },
+      "powerUse": 4.0,
+      "powerProd": 0.0
+    },
+    "kiln": {
+      "name": "kiln",
+      "id": "kiln",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 60,
+        "graphite": 30,
+        "lead": 30
+      },
+      "powerUse": 0.6,
+      "powerProd": 0.0
+    },
+    "plastanium-compressor": {
+      "name": "plastanium-compressor",
+      "id": "plastaniumCompressor",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 80,
+        "lead": 115,
+        "graphite": 60,
+        "titanium": 80
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "phase-weaver": {
+      "name": "phase-weaver",
+      "id": "phaseWeaver",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 130,
+        "lead": 120,
+        "thorium": 75
+      },
+      "powerUse": 5.0,
+      "powerProd": 0.0
+    },
+    "surge-smelter": {
+      "name": "surge-smelter",
+      "id": "surgeSmelter",
+      "className": "GenericCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 80,
+        "lead": 80,
+        "thorium": 70
+      },
+      "powerUse": 4.0,
+      "powerProd": 0.0
+    },
+    "cryofluid-mixer": {
+      "name": "cryofluid-mixer",
+      "id": "cryofluidMixer",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 65,
+        "silicon": 40,
+        "titanium": 60
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "pyratite-mixer": {
+      "name": "pyratite-mixer",
+      "id": "pyratiteMixer",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 50,
+        "lead": 25
+      },
+      "powerUse": 0.2,
+      "powerProd": 0.0
+    },
+    "blast-mixer": {
+      "name": "blast-mixer",
+      "id": "blastMixer",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 30,
+        "titanium": 20
+      },
+      "powerUse": 0.4,
+      "powerProd": 0.0
+    },
+    "melter": {
+      "name": "melter",
+      "id": "melter",
+      "className": "GenericCrafter",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 30,
+        "lead": 35,
+        "graphite": 45
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "separator": {
+      "name": "separator",
+      "id": "separator",
+      "className": "Separator",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 30,
+        "titanium": 25
+      },
+      "powerUse": 1.1,
+      "powerProd": 0.0
+    },
+    "disassembler": {
+      "name": "disassembler",
+      "id": "disassembler",
+      "className": "Separator",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "plastanium": 40,
+        "titanium": 100,
+        "silicon": 150,
+        "thorium": 80
+      },
+      "powerUse": 4.0,
+      "powerProd": 0.0
+    },
+    "spore-press": {
+      "name": "spore-press",
+      "id": "sporePress",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 35,
+        "silicon": 30
+      },
+      "powerUse": 0.7,
+      "powerProd": 0.0
+    },
+    "pulverizer": {
+      "name": "pulverizer",
+      "id": "pulverizer",
+      "className": "GenericCrafter",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 30,
+        "lead": 25
+      },
+      "powerUse": 0.5,
+      "powerProd": 0.0
+    },
+    "coal-centrifuge": {
+      "name": "coal-centrifuge",
+      "id": "coalCentrifuge",
+      "className": "GenericCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 20,
+        "graphite": 40,
+        "lead": 30
+      },
+      "powerUse": 0.7,
+      "powerProd": 0.0
+    },
+    "incinerator": {
+      "name": "incinerator",
+      "id": "incinerator",
+      "className": "Incinerator",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 5,
+        "lead": 15
+      },
+      "powerUse": 0.5,
+      "powerProd": 0.0
+    },
+    "silicon-arc-furnace": {
+      "name": "silicon-arc-furnace",
+      "id": "siliconArcFurnace",
+      "className": "GenericCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 70,
+        "graphite": 80
+      },
+      "powerUse": 5.0,
+      "powerProd": 0.0
+    },
+    "electrolyzer": {
+      "name": "electrolyzer",
+      "id": "electrolyzer",
+      "className": "GenericCrafter",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 50,
+        "graphite": 40,
+        "beryllium": 130,
+        "tungsten": 80
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "atmospheric-concentrator": {
+      "name": "atmospheric-concentrator",
+      "id": "atmosphericConcentrator",
+      "className": "HeatCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "oxide": 60,
+        "beryllium": 180,
+        "silicon": 150
+      },
+      "powerUse": 2.0,
+      "powerProd": 0.0
+    },
+    "oxidation-chamber": {
+      "name": "oxidation-chamber",
+      "id": "oxidationChamber",
+      "className": "HeatProducer",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 120,
+        "graphite": 80,
+        "silicon": 100,
+        "beryllium": 120
+      },
+      "powerUse": 0.5,
+      "powerProd": 0.0
+    },
+    "electric-heater": {
+      "name": "electric-heater",
+      "id": "electricHeater",
+      "className": "HeatProducer",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 30,
+        "oxide": 30,
+        "beryllium": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "slag-heater": {
+      "name": "slag-heater",
+      "id": "slagHeater",
+      "className": "HeatProducer",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 50,
+        "oxide": 20,
+        "beryllium": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "phase-heater": {
+      "name": "phase-heater",
+      "id": "phaseHeater",
+      "className": "HeatProducer",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "oxide": 30,
+        "carbide": 30,
+        "beryllium": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "heat-redirector": {
+      "name": "heat-redirector",
+      "id": "heatRedirector",
+      "className": "HeatConductor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 10,
+        "graphite": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "small-heat-redirector": {
+      "name": "small-heat-redirector",
+      "id": "smallHeatRedirector",
+      "className": "HeatConductor",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "surge-alloy": 3,
+        "graphite": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "heat-router": {
+      "name": "heat-router",
+      "id": "heatRouter",
+      "className": "HeatConductor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 15,
+        "graphite": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "slag-incinerator": {
+      "name": "slag-incinerator",
+      "id": "slagIncinerator",
+      "className": "ItemIncinerator",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbide-crucible": {
+      "name": "carbide-crucible",
+      "id": "carbideCrucible",
+      "className": "HeatCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 110,
+        "thorium": 150,
+        "oxide": 60
+      },
+      "powerUse": 2.0,
+      "powerProd": 0.0
+    },
+    "slag-centrifuge": {
+      "name": "slag-centrifuge",
+      "id": "slagCentrifuge",
+      "className": "GenericCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "carbide": 70,
+        "graphite": 60,
+        "silicon": 40,
+        "oxide": 40
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "surge-crucible": {
+      "name": "surge-crucible",
+      "id": "surgeCrucible",
+      "className": "HeatCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 100,
+        "graphite": 80,
+        "tungsten": 80,
+        "oxide": 80
+      },
+      "powerUse": 1.5,
+      "powerProd": 0.0
+    },
+    "cyanogen-synthesizer": {
+      "name": "cyanogen-synthesizer",
+      "id": "cyanogenSynthesizer",
+      "className": "HeatCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "carbide": 80,
+        "silicon": 120,
+        "beryllium": 140,
+        "oxide": 40
+      },
+      "powerUse": 2.0,
+      "powerProd": 0.0
+    },
+    "phase-synthesizer": {
+      "name": "phase-synthesizer",
+      "id": "phaseSynthesizer",
+      "className": "HeatCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "carbide": 90,
+        "silicon": 100,
+        "thorium": 100,
+        "tungsten": 200
+      },
+      "powerUse": 8.0,
+      "powerProd": 0.0
+    },
+    "heat-reactor": {
+      "name": "heat-reactor",
+      "id": "heatReactor",
+      "className": "HeatProducer",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "oxide": 70,
+        "graphite": 20,
+        "carbide": 10,
+        "thorium": 80
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "copper-wall": {
+      "name": "copper-wall",
+      "id": "copperWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "copper-wall-large": {
+      "name": "copper-wall-large",
+      "id": "copperWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "titanium-wall": {
+      "name": "titanium-wall",
+      "id": "titaniumWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "titanium-wall-large": {
+      "name": "titanium-wall-large",
+      "id": "titaniumWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "plastanium-wall": {
+      "name": "plastanium-wall",
+      "id": "plastaniumWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "plastanium": 5,
+        "metaglass": 2
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "plastanium-wall-large": {
+      "name": "plastanium-wall-large",
+      "id": "plastaniumWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "thorium-wall": {
+      "name": "thorium-wall",
+      "id": "thoriumWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "thorium": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "thorium-wall-large": {
+      "name": "thorium-wall-large",
+      "id": "thoriumWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "phase-wall": {
+      "name": "phase-wall",
+      "id": "phaseWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "phase-fabric": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "phase-wall-large": {
+      "name": "phase-wall-large",
+      "id": "phaseWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "surge-wall": {
+      "name": "surge-wall",
+      "id": "surgeWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "surge-alloy": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "surge-wall-large": {
+      "name": "surge-wall-large",
+      "id": "surgeWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "door": {
+      "name": "door",
+      "id": "door",
+      "className": "Door",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 6,
+        "silicon": 4
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "door-large": {
+      "name": "door-large",
+      "id": "doorLarge",
+      "className": "Door",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scrap-wall": {
+      "name": "scrap-wall",
+      "id": "scrapWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "scrap": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scrap-wall-large": {
+      "name": "scrap-wall-large",
+      "id": "scrapWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scrap-wall-huge": {
+      "name": "scrap-wall-huge",
+      "id": "scrapWallHuge",
+      "className": "Wall",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scrap-wall-gigantic": {
+      "name": "scrap-wall-gigantic",
+      "id": "scrapWallGigantic",
+      "className": "Wall",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "thruster": {
+      "name": "thruster",
+      "id": "thruster",
+      "className": "Thruster",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "scrap": 96
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beryllium-wall": {
+      "name": "beryllium-wall",
+      "id": "berylliumWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beryllium-wall-large": {
+      "name": "beryllium-wall-large",
+      "id": "berylliumWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tungsten-wall": {
+      "name": "tungsten-wall",
+      "id": "tungstenWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tungsten-wall-large": {
+      "name": "tungsten-wall-large",
+      "id": "tungstenWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "blast-door": {
+      "name": "blast-door",
+      "id": "blastDoor",
+      "className": "AutoDoor",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 24,
+        "silicon": 24
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-surge-wall": {
+      "name": "reinforced-surge-wall",
+      "id": "reinforcedSurgeWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "surge-alloy": 6,
+        "tungsten": 2
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-surge-wall-large": {
+      "name": "reinforced-surge-wall-large",
+      "id": "reinforcedSurgeWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbide-wall": {
+      "name": "carbide-wall",
+      "id": "carbideWall",
+      "className": "Wall",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "thorium": 6,
+        "carbide": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "carbide-wall-large": {
+      "name": "carbide-wall-large",
+      "id": "carbideWallLarge",
+      "className": "Wall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shielded-wall": {
+      "name": "shielded-wall",
+      "id": "shieldedWall",
+      "className": "ShieldWall",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "phase-fabric": 20,
+        "surge-alloy": 12,
+        "beryllium": 12
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "mender": {
+      "name": "mender",
+      "id": "mender",
+      "className": "MendProjector",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "lead": 30,
+        "copper": 25
+      },
+      "powerUse": 0.3,
+      "powerProd": 0.0
+    },
+    "mend-projector": {
+      "name": "mend-projector",
+      "id": "mendProjector",
+      "className": "MendProjector",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 100,
+        "titanium": 25,
+        "silicon": 40,
+        "copper": 50
+      },
+      "powerUse": 1.5,
+      "powerProd": 0.0
+    },
+    "overdrive-projector": {
+      "name": "overdrive-projector",
+      "id": "overdriveProjector",
+      "className": "OverdriveProjector",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 100,
+        "titanium": 75,
+        "silicon": 75,
+        "plastanium": 30
+      },
+      "powerUse": 3.5,
+      "powerProd": 0.0
+    },
+    "overdrive-dome": {
+      "name": "overdrive-dome",
+      "id": "overdriveDome",
+      "className": "OverdriveProjector",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "lead": 200,
+        "titanium": 130,
+        "silicon": 130,
+        "plastanium": 80,
+        "surge-alloy": 120
+      },
+      "powerUse": 10.0,
+      "powerProd": 0.0
+    },
+    "force-projector": {
+      "name": "force-projector",
+      "id": "forceProjector",
+      "className": "ForceProjector",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "lead": 100,
+        "titanium": 75,
+        "silicon": 125
+      },
+      "powerUse": 4.0,
+      "powerProd": 0.0
+    },
+    "shock-mine": {
+      "name": "shock-mine",
+      "id": "shockMine",
+      "className": "ShockMine",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "lead": 25,
+        "silicon": 12
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "radar": {
+      "name": "radar",
+      "id": "radar",
+      "className": "Radar",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 60,
+        "graphite": 50,
+        "beryllium": 10
+      },
+      "powerUse": 0.6,
+      "powerProd": 0.0
+    },
+    "build-tower": {
+      "name": "build-tower",
+      "id": "buildTower",
+      "className": "BuildTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 150,
+        "oxide": 40,
+        "thorium": 60
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "regen-projector": {
+      "name": "regen-projector",
+      "id": "regenProjector",
+      "className": "RegenProjector",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 80,
+        "tungsten": 60,
+        "oxide": 40,
+        "beryllium": 80
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "shockwave-tower": {
+      "name": "shockwave-tower",
+      "id": "shockwaveTower",
+      "className": "ShockwaveTower",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "surge-alloy": 50,
+        "silicon": 150,
+        "oxide": 30,
+        "tungsten": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "shield-projector": {
+      "name": "shield-projector",
+      "id": "shieldProjector",
+      "className": "BaseShield",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 5.0,
+      "powerProd": 0.0
+    },
+    "large-shield-projector": {
+      "name": "large-shield-projector",
+      "id": "largeShieldProjector",
+      "className": "BaseShield",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 5.0,
+      "powerProd": 0.0
+    },
+    "conveyor": {
+      "name": "conveyor",
+      "id": "conveyor",
+      "className": "Conveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "titanium-conveyor": {
+      "name": "titanium-conveyor",
+      "id": "titaniumConveyor",
+      "className": "Conveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 1,
+        "lead": 1,
+        "titanium": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "plastanium-conveyor": {
+      "name": "plastanium-conveyor",
+      "id": "plastaniumConveyor",
+      "className": "StackConveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "plastanium": 1,
+        "silicon": 1,
+        "graphite": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "armored-conveyor": {
+      "name": "armored-conveyor",
+      "id": "armoredConveyor",
+      "className": "ArmoredConveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "plastanium": 1,
+        "thorium": 1,
+        "metaglass": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "junction": {
+      "name": "junction",
+      "id": "junction",
+      "className": "Junction",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 3
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "bridge-conveyor": {
+      "name": "bridge-conveyor",
+      "id": "itemBridge",
+      "className": "BufferedItemBridge",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "lead": 6,
+        "copper": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "phase-conveyor": {
+      "name": "phase-conveyor",
+      "id": "phaseConveyor",
+      "className": "ItemBridge",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "phase-fabric": 5,
+        "silicon": 7,
+        "lead": 10,
+        "graphite": 10
+      },
+      "powerUse": 0.3,
+      "powerProd": 0.0
+    },
+    "sorter": {
+      "name": "sorter",
+      "id": "sorter",
+      "className": "Sorter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "lead": 2,
+        "copper": 2
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "inverted-sorter": {
+      "name": "inverted-sorter",
+      "id": "invertedSorter",
+      "className": "Sorter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "lead": 2,
+        "copper": 2
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "router": {
+      "name": "router",
+      "id": "router",
+      "className": "Router",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 3
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "distributor": {
+      "name": "distributor",
+      "id": "distributor",
+      "className": "Router",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "lead": 4,
+        "copper": 4
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "overflow-gate": {
+      "name": "overflow-gate",
+      "id": "overflowGate",
+      "className": "OverflowGate",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "lead": 2,
+        "copper": 4
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "underflow-gate": {
+      "name": "underflow-gate",
+      "id": "underflowGate",
+      "className": "OverflowGate",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "lead": 2,
+        "copper": 4
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "unloader": {
+      "name": "unloader",
+      "id": "unloader",
+      "className": "Unloader",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "titanium": 25,
+        "silicon": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "mass-driver": {
+      "name": "mass-driver",
+      "id": "massDriver",
+      "className": "MassDriver",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "titanium": 125,
+        "silicon": 75,
+        "lead": 125,
+        "thorium": 50
+      },
+      "powerUse": 1.75,
+      "powerProd": 0.0
+    },
+    "duct": {
+      "name": "duct",
+      "id": "duct",
+      "className": "Duct",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "armored-duct": {
+      "name": "armored-duct",
+      "id": "armoredDuct",
+      "className": "Duct",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 2,
+        "tungsten": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "duct-router": {
+      "name": "duct-router",
+      "id": "ductRouter",
+      "className": "DuctRouter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "overflow-duct": {
+      "name": "overflow-duct",
+      "id": "overflowDuct",
+      "className": "OverflowDuct",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 8,
+        "beryllium": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "underflow-duct": {
+      "name": "underflow-duct",
+      "id": "underflowDuct",
+      "className": "OverflowDuct",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 8,
+        "beryllium": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "duct-bridge": {
+      "name": "duct-bridge",
+      "id": "ductBridge",
+      "className": "DuctBridge",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "duct-unloader": {
+      "name": "duct-unloader",
+      "id": "ductUnloader",
+      "className": "DirectionalUnloader",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 20,
+        "silicon": 20,
+        "tungsten": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "surge-conveyor": {
+      "name": "surge-conveyor",
+      "id": "surgeConveyor",
+      "className": "StackConveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "surge-alloy": 1,
+        "tungsten": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "surge-router": {
+      "name": "surge-router",
+      "id": "surgeRouter",
+      "className": "StackRouter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "surge-alloy": 5,
+        "tungsten": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "unit-cargo-loader": {
+      "name": "unit-cargo-loader",
+      "id": "unitCargoLoader",
+      "className": "UnitCargoLoader",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 80,
+        "surge-alloy": 50,
+        "oxide": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "unit-cargo-unload-point": {
+      "name": "unit-cargo-unload-point",
+      "id": "unitCargoUnloadPoint",
+      "className": "UnitCargoUnloadPoint",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 60,
+        "tungsten": 60
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "mechanical-pump": {
+      "name": "mechanical-pump",
+      "id": "mechanicalPump",
+      "className": "Pump",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 15,
+        "metaglass": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "rotary-pump": {
+      "name": "rotary-pump",
+      "id": "rotaryPump",
+      "className": "Pump",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "copper": 70,
+        "metaglass": 50,
+        "silicon": 20,
+        "titanium": 35
+      },
+      "powerUse": 0.3,
+      "powerProd": 0.0
+    },
+    "impulse-pump": {
+      "name": "impulse-pump",
+      "id": "impulsePump",
+      "className": "Pump",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 80,
+        "metaglass": 90,
+        "silicon": 30,
+        "titanium": 40,
+        "thorium": 35
+      },
+      "powerUse": 1.3,
+      "powerProd": 0.0
+    },
+    "conduit": {
+      "name": "conduit",
+      "id": "conduit",
+      "className": "Conduit",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "metaglass": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "pulse-conduit": {
+      "name": "pulse-conduit",
+      "id": "pulseConduit",
+      "className": "Conduit",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "titanium": 2,
+        "metaglass": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "plated-conduit": {
+      "name": "plated-conduit",
+      "id": "platedConduit",
+      "className": "ArmoredConduit",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "thorium": 2,
+        "metaglass": 1,
+        "plastanium": 1
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "liquid-router": {
+      "name": "liquid-router",
+      "id": "liquidRouter",
+      "className": "LiquidRouter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 4,
+        "metaglass": 2
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "liquid-container": {
+      "name": "liquid-container",
+      "id": "liquidContainer",
+      "className": "LiquidRouter",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "titanium": 10,
+        "metaglass": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "liquid-tank": {
+      "name": "liquid-tank",
+      "id": "liquidTank",
+      "className": "LiquidRouter",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "titanium": 30,
+        "metaglass": 40
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "liquid-junction": {
+      "name": "liquid-junction",
+      "id": "liquidJunction",
+      "className": "LiquidJunction",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 4,
+        "metaglass": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "bridge-conduit": {
+      "name": "bridge-conduit",
+      "id": "bridgeConduit",
+      "className": "LiquidBridge",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 4,
+        "metaglass": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "phase-conduit": {
+      "name": "phase-conduit",
+      "id": "phaseConduit",
+      "className": "LiquidBridge",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "phase-fabric": 5,
+        "silicon": 7,
+        "metaglass": 20,
+        "titanium": 10
+      },
+      "powerUse": 0.3,
+      "powerProd": 0.0
+    },
+    "reinforced-pump": {
+      "name": "reinforced-pump",
+      "id": "reinforcedPump",
+      "className": "Pump",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 40,
+        "tungsten": 30,
+        "silicon": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-conduit": {
+      "name": "reinforced-conduit",
+      "id": "reinforcedConduit",
+      "className": "ArmoredConduit",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 2
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-liquid-junction": {
+      "name": "reinforced-liquid-junction",
+      "id": "reinforcedLiquidJunction",
+      "className": "LiquidJunction",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 4,
+        "beryllium": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-bridge-conduit": {
+      "name": "reinforced-bridge-conduit",
+      "id": "reinforcedBridgeConduit",
+      "className": "DirectionLiquidBridge",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 8,
+        "beryllium": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-liquid-router": {
+      "name": "reinforced-liquid-router",
+      "id": "reinforcedLiquidRouter",
+      "className": "LiquidRouter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 8,
+        "beryllium": 4
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-liquid-container": {
+      "name": "reinforced-liquid-container",
+      "id": "reinforcedLiquidContainer",
+      "className": "LiquidRouter",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 10,
+        "beryllium": 16
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-liquid-tank": {
+      "name": "reinforced-liquid-tank",
+      "id": "reinforcedLiquidTank",
+      "className": "LiquidRouter",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 40,
+        "beryllium": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "power-node": {
+      "name": "power-node",
+      "id": "powerNode",
+      "className": "PowerNode",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 2,
+        "lead": 6
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "power-node-large": {
+      "name": "power-node-large",
+      "id": "powerNodeLarge",
+      "className": "PowerNode",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 5,
+        "lead": 10,
+        "silicon": 3
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "surge-tower": {
+      "name": "surge-tower",
+      "id": "surgeTower",
+      "className": "PowerNode",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 7,
+        "lead": 10,
+        "silicon": 15,
+        "surge-alloy": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "diode": {
+      "name": "diode",
+      "id": "diode",
+      "className": "PowerDiode",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 10,
+        "plastanium": 5,
+        "metaglass": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "battery": {
+      "name": "battery",
+      "id": "battery",
+      "className": "Battery",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 5,
+        "lead": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "battery-large": {
+      "name": "battery-large",
+      "id": "batteryLarge",
+      "className": "Battery",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 20,
+        "lead": 50,
+        "silicon": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "combustion-generator": {
+      "name": "combustion-generator",
+      "id": "combustionGenerator",
+      "className": "ConsumeGenerator",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 25,
+        "lead": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 1.0
+    },
+    "thermal-generator": {
+      "name": "thermal-generator",
+      "id": "thermalGenerator",
+      "className": "ThermalGenerator",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 40,
+        "graphite": 35,
+        "lead": 50,
+        "silicon": 35,
+        "metaglass": 40
+      },
+      "powerUse": 0.0,
+      "powerProd": 1.8
+    },
+    "steam-generator": {
+      "name": "steam-generator",
+      "id": "steamGenerator",
+      "className": "ConsumeGenerator",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 35,
+        "graphite": 25,
+        "lead": 40,
+        "silicon": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 5.5
+    },
+    "differential-generator": {
+      "name": "differential-generator",
+      "id": "differentialGenerator",
+      "className": "ConsumeGenerator",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "copper": 70,
+        "titanium": 50,
+        "lead": 100,
+        "silicon": 65,
+        "metaglass": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 18.0
+    },
+    "rtg-generator": {
+      "name": "rtg-generator",
+      "id": "rtgGenerator",
+      "className": "ConsumeGenerator",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 100,
+        "silicon": 75,
+        "phase-fabric": 25,
+        "plastanium": 75,
+        "thorium": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 4.5
+    },
+    "solar-panel": {
+      "name": "solar-panel",
+      "id": "solarPanel",
+      "className": "SolarGenerator",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "lead": 10,
+        "silicon": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.12
+    },
+    "solar-panel-large": {
+      "name": "solar-panel-large",
+      "id": "largeSolarPanel",
+      "className": "SolarGenerator",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "lead": 60,
+        "silicon": 70,
+        "phase-fabric": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 1.6
+    },
+    "thorium-reactor": {
+      "name": "thorium-reactor",
+      "id": "thoriumReactor",
+      "className": "NuclearReactor",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "lead": 300,
+        "silicon": 200,
+        "graphite": 150,
+        "thorium": 150,
+        "metaglass": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 15.0
+    },
+    "impact-reactor": {
+      "name": "impact-reactor",
+      "id": "impactReactor",
+      "className": "ImpactReactor",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "lead": 500,
+        "silicon": 300,
+        "graphite": 400,
+        "thorium": 100,
+        "surge-alloy": 250,
+        "metaglass": 250
+      },
+      "powerUse": 25.0,
+      "powerProd": 130.0
+    },
+    "beam-node": {
+      "name": "beam-node",
+      "id": "beamNode",
+      "className": "BeamNode",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 8
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beam-tower": {
+      "name": "beam-tower",
+      "id": "beamTower",
+      "className": "BeamNode",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 30,
+        "oxide": 10,
+        "silicon": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "beam-link": {
+      "name": "beam-link",
+      "id": "beamLink",
+      "className": "LongPowerNode",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 250,
+        "silicon": 250,
+        "oxide": 150,
+        "carbide": 75,
+        "surge-alloy": 75,
+        "phase-fabric": 75
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "turbine-condenser": {
+      "name": "turbine-condenser",
+      "id": "turbineCondenser",
+      "className": "ThermalGenerator",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 60
+      },
+      "powerUse": 0.0,
+      "powerProd": 3.0
+    },
+    "chemical-combustion-chamber": {
+      "name": "chemical-combustion-chamber",
+      "id": "chemicalCombustionChamber",
+      "className": "ConsumeGenerator",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 40,
+        "tungsten": 20,
+        "oxide": 40,
+        "silicon": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 550.0
+    },
+    "pyrolysis-generator": {
+      "name": "pyrolysis-generator",
+      "id": "pyrolysisGenerator",
+      "className": "ConsumeGenerator",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 100,
+        "carbide": 60,
+        "oxide": 60,
+        "silicon": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 1400.0
+    },
+    "flux-reactor": {
+      "name": "flux-reactor",
+      "id": "fluxReactor",
+      "className": "VariableReactor",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 240,
+        "carbide": 60,
+        "oxide": 80,
+        "silicon": 480,
+        "surge-alloy": 120
+      },
+      "powerUse": 0.0,
+      "powerProd": 18000.0
+    },
+    "neoplasia-reactor": {
+      "name": "neoplasia-reactor",
+      "id": "neoplasiaReactor",
+      "className": "HeaterGenerator",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 750,
+        "carbide": 300,
+        "oxide": 150,
+        "silicon": 500,
+        "phase-fabric": 150,
+        "surge-alloy": 200
+      },
+      "powerUse": 0.0,
+      "powerProd": 140.0
+    },
+    "mechanical-drill": {
+      "name": "mechanical-drill",
+      "id": "mechanicalDrill",
+      "className": "Drill",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 12
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "pneumatic-drill": {
+      "name": "pneumatic-drill",
+      "id": "pneumaticDrill",
+      "className": "Drill",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "copper": 18,
+        "graphite": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "laser-drill": {
+      "name": "laser-drill",
+      "id": "laserDrill",
+      "className": "Drill",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "copper": 35,
+        "graphite": 30,
+        "silicon": 30,
+        "titanium": 20
+      },
+      "powerUse": 1.1,
+      "powerProd": 0.0
+    },
+    "blast-drill": {
+      "name": "blast-drill",
+      "id": "blastDrill",
+      "className": "Drill",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "copper": 65,
+        "silicon": 60,
+        "titanium": 50,
+        "thorium": 75
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "water-extractor": {
+      "name": "water-extractor",
+      "id": "waterExtractor",
+      "className": "SolidPump",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "metaglass": 30,
+        "graphite": 30,
+        "lead": 30,
+        "copper": 30
+      },
+      "powerUse": 1.5,
+      "powerProd": 0.0
+    },
+    "cultivator": {
+      "name": "cultivator",
+      "id": "cultivator",
+      "className": "AttributeCrafter",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "copper": 25,
+        "lead": 25,
+        "silicon": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "oil-extractor": {
+      "name": "oil-extractor",
+      "id": "oilExtractor",
+      "className": "Fracker",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "copper": 150,
+        "graphite": 175,
+        "lead": 115,
+        "thorium": 115,
+        "silicon": 75
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "vent-condenser": {
+      "name": "vent-condenser",
+      "id": "ventCondenser",
+      "className": "AttributeCrafter",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 20,
+        "beryllium": 60
+      },
+      "powerUse": 0.5,
+      "powerProd": 0.0
+    },
+    "cliff-crusher": {
+      "name": "cliff-crusher",
+      "id": "cliffCrusher",
+      "className": "WallCrafter",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 25,
+        "beryllium": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "large-cliff-crusher": {
+      "name": "large-cliff-crusher",
+      "id": "largeCliffCrusher",
+      "className": "WallCrafter",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 80,
+        "surge-alloy": 15,
+        "beryllium": 100,
+        "tungsten": 50
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "plasma-bore": {
+      "name": "plasma-bore",
+      "id": "plasmaBore",
+      "className": "BeamDrill",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 40
+      },
+      "powerUse": 0.15,
+      "powerProd": 0.0
+    },
+    "large-plasma-bore": {
+      "name": "large-plasma-bore",
+      "id": "largePlasmaBore",
+      "className": "BeamDrill",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 100,
+        "oxide": 25,
+        "beryllium": 100,
+        "tungsten": 70
+      },
+      "powerUse": 0.8,
+      "powerProd": 0.0
+    },
+    "impact-drill": {
+      "name": "impact-drill",
+      "id": "impactDrill",
+      "className": "BurstDrill",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 70,
+        "beryllium": 90,
+        "graphite": 60
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "eruption-drill": {
+      "name": "eruption-drill",
+      "id": "eruptionDrill",
+      "className": "BurstDrill",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 300,
+        "oxide": 20,
+        "tungsten": 250,
+        "thorium": 150
+      },
+      "powerUse": 6.0,
+      "powerProd": 0.0
+    },
+    "core-shard": {
+      "name": "core-shard",
+      "id": "coreShard",
+      "className": "CoreBlock",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "copper": 1000,
+        "lead": 800
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "core-foundation": {
+      "name": "core-foundation",
+      "id": "coreFoundation",
+      "className": "CoreBlock",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "copper": 3000,
+        "lead": 3000,
+        "silicon": 2000
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "core-nucleus": {
+      "name": "core-nucleus",
+      "id": "coreNucleus",
+      "className": "CoreBlock",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "copper": 8000,
+        "lead": 8000,
+        "silicon": 5000,
+        "thorium": 4000
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "core-bastion": {
+      "name": "core-bastion",
+      "id": "coreBastion",
+      "className": "CoreBlock",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 1000,
+        "silicon": 1000,
+        "beryllium": 800
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "core-citadel": {
+      "name": "core-citadel",
+      "id": "coreCitadel",
+      "className": "CoreBlock",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 4000,
+        "beryllium": 4000,
+        "tungsten": 3000,
+        "oxide": 1000
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "core-acropolis": {
+      "name": "core-acropolis",
+      "id": "coreAcropolis",
+      "className": "CoreBlock",
+      "size": 6,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 6000,
+        "silicon": 5000,
+        "tungsten": 5000,
+        "carbide": 3000,
+        "oxide": 3000
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "container": {
+      "name": "container",
+      "id": "container",
+      "className": "StorageBlock",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "vault": {
+      "name": "vault",
+      "id": "vault",
+      "className": "StorageBlock",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "titanium": 250,
+        "thorium": 125
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-container": {
+      "name": "reinforced-container",
+      "id": "reinforcedContainer",
+      "className": "StorageBlock",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 30,
+        "graphite": 40
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-vault": {
+      "name": "reinforced-vault",
+      "id": "reinforcedVault",
+      "className": "StorageBlock",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "tungsten": 125,
+        "thorium": 70,
+        "beryllium": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "duo": {
+      "name": "duo",
+      "id": "duo",
+      "className": "ItemTurret",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 35
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scatter": {
+      "name": "scatter",
+      "id": "scatter",
+      "className": "ItemTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "copper": 85,
+        "lead": 45
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scorch": {
+      "name": "scorch",
+      "id": "scorch",
+      "className": "ItemTurret",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 25,
+        "graphite": 22
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "hail": {
+      "name": "hail",
+      "id": "hail",
+      "className": "ItemTurret",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 40,
+        "graphite": 17
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "wave": {
+      "name": "wave",
+      "id": "wave",
+      "className": "LiquidTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "metaglass": 45,
+        "lead": 75,
+        "copper": 25
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "lancer": {
+      "name": "lancer",
+      "id": "lancer",
+      "className": "PowerTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "copper": 60,
+        "lead": 70,
+        "silicon": 60,
+        "titanium": 30
+      },
+      "powerUse": 6.0,
+      "powerProd": 0.0
+    },
+    "arc": {
+      "name": "arc",
+      "id": "arc",
+      "className": "PowerTurret",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "copper": 50,
+        "lead": 50
+      },
+      "powerUse": 3.3,
+      "powerProd": 0.0
+    },
+    "parallax": {
+      "name": "parallax",
+      "id": "parallax",
+      "className": "TractorBeamTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 160,
+        "titanium": 110,
+        "graphite": 50
+      },
+      "powerUse": 3.3,
+      "powerProd": 0.0
+    },
+    "swarmer": {
+      "name": "swarmer",
+      "id": "swarmer",
+      "className": "ItemTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 35,
+        "titanium": 35,
+        "plastanium": 45,
+        "silicon": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "salvo": {
+      "name": "salvo",
+      "id": "salvo",
+      "className": "ItemTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "copper": 100,
+        "graphite": 80,
+        "titanium": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "segment": {
+      "name": "segment",
+      "id": "segment",
+      "className": "PointDefenseTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 130,
+        "thorium": 80,
+        "phase-fabric": 40,
+        "titanium": 40
+      },
+      "powerUse": 8.0,
+      "powerProd": 0.0
+    },
+    "tsunami": {
+      "name": "tsunami",
+      "id": "tsunami",
+      "className": "LiquidTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "metaglass": 100,
+        "lead": 400,
+        "titanium": 250,
+        "thorium": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "fuse": {
+      "name": "fuse",
+      "id": "fuse",
+      "className": "ItemTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 225,
+        "graphite": 225,
+        "thorium": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "ripple": {
+      "name": "ripple",
+      "id": "ripple",
+      "className": "ItemTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 150,
+        "graphite": 135,
+        "titanium": 60
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "cyclone": {
+      "name": "cyclone",
+      "id": "cyclone",
+      "className": "ItemTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 200,
+        "titanium": 125,
+        "plastanium": 80
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "foreshadow": {
+      "name": "foreshadow",
+      "id": "foreshadow",
+      "className": "ItemTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "copper": 1000,
+        "metaglass": 600,
+        "surge-alloy": 300,
+        "plastanium": 200,
+        "silicon": 600
+      },
+      "powerUse": 10.0,
+      "powerProd": 0.0
+    },
+    "spectre": {
+      "name": "spectre",
+      "id": "spectre",
+      "className": "ItemTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "copper": 900,
+        "graphite": 300,
+        "surge-alloy": 250,
+        "plastanium": 175,
+        "thorium": 250
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "meltdown": {
+      "name": "meltdown",
+      "id": "meltdown",
+      "className": "LaserTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "copper": 1200,
+        "lead": 350,
+        "graphite": 300,
+        "surge-alloy": 325,
+        "silicon": 325
+      },
+      "powerUse": 17.0,
+      "powerProd": 0.0
+    },
+    "breach": {
+      "name": "breach",
+      "id": "breach",
+      "className": "ItemTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 150,
+        "silicon": 150,
+        "graphite": 125
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "diffuse": {
+      "name": "diffuse",
+      "id": "diffuse",
+      "className": "ItemTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 150,
+        "silicon": 200,
+        "graphite": 200,
+        "tungsten": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "sublimate": {
+      "name": "sublimate",
+      "id": "sublimate",
+      "className": "ContinuousLiquidTurret",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 150,
+        "silicon": 200,
+        "oxide": 40,
+        "beryllium": 400
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "titan": {
+      "name": "titan",
+      "id": "titan",
+      "className": "ItemTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 250,
+        "silicon": 300,
+        "thorium": 400
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "disperse": {
+      "name": "disperse",
+      "id": "disperse",
+      "className": "ItemTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "thorium": 50,
+        "oxide": 50,
+        "silicon": 200,
+        "beryllium": 350
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "afflict": {
+      "name": "afflict",
+      "id": "afflict",
+      "className": "PowerTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "surge-alloy": 100,
+        "silicon": 200,
+        "graphite": 250,
+        "oxide": 40
+      },
+      "powerUse": 5.0,
+      "powerProd": 0.0
+    },
+    "lustre": {
+      "name": "lustre",
+      "id": "lustre",
+      "className": "ContinuousTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 250,
+        "graphite": 200,
+        "oxide": 50,
+        "carbide": 90
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "scathe": {
+      "name": "scathe",
+      "id": "scathe",
+      "className": "ItemTurret",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 450,
+        "graphite": 400,
+        "tungsten": 500,
+        "oxide": 100,
+        "carbide": 200
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "smite": {
+      "name": "smite",
+      "id": "smite",
+      "className": "ItemTurret",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "oxide": 200,
+        "surge-alloy": 400,
+        "silicon": 800,
+        "carbide": 500,
+        "phase-fabric": 300
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "malign": {
+      "name": "malign",
+      "id": "malign",
+      "className": "PowerTurret",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "carbide": 200,
+        "beryllium": 1000,
+        "silicon": 500,
+        "graphite": 500,
+        "phase-fabric": 200
+      },
+      "powerUse": 40.0,
+      "powerProd": 0.0
+    },
+    "ground-factory": {
+      "name": "ground-factory",
+      "id": "groundFactory",
+      "className": "UnitFactory",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 50,
+        "lead": 120,
+        "silicon": 80
+      },
+      "powerUse": 1.2,
+      "powerProd": 0.0
+    },
+    "air-factory": {
+      "name": "air-factory",
+      "id": "airFactory",
+      "className": "UnitFactory",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 60,
+        "lead": 70,
+        "silicon": 60
+      },
+      "powerUse": 1.2,
+      "powerProd": 0.0
+    },
+    "naval-factory": {
+      "name": "naval-factory",
+      "id": "navalFactory",
+      "className": "UnitFactory",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 150,
+        "lead": 130,
+        "metaglass": 120
+      },
+      "powerUse": 1.2,
+      "powerProd": 0.0
+    },
+    "additive-reconstructor": {
+      "name": "additive-reconstructor",
+      "id": "additiveReconstructor",
+      "className": "Reconstructor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 200,
+        "lead": 120,
+        "silicon": 90
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "multiplicative-reconstructor": {
+      "name": "multiplicative-reconstructor",
+      "id": "multiplicativeReconstructor",
+      "className": "Reconstructor",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "lead": 650,
+        "silicon": 450,
+        "titanium": 350,
+        "thorium": 650
+      },
+      "powerUse": 6.0,
+      "powerProd": 0.0
+    },
+    "exponential-reconstructor": {
+      "name": "exponential-reconstructor",
+      "id": "exponentialReconstructor",
+      "className": "Reconstructor",
+      "size": 7,
+      "rotate": true,
+      "buildCost": {
+        "lead": 2000,
+        "silicon": 1000,
+        "titanium": 2000,
+        "thorium": 750,
+        "plastanium": 450,
+        "phase-fabric": 600
+      },
+      "powerUse": 13.0,
+      "powerProd": 0.0
+    },
+    "tetrative-reconstructor": {
+      "name": "tetrative-reconstructor",
+      "id": "tetrativeReconstructor",
+      "className": "Reconstructor",
+      "size": 9,
+      "rotate": true,
+      "buildCost": {
+        "lead": 4000,
+        "silicon": 3000,
+        "thorium": 1000,
+        "plastanium": 600,
+        "phase-fabric": 600,
+        "surge-alloy": 800
+      },
+      "powerUse": 25.0,
+      "powerProd": 0.0
+    },
+    "repair-point": {
+      "name": "repair-point",
+      "id": "repairPoint",
+      "className": "RepairTurret",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "lead": 30,
+        "copper": 30,
+        "silicon": 20
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "repair-turret": {
+      "name": "repair-turret",
+      "id": "repairTurret",
+      "className": "RepairTurret",
+      "size": 2,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 90,
+        "thorium": 80,
+        "plastanium": 60
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tank-fabricator": {
+      "name": "tank-fabricator",
+      "id": "tankFabricator",
+      "className": "UnitFactory",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 200,
+        "beryllium": 150
+      },
+      "powerUse": 1.5,
+      "powerProd": 0.0
+    },
+    "ship-fabricator": {
+      "name": "ship-fabricator",
+      "id": "shipFabricator",
+      "className": "UnitFactory",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 250,
+        "beryllium": 200
+      },
+      "powerUse": 1.5,
+      "powerProd": 0.0
+    },
+    "mech-fabricator": {
+      "name": "mech-fabricator",
+      "id": "mechFabricator",
+      "className": "UnitFactory",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 200,
+        "beryllium": 250,
+        "tungsten": 10
+      },
+      "powerUse": 1.5,
+      "powerProd": 0.0
+    },
+    "tank-refabricator": {
+      "name": "tank-refabricator",
+      "id": "tankRefabricator",
+      "className": "Reconstructor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 200,
+        "tungsten": 80,
+        "silicon": 100
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "ship-refabricator": {
+      "name": "ship-refabricator",
+      "id": "shipRefabricator",
+      "className": "Reconstructor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 250,
+        "tungsten": 120,
+        "silicon": 150,
+        "oxide": 15
+      },
+      "powerUse": 2.5,
+      "powerProd": 0.0
+    },
+    "mech-refabricator": {
+      "name": "mech-refabricator",
+      "id": "mechRefabricator",
+      "className": "Reconstructor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "beryllium": 250,
+        "tungsten": 175,
+        "silicon": 150
+      },
+      "powerUse": 2.5,
+      "powerProd": 0.0
+    },
+    "prime-refabricator": {
+      "name": "prime-refabricator",
+      "id": "primeRefabricator",
+      "className": "Reconstructor",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "thorium": 250,
+        "oxide": 200,
+        "tungsten": 200,
+        "silicon": 400
+      },
+      "powerUse": 4.5,
+      "powerProd": 0.0
+    },
+    "tank-assembler": {
+      "name": "tank-assembler",
+      "id": "tankAssembler",
+      "className": "UnitAssembler",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "thorium": 500,
+        "oxide": 150,
+        "carbide": 80,
+        "silicon": 650
+      },
+      "powerUse": 2.5,
+      "powerProd": 0.0
+    },
+    "ship-assembler": {
+      "name": "ship-assembler",
+      "id": "shipAssembler",
+      "className": "UnitAssembler",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "carbide": 100,
+        "oxide": 200,
+        "tungsten": 550,
+        "silicon": 900,
+        "thorium": 400
+      },
+      "powerUse": 2.5,
+      "powerProd": 0.0
+    },
+    "mech-assembler": {
+      "name": "mech-assembler",
+      "id": "mechAssembler",
+      "className": "UnitAssembler",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "carbide": 200,
+        "thorium": 600,
+        "oxide": 200,
+        "tungsten": 550,
+        "silicon": 1000
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "basic-assembler-module": {
+      "name": "basic-assembler-module",
+      "id": "basicAssemblerModule",
+      "className": "UnitAssemblerModule",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "carbide": 300,
+        "thorium": 500,
+        "oxide": 250,
+        "phase-fabric": 400
+      },
+      "powerUse": 3.5,
+      "powerProd": 0.0
+    },
+    "unit-repair-tower": {
+      "name": "unit-repair-tower",
+      "id": "unitRepairTower",
+      "className": "RepairTower",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 90,
+        "silicon": 90,
+        "tungsten": 80
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "payload-conveyor": {
+      "name": "payload-conveyor",
+      "id": "payloadConveyor",
+      "className": "PayloadConveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 10,
+        "copper": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "payload-router": {
+      "name": "payload-router",
+      "id": "payloadRouter",
+      "className": "PayloadRouter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 15,
+        "copper": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-payload-conveyor": {
+      "name": "reinforced-payload-conveyor",
+      "id": "reinforcedPayloadConveyor",
+      "className": "PayloadConveyor",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-payload-router": {
+      "name": "reinforced-payload-router",
+      "id": "reinforcedPayloadRouter",
+      "className": "PayloadRouter",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 15
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "payload-mass-driver": {
+      "name": "payload-mass-driver",
+      "id": "payloadMassDriver",
+      "className": "PayloadMassDriver",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "tungsten": 40,
+        "silicon": 50,
+        "graphite": 20
+      },
+      "powerUse": 0.5,
+      "powerProd": 0.0
+    },
+    "large-payload-mass-driver": {
+      "name": "large-payload-mass-driver",
+      "id": "largePayloadMassDriver",
+      "className": "PayloadMassDriver",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "phase-fabric": 10,
+        "tungsten": 120,
+        "silicon": 150,
+        "graphite": 60,
+        "oxide": 30
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "small-deconstructor": {
+      "name": "small-deconstructor",
+      "id": "smallDeconstructor",
+      "className": "PayloadDeconstructor",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 70,
+        "silicon": 70,
+        "oxide": 25,
+        "graphite": 50
+      },
+      "powerUse": 1.0,
+      "powerProd": 0.0
+    },
+    "deconstructor": {
+      "name": "deconstructor",
+      "id": "deconstructor",
+      "className": "PayloadDeconstructor",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {
+        "beryllium": 250,
+        "oxide": 100,
+        "silicon": 250,
+        "carbide": 50
+      },
+      "powerUse": 3.0,
+      "powerProd": 0.0
+    },
+    "constructor": {
+      "name": "constructor",
+      "id": "constructor",
+      "className": "Constructor",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 50,
+        "beryllium": 75,
+        "tungsten": 40
+      },
+      "powerUse": 2.5,
+      "powerProd": 0.0
+    },
+    "large-constructor": {
+      "name": "large-constructor",
+      "id": "largeConstructor",
+      "className": "Constructor",
+      "size": 5,
+      "rotate": true,
+      "buildCost": {
+        "silicon": 150,
+        "oxide": 100,
+        "tungsten": 200,
+        "thorium": 80
+      },
+      "powerUse": 5.0,
+      "powerProd": 0.0
+    },
+    "payload-loader": {
+      "name": "payload-loader",
+      "id": "payloadLoader",
+      "className": "PayloadLoader",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 80,
+        "silicon": 160,
+        "tungsten": 90
+      },
+      "powerUse": 2.0,
+      "powerProd": 0.0
+    },
+    "payload-unloader": {
+      "name": "payload-unloader",
+      "id": "payloadUnloader",
+      "className": "PayloadUnloader",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "graphite": 140,
+        "silicon": 220,
+        "tungsten": 180
+      },
+      "powerUse": 2.0,
+      "powerProd": 0.0
+    },
+    "power-source": {
+      "name": "power-source",
+      "id": "powerSource",
+      "className": "PowerSource",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 1000000.0
+    },
+    "power-void": {
+      "name": "power-void",
+      "id": "powerVoid",
+      "className": "PowerVoid",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "item-source": {
+      "name": "item-source",
+      "id": "itemSource",
+      "className": "ItemSource",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "item-void": {
+      "name": "item-void",
+      "id": "itemVoid",
+      "className": "ItemVoid",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "liquid-source": {
+      "name": "liquid-source",
+      "id": "liquidSource",
+      "className": "LiquidSource",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "liquid-void": {
+      "name": "liquid-void",
+      "id": "liquidVoid",
+      "className": "LiquidVoid",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "payload-source": {
+      "name": "payload-source",
+      "id": "payloadSource",
+      "className": "PayloadSource",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "payload-void": {
+      "name": "payload-void",
+      "id": "payloadVoid",
+      "className": "PayloadVoid",
+      "size": 5,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "heat-source": {
+      "name": "heat-source",
+      "id": "heatSource",
+      "className": "HeatProducer",
+      "size": 1,
+      "rotate": true,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "target-dummy": {
+      "name": "target-dummy",
+      "id": "targetDummy",
+      "className": "TargetDummy",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "illuminator": {
+      "name": "illuminator",
+      "id": "illuminator",
+      "className": "LightBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 12,
+        "silicon": 8,
+        "lead": 8
+      },
+      "powerUse": 0.05,
+      "powerProd": 0.0
+    },
+    "launch-pad": {
+      "name": "launch-pad",
+      "id": "launchPad",
+      "className": "LaunchPad",
+      "size": 3,
+      "rotate": true,
+      "buildCost": {
+        "copper": 350,
+        "silicon": 140,
+        "lead": 200,
+        "titanium": 150
+      },
+      "powerUse": 4.0,
+      "powerProd": 0.0
+    },
+    "advanced-launch-pad": {
+      "name": "advanced-launch-pad",
+      "id": "advancedLaunchPad",
+      "className": "LaunchPad",
+      "size": 4,
+      "rotate": true,
+      "buildCost": {
+        "copper": 350,
+        "silicon": 250,
+        "lead": 300,
+        "titanium": 200
+      },
+      "powerUse": 8.0,
+      "powerProd": 0.0
+    },
+    "landing-pad": {
+      "name": "landing-pad",
+      "id": "landingPad",
+      "className": "LandingPad",
+      "size": 4,
+      "rotate": false,
+      "buildCost": {
+        "copper": 200,
+        "graphite": 100,
+        "titanium": 100
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "interplanetary-accelerator": {
+      "name": "interplanetary-accelerator",
+      "id": "interplanetaryAccelerator",
+      "className": "Accelerator",
+      "size": 7,
+      "rotate": false,
+      "buildCost": {
+        "copper": 16000,
+        "silicon": 11000,
+        "thorium": 13000,
+        "titanium": 12000,
+        "surge-alloy": 6000,
+        "phase-fabric": 5000
+      },
+      "powerUse": 10.0,
+      "powerProd": 0.0
+    },
+    "message": {
+      "name": "message",
+      "id": "message",
+      "className": "MessageBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 5,
+        "copper": 5
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "switch": {
+      "name": "switch",
+      "id": "switchBlock",
+      "className": "SwitchBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 5,
+        "copper": 5
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "micro-processor": {
+      "name": "micro-processor",
+      "id": "microProcessor",
+      "className": "LogicBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "copper": 90,
+        "lead": 50,
+        "silicon": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "logic-processor": {
+      "name": "logic-processor",
+      "id": "logicProcessor",
+      "className": "LogicBlock",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "lead": 320,
+        "silicon": 80,
+        "graphite": 60,
+        "thorium": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "hyper-processor": {
+      "name": "hyper-processor",
+      "id": "hyperProcessor",
+      "className": "LogicBlock",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "lead": 450,
+        "silicon": 150,
+        "thorium": 75,
+        "surge-alloy": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "memory-cell": {
+      "name": "memory-cell",
+      "id": "memoryCell",
+      "className": "MemoryBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 30,
+        "silicon": 30,
+        "copper": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "memory-bank": {
+      "name": "memory-bank",
+      "id": "memoryBank",
+      "className": "MemoryBlock",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 80,
+        "silicon": 80,
+        "phase-fabric": 30,
+        "copper": 30
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "logic-display": {
+      "name": "logic-display",
+      "id": "logicDisplay",
+      "className": "LogicDisplay",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "lead": 100,
+        "silicon": 50,
+        "metaglass": 50
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "large-logic-display": {
+      "name": "large-logic-display",
+      "id": "largeLogicDisplay",
+      "className": "LogicDisplay",
+      "size": 6,
+      "rotate": false,
+      "buildCost": {
+        "lead": 200,
+        "silicon": 150,
+        "metaglass": 100,
+        "phase-fabric": 75
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "tile-logic-display": {
+      "name": "tile-logic-display",
+      "id": "tileLogicDisplay",
+      "className": "TileableLogicDisplay",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "lead": 8,
+        "silicon": 8,
+        "metaglass": 8,
+        "phase-fabric": 3
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "canvas": {
+      "name": "canvas",
+      "id": "canvas",
+      "className": "CanvasBlock",
+      "size": 2,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 10,
+        "beryllium": 10
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "large-canvas": {
+      "name": "large-canvas",
+      "id": "largeCanvas",
+      "className": "CanvasBlock",
+      "size": 3,
+      "rotate": false,
+      "buildCost": {
+        "silicon": 15,
+        "beryllium": 15,
+        "surge-alloy": 5
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "reinforced-message": {
+      "name": "reinforced-message",
+      "id": "reinforcedMessage",
+      "className": "MessageBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {
+        "graphite": 10,
+        "beryllium": 5
+      },
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "world-processor": {
+      "name": "world-processor",
+      "id": "worldProcessor",
+      "className": "LogicBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "world-cell": {
+      "name": "world-cell",
+      "id": "worldCell",
+      "className": "MemoryBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "world-message": {
+      "name": "world-message",
+      "id": "worldMessage",
+      "className": "MessageBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    },
+    "world-switch": {
+      "name": "world-switch",
+      "id": "worldSwitch",
+      "className": "SwitchBlock",
+      "size": 1,
+      "rotate": false,
+      "buildCost": {},
+      "powerUse": 0.0,
+      "powerProd": 0.0
+    }
+  },
+  "items": {
+    "copper": "copper",
+    "lead": "lead",
+    "metaglass": "metaglass",
+    "graphite": "graphite",
+    "sand": "sand",
+    "coal": "coal",
+    "titanium": "titanium",
+    "thorium": "thorium",
+    "scrap": "scrap",
+    "silicon": "silicon",
+    "plastanium": "plastanium",
+    "phaseFabric": "phase-fabric",
+    "surgeAlloy": "surge-alloy",
+    "sporePod": "spore-pod",
+    "blastCompound": "blast-compound",
+    "pyratite": "pyratite",
+    "beryllium": "beryllium",
+    "tungsten": "tungsten",
+    "oxide": "oxide",
+    "carbide": "carbide",
+    "fissileMatter": "fissile-matter",
+    "dormantCyst": "dormant-cyst"
+  }
+}

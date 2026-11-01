@@ -1,0 +1,18 @@
+# GitHub may still run a legacy Jekyll "Deploy from a branch" publisher
+# alongside the Actions workflow. Keep that publisher from serving the
+# Vite source tree (index.html with /src/main.tsx).
+exclude:
+  - index.html
+  - src
+  - node_modules
+  - public
+  - dist
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - tsconfig.app.json
+  - tsconfig.node.json
+  - vite.config.ts
+  - vitest.config.ts
+  - .github
+  - README.md

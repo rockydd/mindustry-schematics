@@ -72,7 +72,9 @@ Keep the rule-based parser as a fallback. If you add an LLM:
 
 ## Deploy
 
-The app deploys automatically to GitHub Pages on every push to `main` via GitHub Actions. The Vite `base` is set to `/mindustry-schematics/` for correct asset paths.
+The app deploys automatically to GitHub Pages on every push to `main` via GitHub Actions. The Vite `base` is set to `/mindustry-schematics/` so JS/CSS load from `/mindustry-schematics/assets/`.
+
+If GitHub also runs the legacy `pages-build-deployment` Jekyll job (repo root), the Actions workflow waits for it and then publishes the Vite `dist/` artifact last.
 
 ## License
 

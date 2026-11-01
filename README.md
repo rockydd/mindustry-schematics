@@ -4,6 +4,9 @@ Web app that turns a plain-language prompt into a working Mindustry schematic (.
 
 MVP scope focuses on Erekir silicon production using the Silicon Arc Furnace. More content is easy to add.
 
+Live site:
+- https://rockydd.github.io/mindustry-schematics/
+
 ## Quick start
 
 ```bash
@@ -69,9 +72,7 @@ Keep the rule-based parser as a fallback. If you add an LLM:
 
 ## Deploy
 
-The app is a standard Vite + React (TypeScript) SPA. You can host it on Vercel/Netlify/Cloudflare Pages:
-- Build: `npm run build`
-- Preview locally: `npm run preview`
+The app deploys automatically to GitHub Pages on every push to `main` via GitHub Actions. The Vite `base` is set to `/mindustry-schematics/` for correct asset paths.
 
 ## License
 

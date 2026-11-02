@@ -23,6 +23,9 @@ export function sanitizeBase64(input: string): string {
   s = s.replace(/-/g, '+').replace(/_/g, '/');
   const start = s.indexOf('bXNjaA');
   if (start > 0) s = s.slice(start);
+  const valid = s.match(/^bXNjaA[A-Za-z0-9+/=]*/);
+  s = valid ? valid[0] : s;
+  while (s.length % 4 !== 0) s += '=';
   return s;
 }
 

@@ -30,7 +30,7 @@ npm run ingest
 npm run ingest -- --seed scripts/seed/reddit-raw.json
 ```
 
-Anonymous `www.reddit.com` JSON often returns HTTP 403. The script then uses official app-only OAuth when these env vars are set:
+Anonymous `www.reddit.com` JSON often returns HTTP 403. The script then tries Atom search feeds (`search.rss?q=bXNjaA`), which work from some networks. If those fail too, it uses official app-only OAuth when these env vars are set:
 
 - `REDDIT_CLIENT_ID`
 - `REDDIT_CLIENT_SECRET`

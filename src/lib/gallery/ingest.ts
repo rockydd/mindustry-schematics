@@ -121,7 +121,11 @@ export async function entryFromBase64(
 ): Promise<CatalogEntry | null> {
   if (!looksLikeSchematicBase64(raw)) return null;
   const cleaned = sanitizeBase64(raw);
-  return entryFromSchematicBytes(fromBase64(cleaned), { ...meta, base64: cleaned });
+  try {
+    return await entryFromSchematicBytes(fromBase64(cleaned), { ...meta, base64: cleaned });
+  } catch {
+    return null;
+  }
 }
 
 export function mergeCatalog(existing: CatalogEntry[], incoming: CatalogEntry[]): CatalogEntry[] {
@@ -154,4 +158,55 @@ export function emptyCatalog(): SchematicCatalog {
 
 export function collectText(post: RawSeedPost): string {
   return [post.title, post.body, post.selftext, post.url].filter(Boolean).join('\n');
+}
+
+function stripHtml(html: string): string {
+  return html
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/<br\s*\/?>/gi, '\n')
+    .replace(/<\/p>/gi, '\n')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ');
+}
+
+function xmlText(xml: string, tag: string): string {
+  const m = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i'));
+  return m ? m[1].trim() : '';
+}
+
+function xmlAttr(xml: string, tag: string, attr: string): string {
+  const m = xml.match(new RegExp(`<${tag}\\b[^>]*\\b${attr}="([^"]+)"`, 'i'));
+  return m ? m[1] : '';
+}
+
+/** Parse a Reddit Atom/RSS feed into raw posts (anonymous-friendly). */
+export function parseRedditAtomFeed(xml: string): RawSeedPost[] {
+  const posts: RawSeedPost[] = [];
+  const chunks = xml.split(/<entry\b/i).slice(1);
+  for (const raw of chunks) {
+    const entry = raw.split(/<\/entry>/i)[0] ?? raw;
+    const authorRaw = xmlText(entry, 'name').replace(/^\/u\//, '');
+    const permalink = xmlAttr(entry, 'link', 'href') || xmlText(entry, 'id');
+    const title = xmlText(entry, 'title');
+    const published = xmlText(entry, 'published') || xmlText(entry, 'updated');
+    const content = stripHtml(xmlText(entry, 'content') || xmlText(entry, 'summary'));
+    let created_utc: number | undefined;
+    if (published) {
+      const ms = Date.parse(published);
+      if (Number.isFinite(ms)) created_utc = Math.floor(ms / 1000);
+    }
+    if (!permalink && !content) continue;
+    posts.push({
+      author: authorRaw,
+      permalink,
+      created_utc,
+      title,
+      body: content,
+    });
+  }
+  return posts;
 }

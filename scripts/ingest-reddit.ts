@@ -16,6 +16,7 @@ import {
   extractMschUrls,
   extractSchematicStrings,
   mergeCatalog,
+  parseRedditAtomFeed,
 } from '../src/lib/gallery/ingest.ts';
 import type { CatalogEntry, RawSeedFile, RawSeedPost, SchematicCatalog } from '../src/lib/gallery/types.ts';
 
@@ -211,6 +212,54 @@ async function collectFromReddit(token?: string): Promise<CatalogEntry[]> {
   return found;
 }
 
+/** Anonymous Atom feeds work from some networks where JSON returns 403. */
+async function collectFromRedditRss(): Promise<CatalogEntry[]> {
+  const queries = [
+    'https://www.reddit.com/r/Mindustry/search.rss?q=bXNjaA&restrict_sr=1&sort=new',
+    'https://www.reddit.com/r/Mindustry/search.rss?q=bXNjaA&restrict_sr=1&sort=top',
+    'https://www.reddit.com/r/Mindustry/search.rss?q=msch&restrict_sr=1&sort=new',
+    'https://www.reddit.com/r/Mindustry/search.rss?q=schematic&restrict_sr=1&sort=new',
+    'https://www.reddit.com/r/Mindustry/.rss',
+  ];
+  const seen = new Set<string>();
+  const posts: RawSeedPost[] = [];
+  let anyOk = false;
+  for (const url of queries) {
+    const res = await redditFetch(url);
+    console.log(`rss ${url}: HTTP ${res.status}`);
+    if (!res.ok) {
+      await sleep(SLEEP_MS);
+      continue;
+    }
+    anyOk = true;
+    const xml = await res.text();
+    for (const post of parseRedditAtomFeed(xml)) {
+      const key = post.permalink || `${post.author}:${post.title}`;
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      posts.push(post);
+    }
+    await sleep(SLEEP_MS);
+  }
+  if (!anyOk) {
+    throw new Error('Reddit RSS feeds were also unreachable');
+  }
+  const download = async (fileUrl: string) => {
+    try {
+      const r = await fetch(fileUrl, { headers: { 'User-Agent': UA } });
+      if (!r.ok) return null;
+      return new Uint8Array(await r.arrayBuffer());
+    } catch {
+      return null;
+    }
+  };
+  const found: CatalogEntry[] = [];
+  for (const post of posts) {
+    found.push(...(await entriesFromPost(post, download)));
+  }
+  return found;
+}
+
 async function collectFromSeed(path: string): Promise<CatalogEntry[]> {
   const raw = JSON.parse(readFileSync(path, 'utf8')) as RawSeedFile;
   const download = async (fileUrl: string) => {
@@ -247,18 +296,24 @@ async function main() {
   } else {
     try {
       incoming = await collectFromReddit();
-      console.log(`anonymous Reddit produced ${incoming.length} valid schematics`);
+      console.log(`anonymous Reddit JSON produced ${incoming.length} valid schematics`);
     } catch (e) {
       console.warn(String(e));
-      const token = await clientCredentialsToken();
-      if (!token) {
-        console.warn(
-          'Reddit is unreachable and REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET are not set. Skipping ingest.',
-        );
-        process.exit(0);
+      try {
+        incoming = await collectFromRedditRss();
+        console.log(`anonymous Reddit RSS produced ${incoming.length} valid schematics`);
+      } catch (rssErr) {
+        console.warn(String(rssErr));
+        const token = await clientCredentialsToken();
+        if (!token) {
+          console.warn(
+            'Reddit is unreachable and REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET are not set. Skipping ingest.',
+          );
+          process.exit(0);
+        }
+        incoming = await collectFromReddit(token);
+        console.log(`OAuth Reddit produced ${incoming.length} valid schematics`);
       }
-      incoming = await collectFromReddit(token);
-      console.log(`OAuth Reddit produced ${incoming.length} valid schematics`);
     }
   }
 

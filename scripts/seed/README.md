@@ -1,6 +1,6 @@
 # Local Reddit seed
 
-If anonymous Reddit access is blocked, collect posts/comments another way and import them:
+If JSON and RSS are both blocked, collect posts/comments another way and import them:
 
 ```bash
 npm run ingest -- --seed scripts/seed/reddit-raw.json

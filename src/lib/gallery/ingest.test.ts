@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { OVERFLOW_GATES } from '../schematic/fixtures';
-import { extractMschUrls, extractSchematicStrings, mergeCatalog } from './ingest';
+import { extractMschUrls, extractSchematicStrings, mergeCatalog, parseRedditAtomFeed } from './ingest';
 import type { CatalogEntry } from './types';
 
 function stub(partial: Partial<CatalogEntry>): CatalogEntry {
@@ -35,6 +35,25 @@ describe('reddit ingest helpers', () => {
   it('finds .msch links', () => {
     const urls = extractMschUrls('file at https://example.com/foo.msch?dl=1 and http://x.test/a.msch');
     expect(urls).toHaveLength(2);
+  });
+
+  it('parses Reddit Atom search feeds into raw posts', () => {
+    const xml = `<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">
+      <entry>
+        <author><name>/u/alice</name></author>
+        <title>Core schematic</title>
+        <link href="https://www.reddit.com/r/Mindustry/comments/abc/core_schematic/"/>
+        <published>2024-05-01T12:00:00+00:00</published>
+        <content type="html">&lt;p&gt;try ${OVERFLOW_GATES}&lt;/p&gt;</content>
+      </entry>
+    </feed>`;
+    const posts = parseRedditAtomFeed(xml);
+    expect(posts).toHaveLength(1);
+    expect(posts[0].author).toBe('alice');
+    expect(posts[0].permalink).toContain('/comments/abc/');
+    expect(posts[0].title).toBe('Core schematic');
+    expect(posts[0].body).toContain('bXNjaA');
+    expect(posts[0].created_utc).toBe(1714564800);
   });
 
   it('dedupes by content hash and keeps the higher score', () => {

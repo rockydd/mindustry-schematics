@@ -1,8 +1,10 @@
-# Mindustry Schematic Builder
+# Mindustry Schematics
 
-Web app that generates Mindustry schematics from a plain-language prompt and previews **any** community schematic (paste base64 or upload `.msch`) using the real game sprites.
+Browse community schematics from [r/Mindustry](https://www.reddit.com/r/Mindustry/), or paste / upload a `.msch` to preview it with the real game sprites.
 
 Live site: https://rockydd.github.io/mindustry-schematics/
+
+The Create / generate page is hidden in v1 (code is still in `src/components/GeneratePanel.tsx`).
 
 ## Quick start
 
@@ -11,10 +13,8 @@ npm install
 npm run dev
 ```
 
-Try:
-
-- Generate: `compact three silicon factories for Erekir`
-- View: paste a schematic string that starts with `bXNjaA`, or upload a `.msch` file
+- **Browse** — gallery from `public/data/schematics.json`
+- **View** — paste a `bXNjaA…` string or upload a `.msch` file
 
 ## Tests
 
@@ -22,28 +22,42 @@ Try:
 npm test
 ```
 
-Covers the `.msch` encoder/decoder (including public community schematics), round-trip with our encoder, and the Erekir silicon layout engine.
+## Reddit ingest
+
+```bash
+npm run ingest
+# or, if Reddit is blocked from your network:
+npm run ingest -- --seed scripts/seed/reddit-raw.json
+```
+
+Anonymous `www.reddit.com` JSON often returns HTTP 403. The script then uses official app-only OAuth when these env vars are set:
+
+- `REDDIT_CLIENT_ID`
+- `REDDIT_CLIENT_SECRET`
+
+Create a Reddit app at https://www.reddit.com/prefs/apps (type **script**), then add those as GitHub repo secrets. The `Ingest Reddit schematics` workflow runs daily and on `workflow_dispatch`. It exits 0 if Reddit is blocked and the secrets are missing.
+
+Every candidate is decoded with our `.msch` decoder. Failures are dropped. Duplicates are keyed by content hash. Author + permalink are always stored.
+
+Auto tags (planet, products, size) come from the decoded blocks in `src/lib/schematic/tags.ts`, not from the Reddit title.
 
 ## Architecture
 
-- `src/lib/schematic/` — `.msch` encoder/decoder (`msch` header, version 1, zlib body, tags, dictionary, TypeIO configs, tiles)
-- `src/lib/blocks/catalog.json` — names, sizes, build costs, power, parsed from Anuke/Mindustry `Blocks.java`
-- `src/lib/layout/` — deterministic Erekir silicon layout (no LLM coordinates)
-- `src/lib/sprites/` — sprite filename index; PNGs live in `public/sprites/`
-- `src/components/SchematicCanvas.tsx` — canvas renderer (multi-tile size/offset, rotation, bottom/top/team layers)
-- `src/AppMindustry.tsx` — generate + view UI, mobile stacked layout
+- `src/lib/schematic/` — `.msch` encoder/decoder and auto-tags
+- `src/lib/gallery/` — catalog types + ingest helpers
+- `src/lib/blocks/catalog.json` — names, sizes, costs from Anuke/Mindustry
+- `src/lib/layout/` — hidden Erekir silicon generator
+- `src/components/SchematicCanvas.tsx` — sprite renderer
+- `public/data/schematics.json` — static gallery catalog
+- `scripts/ingest-reddit.ts` — Reddit / seed import
 
 ## License
 
 **GNU GPL v3.0** (`LICENSE`).
 
-Mindustry (game, sprites, block data) is © Anuke and GPL-3.0. This repo vendors a subset of block sprites and parsed block metadata so previews look like the in-game schematic view. See `ATTRIBUTION.md` and `public/sprites/NOTICE`.
+Mindustry (game, sprites, block data) is © Anuke and GPL-3.0. This repo vendors a subset of block sprites. See `ATTRIBUTION.md` and `public/sprites/NOTICE`.
 
-Refreshing vendored assets:
-
-```bash
-python3 scripts/fetch-mindustry-assets.py
-```
+Community schematics remain the work of their Reddit authors.
 
 ## Deploy
 

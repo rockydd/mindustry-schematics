@@ -129,6 +129,98 @@
   color: var(--accent);
 }
 
+.gallery-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.gallery-toolbar input {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.gallery-toolbar select {
+  font: inherit;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text-h);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.gallery-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.card-preview {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #1c1d22;
+}
+
+.card-preview .schematic-canvas-wrap {
+  margin: 0;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 10px 12px 12px;
+}
+
+.card-body h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.card-body h3 a {
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.card-body h3 a:hover {
+  color: var(--accent);
+}
+
+.source-line {
+  font-size: 13px;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.source-line a {
+  color: var(--accent);
+}
+
+.empty-state {
+  background: var(--panel);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.detail-preview {
+  margin-top: 12px;
+}
+
+.back-btn {
+  margin-bottom: 8px;
+}
+
 @media (max-width: 800px) {
   .workspace {
     grid-template-columns: 1fr;

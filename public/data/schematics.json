@@ -1,7 +1,51 @@
 {
-  "updatedAt": "2026-11-06T14:14:10.934Z",
+  "updatedAt": "2026-11-07T12:57:21.600Z",
   "source": "reddit:r/Mindustry",
   "schematics": [
+    {
+      "id": "r_e6a895c88fe8",
+      "title": "10 Impact schematic",
+      "base64": "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",
+      "author": "Luslusgesges",
+      "authorUrl": "https://www.reddit.com/user/Luslusgesges",
+      "permalink": "https://www.reddit.com/r/Mindustry/comments/1xpl666/10_impact_schematic/",
+      "postDate": "2026-11-06T19:03:46.000Z",
+      "decodedName": "10impact",
+      "width": 27,
+      "height": 17,
+      "tileCount": 138,
+      "blockCounts": {
+        "blast-mixer": 6,
+        "unloader": 20,
+        "bridge-conveyor": 13,
+        "power-node": 7,
+        "impact-reactor": 10,
+        "overflow-gate": 4,
+        "mass-driver": 2,
+        "cultivator": 8,
+        "bridge-conduit": 28,
+        "phase-conduit": 11,
+        "liquid-router": 8,
+        "phase-conveyor": 4,
+        "overdrive-dome": 1,
+        "message": 1,
+        "cryofluid-mixer": 13,
+        "micro-processor": 1,
+        "liquid-container": 1
+      },
+      "tags": [
+        "cryofluid",
+        "defense",
+        "liquids",
+        "logic",
+        "logistics",
+        "medium",
+        "power",
+        "production",
+        "serpulo"
+      ],
+      "contentHash": "e6a895c88fe83986c9dd7cc2ecea8dd6f713f30e495c7fa994687634e1546267"
+    },
     {
       "id": "r_47f00e038d64",
       "title": "8x Impact Reactor",
@@ -48,7 +92,8 @@
         "production",
         "serpulo"
       ],
-      "contentHash": "47f00e038d6480ed37cdfdaee74c497dcb7ed9c223fd4f870416e642fd102e32"
+      "contentHash": "47f00e038d6480ed37cdfdaee74c497dcb7ed9c223fd4f870416e642fd102e32",
+      "score": 0
     },
     {
       "id": "r_cbc346a39833",

@@ -1,7 +1,55 @@
 {
-  "updatedAt": "2026-11-07T12:57:21.600Z",
+  "updatedAt": "2026-11-08T13:21:14.784Z",
   "source": "reddit:r/Mindustry",
   "schematics": [
+    {
+      "id": "r_bf2dc1b05693",
+      "title": "10 impact reactor",
+      "base64": "bXNjaAF4nF1W2Y4bVRC9tntv9+ZlnJnJ5AuwRIR4mQ8AoRB2iTWQHrsTGnncpt1OGEV5QLzyzCPPfAJiERJf4PkHCEiIgBBCChnH1KnqdtvM6Lrm1K26dW4t16MidUVTziibFsm0uB7P1JV7Tx/fm53lcZEWyfHVZ5+az7I8Gc6y8fHVZ+7fV8YkPkkmc6W/+8eXX91Q2jQ+TVTv/Ivld8sfzj9bfnv++fmny++XXy+/Ue44mY/ydFak2VSpgerOJvG8iKfp4nRIEe8kZ1muglF+lt2aLNLx8DT9JMmVf5Kn49sJLMaLtFB+ejqLR8UwT+iTHKzFdJLFY7I0T+KiSPIz5S+mhG9NsrvD23GRKGeW3U3y4TQbJ8rIswUZqaA+VgL7sw/j+Q6ekO94E9ebLSbzmkYwST8GyY8W0xFfyNp4euVWGcnbHMyOzmgxKdI7Mbi7J8hAedGIMvy/ZPhV4kuTIKWNHKzmWY6zjVIq9UDJT0NWk0TLLHUt1mqiNXa1pmhtUyxKvSsiENEVMRBxWIUh+wZpWBhK6SRsqHEeKZrCg37N9Xr9D62bDDe0mhS8qTTLVI31av1kveLgLXzS3zoWIbjo1Qk3GBr1CTqfwlqrMnqH4daNLD6UyTag4yBAmiBDkKk4IN3Bxo5ZXQUkt5MJaOxCu2YEXwdU/qb1Fu+6FXyTYbv2hbHHkHZXDP3K+A02Dir4OsNw1zfa9e1Uxq+wcbeCLzPs7fr2d333KuMX2XhQwWsML1W+Ghvv174WwQOlHBKHlc/z7HO5gs9RP2nqSDXalGDKdYN7havXgs267FxdCqJLQXQpiI6CoEauiEBEV8RAxCFqRl447S9aJygRqkzNQrUizZOyPAbVqjR6m7ibEtkUPqbwEds2QU01QUMHLVNomfDx6IP7xNrukzZ3WquJnOCcP2m9Ty4WDvBI2LCxJQW29KINlj4ntYHmMc1qutjUUs2AhC2d5dRVQFpcxaItwhMbv64yPAPRhnWDOgSj7fa1pW9+o/WqCgl2TR5g/MC4V0eNCPYl3EA2L1Wu11SH4L5ouRMesxO0l5EqR8rzkMsDGpzr1YaVtl0mR2b+Ic+8TtAQrVk13gVrrfJCtRZxePx+5wcH0K0vaxJsW3iw6B1C35EHrgozr/J6j6FfZwwhgu0JdySfrQ3ZqIYRwQ6y4FDiNs0N7UC0h7VWpxI2RbREaCJ0EYYIOrxLwlINTIGteBgonT0SLsriovhAvjiEiOQSq01GI4I9Rd3gqj20rKv2LcoxXb9BL++aG7hZ/hIVqp3GCX3MDyQiHKCULiYN6AiB2jBC/+nbr0O7fhw1NmL6mI0mNu2qYW6yrVPBD/Ay4h5woQv0SUQ8NxH91QG9tjxSv9K6ztoBOLXRdPA9UjwFWh0d3viGIGFgkjG2bMPfFT8yCYMgp9STlHqSUk9S6iGl8NgpuCep/YXWa0TEQ2px+h7y7kmFV2X3e+j+Lh2jgYgvfHzh48sT56OP+3gFdMVD60taLspr+JIWH2mJSEQI48uY4gdfo77kpqq2j9zAc19sD7D5gNYLHOiQA3VpMatAWAXCKgCrHglitUeCRrPHncPIkz3utACMQpy0/bwE8mLII4bdPoL/TOslAgGy1CGxjzsHTMVjBecpFEahMAqFUQhG9OWHCgF5qEm4/WUIbSSbHdns1ps0rjKL/5bpClXfcsopbCJr+KV+X60v8J8IzQX1Pf31iPYe8Wl72/9yhEgutPz4/cSPH9jRbPwHol4a7A==",
+      "author": "crozbi1",
+      "authorUrl": "https://www.reddit.com/user/crozbi1",
+      "permalink": "https://www.reddit.com/r/Mindustry/comments/1xqdu4j/10_impact_reactor/",
+      "postDate": "2026-11-07T18:51:43.000Z",
+      "decodedName": "імпульсник",
+      "width": 17,
+      "height": 30,
+      "tileCount": 230,
+      "blockCounts": {
+        "plastanium-conveyor": 11,
+        "cryofluid-mixer": 13,
+        "bridge-conduit": 41,
+        "impact-reactor": 10,
+        "unloader": 18,
+        "battery": 33,
+        "underflow-gate": 5,
+        "power-node": 4,
+        "router": 3,
+        "bridge-conveyor": 29,
+        "phase-conveyor": 13,
+        "plated-conduit": 1,
+        "pulse-conduit": 5,
+        "liquid-junction": 2,
+        "conveyor": 1,
+        "liquid-router": 4,
+        "phase-conduit": 3,
+        "cultivator": 9,
+        "blast-mixer": 7,
+        "titanium-conveyor": 5,
+        "pyratite-mixer": 7,
+        "inverted-sorter": 4,
+        "sorter": 2
+      },
+      "tags": [
+        "cryofluid",
+        "large",
+        "liquids",
+        "logistics",
+        "power",
+        "production",
+        "serpulo"
+      ],
+      "contentHash": "bf2dc1b056932268e6c6f9a1a2619df380353ef962bbf8dc384f88a486c1fcbe"
+    },
     {
       "id": "r_e6a895c88fe8",
       "title": "10 Impact schematic",
@@ -44,7 +92,8 @@
         "production",
         "serpulo"
       ],
-      "contentHash": "e6a895c88fe83986c9dd7cc2ecea8dd6f713f30e495c7fa994687634e1546267"
+      "contentHash": "e6a895c88fe83986c9dd7cc2ecea8dd6f713f30e495c7fa994687634e1546267",
+      "score": 0
     },
     {
       "id": "r_47f00e038d64",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T13:21:14.784Z",
+  "updatedAt": "2026-11-09T16:13:35.254Z",
   "source": "reddit:r/Mindustry",
   "schematics": [
     {
@@ -48,7 +48,8 @@
         "production",
         "serpulo"
       ],
-      "contentHash": "bf2dc1b056932268e6c6f9a1a2619df380353ef962bbf8dc384f88a486c1fcbe"
+      "contentHash": "bf2dc1b056932268e6c6f9a1a2619df380353ef962bbf8dc384f88a486c1fcbe",
+      "score": 0
     },
     {
       "id": "r_e6a895c88fe8",

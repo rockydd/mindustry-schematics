@@ -26,6 +26,8 @@ npm test
 
 ```bash
 npm run ingest
+# retag the existing catalog without fetching Reddit:
+npm run retag
 # or, if Reddit is blocked from your network:
 npm run ingest -- --seed scripts/seed/reddit-raw.json
 ```

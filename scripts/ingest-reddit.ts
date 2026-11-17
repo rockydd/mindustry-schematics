@@ -17,6 +17,7 @@ import {
   extractSchematicStrings,
   mergeCatalog,
   parseRedditAtomFeed,
+  retagCatalogEntries,
 } from '../src/lib/gallery/ingest.ts';
 import type { CatalogEntry, RawSeedFile, RawSeedPost, SchematicCatalog } from '../src/lib/gallery/types.ts';
 
@@ -285,8 +286,24 @@ async function collectFromSeed(path: string): Promise<CatalogEntry[]> {
   return found;
 }
 
+async function writeCatalog(schematics: CatalogEntry[]) {
+  const next: SchematicCatalog = {
+    updatedAt: new Date().toISOString(),
+    source: 'reddit:r/Mindustry',
+    schematics,
+  };
+  mkdirSync(dirname(OUT), { recursive: true });
+  writeFileSync(OUT, `${JSON.stringify(next, null, 2)}\n`);
+  console.log(`catalog now has ${schematics.length} schematics → ${OUT}`);
+}
+
 async function main() {
   const existing = loadCatalog();
+  if (process.argv.includes('--retag')) {
+    const schematics = retagCatalogEntries(existing.schematics);
+    await writeCatalog(schematics);
+    return;
+  }
   const seedPath = argValue('--seed');
   let incoming: CatalogEntry[] = [];
 
@@ -317,15 +334,8 @@ async function main() {
     }
   }
 
-  const merged = mergeCatalog(existing.schematics, incoming);
-  const next: SchematicCatalog = {
-    updatedAt: new Date().toISOString(),
-    source: 'reddit:r/Mindustry',
-    schematics: merged,
-  };
-  mkdirSync(dirname(OUT), { recursive: true });
-  writeFileSync(OUT, `${JSON.stringify(next, null, 2)}\n`);
-  console.log(`catalog now has ${merged.length} schematics → ${OUT}`);
+  const merged = retagCatalogEntries(mergeCatalog(existing.schematics, incoming));
+  await writeCatalog(merged);
 }
 
 main().catch((e) => {

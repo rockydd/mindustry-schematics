@@ -1,8 +1,17 @@
-import { decodeSchematicBinary, fromBase64, looksLikeSchematicBase64, sanitizeBase64 } from '../schematic/decoder';
+import {
+  decodeSchematicBinary,
+  decodeSchematicFromBase64,
+  fromBase64,
+  looksLikeSchematicBase64,
+  sanitizeBase64,
+} from '../schematic/decoder';
 import { toBase64 } from '../schematic/encoder';
 import { summarizeSchematic } from '../schematic/stats';
 import { tagSchematic } from '../schematic/tags';
 import type { CatalogEntry, RawSeedPost, SchematicCatalog } from './types';
+import { uniqueByContentHash } from './unique';
+
+export { uniqueByContentHash } from './unique';
 
 const SCHEM_RE = /bXNjaA[A-Za-z0-9+/=\-_]+/g;
 const MSCH_URL_RE = /https?:\/\/[^\s"'<>]+?\.msch(?:\?[^\s"'<>]*)?/gi;
@@ -90,6 +99,7 @@ export async function entryFromSchematicBytes(
     return {
       id: `r_${hash.slice(0, 12)}`,
       title,
+      postTitle: title,
       base64: meta.base64 ? sanitizeBase64(meta.base64) : toBase64(bytes),
       author,
       authorUrl: redditAuthorUrl(author),
@@ -128,6 +138,84 @@ export async function entryFromBase64(
   }
 }
 
+const GENERIC_DECODED_NAMES = new Set([
+  '',
+  'schematic',
+  'untitled',
+  'untitled schematic',
+  'new schematic',
+  'schem',
+]);
+
+export function postTitleOf(entry: CatalogEntry): string {
+  if (entry.postTitle?.trim()) return entry.postTitle.trim();
+  return (entry.title || '').replace(/ \(\d+\/\d+\)$/, '').trim();
+}
+
+export function isMeaningfulDecodedName(name: string, postTitle: string): boolean {
+  const n = name.trim();
+  if (n.length < 2) return false;
+  if (GENERIC_DECODED_NAMES.has(n.toLowerCase())) return false;
+  if (n.toLowerCase() === postTitle.trim().toLowerCase()) return false;
+  return true;
+}
+
+/** When one Reddit post has several schematics, prefer each schematic's own name. */
+export function disambiguateTitles(entries: CatalogEntry[]): CatalogEntry[] {
+  const groups = new Map<string, CatalogEntry[]>();
+  for (const e of entries) {
+    const key = normalizePermalink(e.permalink) || e.contentHash || e.id;
+    const list = groups.get(key) ?? [];
+    list.push(e);
+    groups.set(key, list);
+  }
+  const out: CatalogEntry[] = [];
+  for (const group of groups.values()) {
+    const postTitle = postTitleOf(group[0]) || group[0].title;
+    if (group.length === 1) {
+      out.push({ ...group[0], postTitle, title: group[0].title || postTitle });
+      continue;
+    }
+    const nameCount = new Map<string, number>();
+    for (const e of group) {
+      const n = (e.decodedName || '').trim();
+      nameCount.set(n, (nameCount.get(n) ?? 0) + 1);
+    }
+    const n = group.length;
+    group.forEach((e, i) => {
+      const decoded = (e.decodedName || '').trim();
+      const useDecoded = isMeaningfulDecodedName(decoded, postTitle) && nameCount.get(decoded) === 1;
+      out.push({
+        ...e,
+        postTitle,
+        title: useDecoded ? decoded : `${postTitle} (${i + 1}/${n})`,
+      });
+    });
+  }
+  return out;
+}
+
+export function retagCatalogEntries(entries: CatalogEntry[]): CatalogEntry[] {
+  const unique = uniqueByContentHash(entries);
+  const retagged = unique.map((e) => {
+    try {
+      const schem = decodeSchematicFromBase64(e.base64);
+      return { ...e, tags: tagSchematic(schem) };
+    } catch {
+      return e;
+    }
+  });
+  return disambiguateTitles(retagged);
+}
+
+function sortCatalog(entries: CatalogEntry[]): CatalogEntry[] {
+  return [...entries].sort((a, b) => {
+    const s = (b.score ?? 0) - (a.score ?? 0);
+    if (s) return s;
+    return b.postDate.localeCompare(a.postDate);
+  });
+}
+
 export function mergeCatalog(existing: CatalogEntry[], incoming: CatalogEntry[]): CatalogEntry[] {
   const byHash = new Map<string, CatalogEntry>();
   for (const e of existing) byHash.set(e.contentHash, e);
@@ -139,13 +227,13 @@ export function mergeCatalog(existing: CatalogEntry[], incoming: CatalogEntry[])
     }
     const score = Math.max(prev.score ?? 0, e.score ?? 0);
     const older = prev.postDate <= e.postDate ? prev : e;
-    byHash.set(e.contentHash, { ...older, score, title: older.title || e.title });
+    byHash.set(e.contentHash, {
+      ...older,
+      score,
+      postTitle: older.postTitle || e.postTitle || postTitleOf(older),
+    });
   }
-  return [...byHash.values()].sort((a, b) => {
-    const s = (b.score ?? 0) - (a.score ?? 0);
-    if (s) return s;
-    return b.postDate.localeCompare(a.postDate);
-  });
+  return sortCatalog(disambiguateTitles([...byHash.values()]));
 }
 
 export function emptyCatalog(): SchematicCatalog {

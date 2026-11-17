@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T14:50:32.470Z",
+  "updatedAt": "2026-11-17T19:32:22.836Z",
   "source": "reddit:r/Mindustry",
   "schematics": [
     {
@@ -42,14 +42,12 @@
       "tags": [
         "cryofluid",
         "large",
-        "liquids",
-        "logistics",
         "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "bf2dc1b056932268e6c6f9a1a2619df380353ef962bbf8dc384f88a486c1fcbe",
-      "score": 0
+      "score": 0,
+      "postTitle": "10 impact reactor"
     },
     {
       "id": "r_e6a895c88fe8",
@@ -84,17 +82,14 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
         "logic",
-        "logistics",
         "medium",
         "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "e6a895c88fe83986c9dd7cc2ecea8dd6f713f30e495c7fa994687634e1546267",
-      "score": 0
+      "score": 0,
+      "postTitle": "10 Impact schematic"
     },
     {
       "id": "r_47f00e038d64",
@@ -133,21 +128,17 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
-        "logic",
-        "logistics",
         "medium",
         "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "47f00e038d6480ed37cdfdaee74c497dcb7ed9c223fd4f870416e642fd102e32",
-      "score": 0
+      "score": 0,
+      "postTitle": "8x Impact Reactor"
     },
     {
       "id": "r_cbc346a39833",
-      "title": "Mindustry Logic 101 - Chapter 2: Instruction Basics",
+      "title": "Example1",
       "base64": "bXNjaAF4nGNgZWBlYeBKzs8rSc0r8U0sYFCsNrCqzklNTLEy1EnOLyhILbIy0MlNLUlMz0ksLrYyqq1lYMtJTErNKWZgi07KyU+PZWDJS8xNZeBwrUjMLchJNWTgTkktTi7KLCjJzM9jYGBl4M4sSc3VLc4vLUpOZRAsySxJzMsszdUFWlqWWplfxMBWXJ5ZkpzBwJ+bmVyUr1tQlJ+cWlwMlOAEayzLz0xhYGAQBGIGJlYgBjEYmIEsRjCLhRVEMgIhE4RihlAsIKVAIS4GsBQThGKGUEBJZhCbD6g1u2JOckpCQkTwnFnhc+KXCMTMi5w0R1A+ZlLEpFUBPM8ktCyWPFNVe7pkWYHq8+dTRZ4+13D4yeVQF5mVWjdRcZUds8CRlTc6RI4euyHCfPf0oQN8pXf//3fQU7+j6qDH3ZTN8sRIeccxBz1hhsvxwXxg54GdwgxxCjPIKSxAyAShmCEUUBAAoixm4Q==",
       "author": "IKNEUMON",
       "authorUrl": "https://www.reddit.com/user/IKNEUMON",
@@ -166,16 +157,16 @@
       },
       "tags": [
         "logic",
-        "logistics",
         "serpulo",
         "small"
       ],
       "contentHash": "cbc346a3983366131fbc95a0e31f9f6ea383c89b313a4c94aabae5c099d56f8e",
-      "score": 0
+      "score": 0,
+      "postTitle": "Mindustry Logic 101 - Chapter 2: Instruction Basics"
     },
     {
       "id": "r_4c2ecfd9f6e1",
-      "title": "Mindustry Logic 101 - Chapter 2: Instruction Basics",
+      "title": "Example2",
       "base64": "bXNjaAF4nD2QTUvDQBCGp82HUaGiB6koCCqI0qLVHiQXQdCbFwVrqWK3yVoDSTbubkqlCILiTRBREOnBShX0H/TmRfDmUY8elP4HFXSTgCwz77Ozw8zLggaKDF0GcTl2+TLyIFWb1ms2RqaeSZUp8nYsjvXZlEE8D1N9OuVgjso2Ykyf2d8H1UYlbDNQCyWblDdBdpGDQVusIsez8Qx0m5gZ1PK4RVyADugW05w0Iz41MPRyiyPX8p202F/Be4SCUkG+zUFlhHJMocexDErSHiUGZqIGmu/aBJniqTOcVCGWCQB9IiCuiAgAJEGxkGQlyDFx4pFIkchBqxTcwqQEKgfVhGi3qnXDLBYvV+tXufpW8z1/djU4vJI/fYCPi2b/wOTcWLt9i+9Y7P7s5mdI0XKN7NT4fEZpQuMJ5N2J7MhaI3O8cP29nnxrJL5+h58/jwovj9r5ITs52NiWX5PPOA6t1tKoWKyEvqWQpH+SQ4qBGvlWI99q4FAV3xiPRIpEFP8AmVxuWg==",
       "author": "IKNEUMON",
       "authorUrl": "https://www.reddit.com/user/IKNEUMON",
@@ -196,16 +187,16 @@
       },
       "tags": [
         "logic",
-        "logistics",
         "serpulo",
         "small"
       ],
       "contentHash": "4c2ecfd9f6e143480d6f1a1a73c78882b1cef70dfd4e93dc7a30e1398cc33399",
-      "score": 0
+      "score": 0,
+      "postTitle": "Mindustry Logic 101 - Chapter 2: Instruction Basics"
     },
     {
       "id": "r_3189ec815936",
-      "title": "Mindustry Logic 101 - Chapter 2: Instruction Basics",
+      "title": "Example3",
       "base64": "bXNjaAF4nGNgY2BjYeBKzs8rSc0r8U0sYJCoNrCqTs5PzLEyrdUxsaouTyxJLbIyqK1lYMtJTErNKWZgi07KyU+PZWDJS8xNZeBwrUjMLchJNWbgTkktTi7KLCjJzM9jYOBk4M/NTC7K1y0oyk9OLS7OL2LgzcksLM1M0S3OLy1KTmXgzixJzYVx2IFOSCnNLGEQLMksSczLLM3VBYqUpVYC9fHlpualgMzJSk0uAfL5i0tSE3N101PzUosSQQLsSYklQFdWMnAV5JenFunm5aekMjAw8DKAAB8Qd1XMSU5JSLAInTMrfE78EoEJ8fOiRN7Pjlg4Yd6s6VFTIibFp6x4EMAg9NVbt9BPx8PnnM7KJ06BsjwhU2Y1hTK7dGnvd1BU3ezDuEL2JJPyhAK/rMJCD7ekeU3WHuYXVhyZFBKS3Dhrx6TPn726PhWLBH0WmlwUsNbpWjpDU4zDfQOjAsUpBgbGGxgYwnb5PmFgBLqHhZUFSDIBMSsrEDMwA0WBIixACshnBsqAeUwMUFkgYANSQEF2kBADAweQYuQAGcUMZrOA2P//gqWBCgC66oZR",
       "author": "IKNEUMON",
       "authorUrl": "https://www.reddit.com/user/IKNEUMON",
@@ -227,20 +218,17 @@
         "power-node": 2
       },
       "tags": [
-        "defense",
-        "liquids",
         "logic",
-        "logistics",
-        "power",
         "serpulo",
         "small"
       ],
       "contentHash": "3189ec815936a8e083e624a996eaced9b5583d0443c0d366e60a0dd00e8cb715",
-      "score": 0
+      "score": 0,
+      "postTitle": "Mindustry Logic 101 - Chapter 2: Instruction Basics"
     },
     {
       "id": "r_bbf0727f28e6",
-      "title": "Mindustry Logic 101 - Chapter 2: Instruction Basics",
+      "title": "Example4",
       "base64": "bXNjaAF4nGPgYOBkYeBKzs8rSc0r8U0sYJCoNrCqTs5PzLEyrdUxsaouTyxJLbIyqK1lYMtJTErNKWZgi07KyU+PZWDJS8xNZeBwrUjMLchJNWHgTkktTi7KLCjJzM9jYOBi4M4sSc3VLc4vLUpOZeDNySwszUyBcYVLMksS8zJLc3XLE3NydHMSi9JTGQThgkD3lKVW5hcxsANZKaWZJSDL85JTixj4i0tSE3N101PzUosSS4AquAryy1OLdPPyU1IZ2JMSS4CurWTgz81MLsrXLSjKT04tLgaqYmAQZAABVhBiBDIYWVmAJBMQszMwMIOFGFiAFCNEARAzg2WBgkwgQSYgBKpkA6oF6wHKcjD//wfmglQyA7WAMCMHWAcQsYDUs4IhIydQIwMfUOn8ijm9vb5chwwEWpd7CFaxiRez+Oor7NjGUaafbJ2xUCVR6v85PaHgkJwAx7Svdvu+qzF6qMm+Psex7kxn6uYlxtuWaE+TPJfbz1XGvSnE9N0k11e3JB/+ulz34UzEmtnKbe8Sor5WqPv0Lb0z+dgnhUN6OaxC79uSwiTfHtlyYta2tw/Cr8z69t059P/qn+aiDG4Gdfu+hnvEO/68bf3knnMV+/XMYm6gu9lA7gYAZaacfA==",
       "author": "IKNEUMON",
       "authorUrl": "https://www.reddit.com/user/IKNEUMON",
@@ -264,19 +252,17 @@
       },
       "tags": [
         "defense",
-        "liquids",
         "logic",
-        "logistics",
-        "power",
         "serpulo",
         "small"
       ],
       "contentHash": "bbf0727f28e691d7688c48e7e134d076977effbe61d2250430e50fdd11fdf9fe",
-      "score": 0
+      "score": 0,
+      "postTitle": "Mindustry Logic 101 - Chapter 2: Instruction Basics"
     },
     {
       "id": "r_e015dacaef8b",
-      "title": "Mindustry Logic 101 - Chapter 2: Instruction Basics",
+      "title": "Example5",
       "base64": "bXNjaAF4nD1Oy0rDUBCdPpKqlWq1IK6EQoubovhAcKVQdwr1AVat6DW9lkiSG25SHxQRhIJLLdZqCShSRVz5Ae5dWTfudWGtHyCuhDqJKJeZOTPnzLkDzeDzQovENJNq5hTRIZDrH81JTNcpH+3f3QVRIWtUMUBcWlNYZhm8GlEpNE1sE1VX6DD409SQuKybMtMAmsAvm1SNGSzLJQpBUzaJJmfVGP6wSXcYh87/0RZRlJhCeIaCYBBlk4HIWdakHFp1tkX5n0lApVo6pnO2QSUTHdpUWeLMHkjUMHAA0I4BbsHOLnxubLAI4GDsPJg84PI6wMHICeDFg11g0y7EyIhgS5xVRyf8eoi2nQcLCn3gAwjgUn7bktKrq8kFqzxvrVTaZxbnjhc7elKFZGHjJmGdzp6wm9eEdXS+UjgrVfMTxWC8GCzcfruFi/DL8/3xc/ggPGRMfxqRer0YqtV7K++RaK1y3RsK1TJX0dJbV/dlmcB+auxhYPBuPPXVGDl8zCcajb5U9aOxJ65DJD75hJf57CN/AHbcgTo=",
       "author": "IKNEUMON",
       "authorUrl": "https://www.reddit.com/user/IKNEUMON",
@@ -299,12 +285,12 @@
       "tags": [
         "defense",
         "logic",
-        "logistics",
         "serpulo",
         "small"
       ],
       "contentHash": "e015dacaef8ba696c2572145a4b47ed5d15d576ac6629b7614d020d87b3a10ac",
-      "score": 0
+      "score": 0,
+      "postTitle": "Mindustry Logic 101 - Chapter 2: Instruction Basics"
     },
     {
       "id": "r_0d74483b425f",
@@ -332,18 +318,18 @@
       },
       "tags": [
         "defense",
-        "logistics",
         "medium",
         "power",
         "serpulo",
         "units"
       ],
       "contentHash": "0d74483b425f36cc52011386fe650240f15776d124d0dd2d668d0786dd5e2f54",
-      "score": 0
+      "score": 0,
+      "postTitle": "I tried making a starter core schematic; is this good?"
     },
     {
       "id": "r_1d59510b4b7e",
-      "title": "schemes I made myself",
+      "title": "Silicon Crucible",
       "base64": "bXNjaAF4nE1QsW7bMBR8kknRklE3U2d/QAV06BKvmTN1DDrQEusSkESBlO04hj8iQ9HfytKvsV3lSNpoBTwdHt+9uyNpRh8YFZXpBtUNj7KnT4cvy4PTjcbZ8v6zk129/Ho8UtbIlWocpU/fiXWyVXT3LbIWD3ZT6VWjaFYrV1ndD9p0RDP6uLK6XqsSpK3aG0vTTdcYWStLolXOyTVUrl5ldVOZ93srBz2ostXPoM43HTZ+NGZXruWgqOjNTtmyMzUcW+lcWVu9BZFv5aYZKHPGDn6v/yndf+ZEJYoSQfGbUIJ/yolY7P8N/MfEOI5/UL8pRctZQvMW2Rf1flFZ87LSgZbdaL+C4NSrJWEfgEUOgH4G4FMR1BkqxQkLLPiPF9QJjASnGE78oQDM/IJ3LzAKsZIYOwkSASYRRIRphBwCORoeyd4xqIYx910OYJQWAH67OA/DzNtxKvzF3lCvIVYQEDGYQDAM/l6DiRhMRC8Rg4kYTMRgIjqLazDmWwqQel0fFdJ5fKn89lJwyOBzQZ3GM97ojLNziJn7mO/qJ4Pf",
       "author": "crozbi1",
       "authorUrl": "https://www.reddit.com/user/crozbi1",
@@ -367,20 +353,17 @@
         "phase-conveyor": 2
       },
       "tags": [
-        "logic",
-        "logistics",
         "medium",
-        "power",
-        "production",
         "serpulo",
         "silicon"
       ],
       "contentHash": "1d59510b4b7ed8d9a3459911b57fcbbbfede50b82b7660f1f2544a2242b3c30d",
-      "score": 0
+      "score": 0,
+      "postTitle": "schemes I made myself"
     },
     {
       "id": "r_98bbec93bb00",
-      "title": "schemes I made myself",
+      "title": "Spore Press",
       "base64": "bXNjaAF4nFWO0UrEMBBFb9vstmxxV9gfEMHHfoog+Cg+ZNtxicSkpsmKiJ8g+Mc6SbOUHRhm7p3JyWADIbDprfFk/L0cUX59Y63lgfSE8ukZwsg3Qvs4Wkc3D46mCe1AU+/U6JU1QIOdVu9BDd1rMH3yrrMRsVIZctgenBqOFJ0hKM8/Bu3VSXrrsFtmJ/pkYxvMQO5F24/uKD3hKuOcDZ5Z7RRv6cZ0C7DHHEVOjgooY1/PPWZZLbJiI5cyDkXaLe44f1kIFMvuimVeuiCszoWHIj6PhNtMqGcC/jiwZpkIdSKkpR8WzUxo4vAfli5GeA==",
       "author": "crozbi1",
       "authorUrl": "https://www.reddit.com/user/crozbi1",
@@ -401,18 +384,17 @@
         "spore-press": 1
       },
       "tags": [
-        "liquids",
-        "logistics",
         "production",
         "serpulo",
         "small"
       ],
       "contentHash": "98bbec93bb00fdf60f5326321ba4794ee097e2da676fab7a0d2bc98f45c52ebb",
-      "score": 0
+      "score": 0,
+      "postTitle": "schemes I made myself"
     },
     {
       "id": "r_8cde7375af06",
-      "title": "schemes I made myself",
+      "title": "Landing Pad",
       "base64": "bXNjaAF4nEVRwW7TQBCdOIntZBPqhoozH2BLSZFA+BtaiTvisI23yYKzNus1CFX9VO7AmR4qaLYzO666Bz/tm/fezKzhFSwmMN82xinjLmUL+5t1eeP2jdX9oXyX76xs99qp8k3e6VqjsHyft3vZqeJaXlm9LTebvOvtThWyrpsf5eY8b2vZOWkoYLPOD8rJHTJdeZ47PfBvb28hruWVqjuIPn6CiZEHBeJCmkqb3esPsgJRqW5rdet0YwBSyGr9tddVQbNKbZQFMTCY+QVOhsvn3myDRdQcVrQYtuSR0Vv12sG8bb4rW5imwqYHnK2orP6GkcshxTa9wyvAGmAE4YwgYpjQZwQJIDEmaoxUNAWYIY5higUq4pniNU6RIpG/8z/9fZAkzxLyzqYUFVEwQIzqOPHeT7x/+I0smRFihoRNaWg4RzZl9SioqUBpY1SmbJgxzAnwT+N43h/R8PAHsyggsMkT+wu1gnssQg+BdcGu4+AS7BLsOgYXyalzjP4F77EMkx3/D3sseZAXDCfcIws9FqjOWH0/7JGFtASVGRtOGVa8xypMhM/Jz7zCZ478PwD/19+FcvJcBnj5BBFD+INn9JaPjMu08A==",
       "author": "crozbi1",
       "authorUrl": "https://www.reddit.com/user/crozbi1",
@@ -433,18 +415,17 @@
         "liquid-router": 2
       },
       "tags": [
-        "liquids",
         "logistics",
         "medium",
-        "power",
         "serpulo"
       ],
       "contentHash": "8cde7375af064f050f96862188532acca4e00400af0d50e9b27f85ad3ded08f5",
-      "score": 0
+      "score": 0,
+      "postTitle": "schemes I made myself"
     },
     {
       "id": "r_27deaf0c2956",
-      "title": "schemes I made myself",
+      "title": "core",
       "base64": "bXNjaAF4nD1SXUgUURQ+uzuzMzuz7lbbQ38EBgWJUyqlIBT9SSIFPRRlITnO3F1nnZ1Z7sy4ayJpSJGavgT1IIpYRi+RFEI+ZISFlVY++FKk1UP4EL1Ib9Z278y0M9z7nXO+c88595uBKEQZEBTTsJFhn5azUNZZUdtpt5pYczK1NeXZVtlCUlJuwZpSW1lZbmu2bFCquqsLwrrcgnQLgpeagDHkDAJGMTECUUWWgrWsrZkGQBRKsJ2SUshAWLZNDKJl6jKWsrKBdIj7vSSMZIWyvGPopqwiDPGMpmBTymJTQZZFqBiZQk0hiYyrOpoNMccgeUndzEkp2UaQMNsRVrHWjuihNHLrRelIkuEoOnIsiCu4w0zqjqZKGS1PmsSyOjmqFmvGc8TFEsrb2JsHYD94T4CsoAchL8LQQAA4DwQvKehvNIuEWSA8tZiixbqWXyVEQz5F3iLF0PIhCMeI9yY/3DR0NHatYkNdf2n6St/OwGbn3evt+UBvX2tmUhJzs4mtiZq7j63LMeX72097JrZVPelYS/2dz0P3jRebnINC8+DuvavL3dMP+9PTT9K3Pi6daS7bcnJCvT+1svHB+mz1vbKquYbb1nD9/PnPvfuG6pvOjf+aWeQnBhre8y8PNCaGfy88D/WUtN1Rp14l+dzS2InSXRf4NrN/8lDjkbU5fmDhx9mqw0sXZ3bUXR8ZPFYBI+M3S1cWT80Unj4bG52C41+vwuiHnkfAkjtxXKFQ+EnWN/fOvHvnMLEi1A6BQBUAwv9x08X/6V9cyYNUbdYTnfVEZ+nGEWCocuGinmFXTxF4UjlIKc7VPkxc2tCtwnP+5w26fIT1KnFkCtJylaxl13WnWPd/BJ62FAjwEAiSagLtEgHWA46miNSjEPbAD/IeRDwQPBAB/gEXKePK",
       "author": "crozbi1",
       "authorUrl": "https://www.reddit.com/user/crozbi1",
@@ -470,21 +451,18 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
         "logic",
-        "logistics",
         "power",
-        "production",
         "serpulo",
         "small"
       ],
       "contentHash": "27deaf0c2956b3ba06a37af0241cf3f7eb7d534e60e7dd28b016c4b48ae798e7",
-      "score": 0
+      "score": 0,
+      "postTitle": "schemes I made myself"
     },
     {
       "id": "r_cab24a01e5d3",
-      "title": "schemes I made myself",
+      "title": "Phase Weaver",
       "base64": "bXNjaAF4nFWSy0rDQBiF/6SZTJpbI4JrH8CCC0HoOwiCCxfiYtrEtpAmJUlbpPQ1BEEQBEF8yTozJ5mahNz+nDnfySF0Rtwhf1YWTVY0d2JNF/vryb5ZlNVys5rcXtWiSCc3hwO5uZhmeU320zM5hVhlFN4vRJ1dPmZim1UUpFk9q5brZlkWRC6dr3NRN6KQNmNpv81ey4q8TZGXIpXyeK0Wn96MptUynf8bxJtC6l7ycjeei0bSsGAHGtEDYbPUwYgc/WR3I3lnkcVb0UBPbXVj0eA0VSKHH4/Hb3n8Sg+LGERuN/05udoGZKsRk6cBLqyDKHut4q0/tclsZd6BmZ7aSu2oZY7e9YlBqvFfLZ7BmBljBjwDnkHgQuWakC7wHHjeb4OjDd5vg6ONz7YNjjY44ny2cTyAPAPyEMdDHA9xhlANTegh4viI4/fb8NGGjzZ8eXjqIt2UVOM/WnwA48AYB8AHwAfAh1CFJmQIfAR81G8jQhtRv41ItkHd5shHBpGO897GiQGKDShGnBhxYrXIopFJO1KvbUr635/g+xN8f4K/IcHfkAD4poF/e4t7ng==",
       "author": "crozbi1",
       "authorUrl": "https://www.reddit.com/user/crozbi1",
@@ -503,18 +481,17 @@
         "phase-weaver": 10
       },
       "tags": [
-        "logistics",
         "medium",
         "phase",
-        "production",
         "serpulo"
       ],
       "contentHash": "cab24a01e5d3cd2ac43c000f46a9dd92d05f68b55e019861735fe3c98c2836ea",
-      "score": 0
+      "score": 0,
+      "postTitle": "schemes I made myself"
     },
     {
       "id": "r_9ba60383b066",
-      "title": "Simple Universal Drone delivery logics",
+      "title": "Lazy delivery logic V2",
       "base64": "bXNjaAF4nAFuApH9AAEAAQQACmNvbnRlbnRNYXAAAnt9AAZsYWJlbHMABVvuobxdAARuYW1lABZMYXp5IGRlbGl2ZXJ5IGxvZ2ljIFYyAAtkZXNjcmlwdGlvbgBISnVzdCBmaWxsIGluIHRoZSBibGFua3MuCmNhbiBvbmx5IHNlbGVjdCAxIHVuaXQKW0RlZmF1bHQgaXMgZmxhcmVdCi1wZWVwAQAPbWljcm8tcHJvY2Vzc29yAAAAAQAAAAAADgAAAbR4nJVTW6+UMBBe49v+isl5J4Fj4uWNxEuOr+qDPpkuDGzX0sF2ugd+pP/JKS0sJ0YTIaEw36VzKc8Oh+e/0LbH0WnLcFXBcFU0ZFlpi64qBj3F5RHVNa6NC40+GayK0aH3VeEHNLwgNCwhclU261TD5OaqcCiGnkUq31XR0rDo6YIp4FCllx5lT7W8iuKKczTzaMUUJijiBfW0RuY1Mq+Rz2gWS7gEz98bGjNFcAbNOOw+3zkaH9BhDtEIqm3hk7KS3leo+az9BG/KsnwKfUvQDK/LHfbBqL5Ht8kz93gJwwjVS7DE738GZaAOVjOUx3DStoW6M8rhmn2nYyczJUL9psdFnAl5swze38wzLu5xgI4kItQtuTLdeTp3mWM8tPRo4Sy9uLspT0SeodpEwVCjGOEUtGm17aEh6V2njEeopdOjbECBp/iYoaMg5UXKWtxZOvKApt3K087zRxnJnvBWZLwymFiZyPCp0hdlbsNmFSeasPtXOyy57LowKj53sd+3BHNRKyM6xQORqpKpZ0L8M/7T5ov6gclmOXDZ66nTP3h/7jbB39PdDvEt5YNcvwHx7ksOAC8eG4A=",
       "author": "Calm-Opposite8649",
       "authorUrl": "https://www.reddit.com/user/Calm-Opposite8649",
@@ -532,11 +509,12 @@
         "small"
       ],
       "contentHash": "9ba60383b066af6e6e05a314e15548aa40e26a14fb61c570f9dc99fd721ccc92",
-      "score": 0
+      "score": 0,
+      "postTitle": "Simple Universal Drone delivery logics"
     },
     {
       "id": "r_f57b88283810",
-      "title": "Simple Universal Drone delivery logics",
+      "title": "Unit Transfering plan V5",
       "base64": "bXNjaAF4nGNgZmBkYeBKzs8rSc0r8U0sYGCqrmVgy0lMSs0pZmCNfrdwTywDS15ibiqDRGheZolCSFFiXnFaalFmXrpCQU5inkKYKQN3SmpxclFmQUlmfh7DDtfE4kqFknyF0uJUPQWv0uIShbTMnByFkoxUhSSghuxirmjPvOLUohKFjPxyhdzEvEqFUqDJxbFw8fKMxBKImEJ+nkJSfkmGQkFRfnJyanFxfhFQWXBJYl5KYlGKQmaxQlhiaQ5QHVBAwRnoicTMvNQikFGBpZnJ2QpA9SWpRQpp+UUKxak5qcklqUBNJam5QBVcTpUKBampBVweiWWpCmmleUwM/LmZyUX5uiC7wFYxsEH0MzAwMDOAAB8QH6iYk9tvy9dswNOaeFazptFLofTlMafQNqMtJU6iRYoOWh4ZQix39j1cfiCgesPXP38it+metutgMzi9QLArU82iYlfKqvmnHaa93Hlo0YKi4rkywi6BvOFvfAsV93XorZzIf94zLE8rat3ZPudb4o8ljzhWfM8P/MTRnPGlQFXlCdsak6xXTdeLlh2UFv2U95qtL8Ajy81Ia+Lv+bJFO38e38Y+6/DKB1FdWUHX1edY1u/PvbE2+mJEqYXGC8XjXoFJM38wlZxKbwT6gRHsFSbjijlbQ3KzbxsIlH0/dGD/oxPfN+7g7qnRPml1YnrempcRnIoa295khKqcnST1Ovytepn66a6503jZVtvfuHR38fNz5f3vdDzj/geZCrO5Xa/UtWx3kmMRCHQ4+aFUeUaj7jq3TPboEKdrIhGcTlICU8RE5s7i0s2eEZ37ZF9jaEROWsyz8uwdGX6M7zgPlH7J//9bWHk1W4hu8arCybxGQe+OvOubeU5h+iEBtRXbpZdnlNTOPmi78Y6NUXywX3Ez950Z3wSEpqxx2s+Y9uJfh8dSpiCRBVOunDHQvPUmxqT+0ZJVGbYF/sd/LLF/E+do9rV1/59Mzu+dPdHf1uZsctxlqGySv2/+HzfjkrvzdsQ8sLdnP8R/JFPCmcfypfM55xOMtTpHlV9llNU2HZwS9cbSUGTbtI9NnVybHRyntmS/8l4m8m/XlmUf9dmXblnhzF9p1xmxviBCd906/f165ubh3U9/3fwakTR560GrhN41+1PF7136msC1Ze03hiudi5h9kibPCthxYtfiPRGL1PrnrLmW1nhLmulZRJCwoJvUIVun5ddOM7YzlHlnMc8Md1jfdHKH9yuJw9lWP+7VS/xg+rtjefCRN7cyL5WbfpATnPcyufdT/tKGrPcMISL/vTarlJtc2BK+7rFV6i/ud5lbFnxSeGW/9O6p3f67pafOf59Zu0KQJV7p5qrU6vLdee5r9Ksfnq8u3vbN+aonN3vT8t6WGncX14UL5ihOZuaXXeo5aY/Ppbo0W5sFT33NiycZ39kTtOTEh9+PzA1mXF8FTDtMoKwAACtA1sc=",
       "author": "Calm-Opposite8649",
       "authorUrl": "https://www.reddit.com/user/Calm-Opposite8649",
@@ -552,12 +530,12 @@
       },
       "tags": [
         "logic",
-        "logistics",
         "serpulo",
         "small"
       ],
       "contentHash": "f57b88283810ed2f033a0d0331f7e539158402c01eac79e2b088a9be48b183a4",
-      "score": 0
+      "score": 0,
+      "postTitle": "Simple Universal Drone delivery logics"
     },
     {
       "id": "r_94e7b54f0763",
@@ -589,15 +567,12 @@
       },
       "tags": [
         "cryofluid",
-        "liquids",
-        "logistics",
         "medium",
-        "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "94e7b54f076398d04445f5e7d2c03962d41d0f19b29a8fda2275e7d23fa15d59",
-      "score": 0
+      "score": 0,
+      "postTitle": "I’ve reached the level where I create the schematics myself."
     },
     {
       "id": "r_a42875771c25",
@@ -644,17 +619,13 @@
       "tags": [
         "cryofluid",
         "defense",
-        "liquids",
-        "logic",
-        "logistics",
         "medium",
-        "power",
-        "production",
         "serpulo",
         "units"
       ],
       "contentHash": "a42875771c25db025ac9888f1ba71b3e38771f52e49ddfd409ee1c082b03ce4c",
-      "score": 0
+      "score": 0,
+      "postTitle": "Need a little bit of help using logic for my schem"
     },
     {
       "id": "r_96800e46896b",
@@ -683,16 +654,13 @@
         "underflow-gate": 1
       },
       "tags": [
-        "defense",
-        "logistics",
-        "power",
-        "production",
         "serpulo",
         "silicon",
         "small"
       ],
       "contentHash": "96800e46896b2c15547d47f1b371a7991563059fa5efe4b3009019b5d2879594",
-      "score": 0
+      "score": 0,
+      "postTitle": "Silicon schematic"
     },
     {
       "id": "r_d4f9bc198c55",
@@ -740,17 +708,13 @@
       "tags": [
         "cryofluid",
         "defense",
-        "liquids",
         "logic",
-        "logistics",
         "medium",
-        "mining",
-        "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "d4f9bc198c5516b533e2d74fb4321c92e9e9390571ab16b69b24a3a70285073c",
-      "score": 0
+      "score": 0,
+      "postTitle": "Rate my 3 impact schem"
     },
     {
       "id": "r_70e1e96a121d",
@@ -781,16 +745,14 @@
         "message": 1
       },
       "tags": [
-        "logic",
-        "logistics",
         "medium",
-        "power",
         "production",
         "serpulo",
         "units"
       ],
       "contentHash": "70e1e96a121d9b3163c5e1402be10bd76de55b7ff7b3f8126a54d0a39fa41219",
-      "score": 0
+      "score": 0,
+      "postTitle": "A scrap to items factory"
     },
     {
       "id": "r_ea82bb857a28",
@@ -819,17 +781,14 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
         "logic",
-        "logistics",
         "medium",
         "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "ea82bb857a2881e7af209cbfed74a0b2f10e2e615e1d1b0f5517ab8a7fbbebe6",
-      "score": 0
+      "score": 0,
+      "postTitle": "10 tho reactor and 2 startup RTG"
     },
     {
       "id": "r_9279301c8715",
@@ -867,16 +826,14 @@
       },
       "tags": [
         "cryofluid",
-        "liquids",
         "logic",
-        "logistics",
         "medium",
         "power",
-        "production",
         "serpulo"
       ],
       "contentHash": "9279301c8715c2a07349a6a7a24ff637345cfef6ba05675ed26667427fb8e77f",
-      "score": 0
+      "score": 0,
+      "postTitle": "One of my first impact reactor schems"
     },
     {
       "id": "r_3a7a5b7fa541",
@@ -915,18 +872,14 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
-        "logistics",
         "medium",
         "mining",
-        "power",
-        "production",
         "serpulo",
         "silicon"
       ],
       "contentHash": "3a7a5b7fa5418679721844f1f65078a25fb48e5177126cfff724674718b4c224",
-      "score": 0
+      "score": 0,
+      "postTitle": "Differential gen to oil converter"
     },
     {
       "id": "r_381281397a7e",
@@ -946,12 +899,12 @@
         "liquid-container": 1
       },
       "tags": [
-        "liquids",
         "logic",
         "small"
       ],
       "contentHash": "381281397a7ed4d41789f2b216e016ac9ae971388d6d36df8aebbf8406478052",
-      "score": 0
+      "score": 0,
+      "postTitle": "RC aerial TV camera"
     },
     {
       "id": "r_cf0c65c14faa",
@@ -1003,20 +956,14 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
-        "logic",
-        "logistics",
         "medium",
         "phase",
-        "power",
-        "production",
         "serpulo",
-        "silicon",
-        "units"
+        "silicon"
       ],
       "contentHash": "cf0c65c14faade2314887f4601770dc001431d0b9380e92ca48f0b111342a3b4",
-      "score": 0
+      "score": 0,
+      "postTitle": "Scrap to power schematic"
     },
     {
       "id": "r_0ece658fc7f3",
@@ -1040,15 +987,13 @@
         "power-node-large": 1
       },
       "tags": [
-        "defense",
         "liquids",
-        "logistics",
         "medium",
-        "power",
         "serpulo"
       ],
       "contentHash": "0ece658fc7f35333b816e8f7dd25ecf226013a97340e02ae3b27013043549956",
-      "score": 0
+      "score": 0,
+      "postTitle": "Water extractor landing pad"
     },
     {
       "id": "r_c29a23de7966",
@@ -1072,15 +1017,13 @@
         "power-node": 1
       },
       "tags": [
-        "liquids",
-        "logistics",
-        "power",
         "production",
         "serpulo",
         "small"
       ],
       "contentHash": "c29a23de7966c4e20f648fcbb1d70d9f73e13e17735efa46c15f4cee74cc02bb",
-      "score": 0
+      "score": 0,
+      "postTitle": "Oil schematic"
     },
     {
       "id": "r_642eb5e7a3e6",
@@ -1113,13 +1056,10 @@
       "tags": [
         "erekir",
         "large",
-        "liquids",
-        "logistics",
-        "power",
-        "production",
         "surge"
       ],
-      "contentHash": "642eb5e7a3e6d955efa19cc7e5346915e0bcef1af4d93e455957df9689a48632"
+      "contentHash": "642eb5e7a3e6d955efa19cc7e5346915e0bcef1af4d93e455957df9689a48632",
+      "postTitle": "4x surge erekir slagpowered rate my schematic"
     },
     {
       "id": "r_1c7249280ce2",
@@ -1151,16 +1091,14 @@
         "overdrive-projector": 1
       },
       "tags": [
-        "defense",
         "liquids",
         "logic",
-        "logistics",
         "medium",
-        "power",
         "serpulo"
       ],
       "contentHash": "1c7249280ce266cae296212e36cb36d254e8276d0063296b9015abb9f84b8c76",
-      "score": 0
+      "score": 0,
+      "postTitle": "Help why doesnt this work"
     },
     {
       "id": "r_5cc20ff471e2",
@@ -1181,12 +1119,12 @@
       },
       "tags": [
         "logic",
-        "power",
         "serpulo",
         "small"
       ],
       "contentHash": "5cc20ff471e2f0122b15dd8d6e226b2c2aa627c862524ad6c9242444d764b8b9",
-      "score": 0
+      "score": 0,
+      "postTitle": "Power monitor"
     },
     {
       "id": "r_c484accdd299",
@@ -1211,7 +1149,8 @@
         "small"
       ],
       "contentHash": "c484accdd299b1290f27ac299f15f7a7330c72ced758e42ea26ea45355a3b991",
-      "score": 0
+      "score": 0,
+      "postTitle": "Ground unit suppression squad"
     },
     {
       "id": "r_9155de551027",
@@ -1235,7 +1174,8 @@
         "small"
       ],
       "contentHash": "9155de551027958468ae3fc987f2334179ecc4ce76b9eeeccae599f67830a836",
-      "score": 0
+      "score": 0,
+      "postTitle": "For those who want to display core resources"
     },
     {
       "id": "r_478af3c95c6a",
@@ -1271,14 +1211,14 @@
       },
       "tags": [
         "logic",
-        "logistics",
         "medium",
         "power",
         "serpulo",
         "units"
       ],
       "contentHash": "478af3c95c6a0b8db785c72567b8bdd7b386041eb720a9689949a8359e0d4905",
-      "score": 0
+      "score": 0,
+      "postTitle": "Wireless unit factory"
     },
     {
       "id": "r_c783aed72da1",
@@ -1300,11 +1240,12 @@
         "small"
       ],
       "contentHash": "c783aed72da1e765da8611c05a13afe550cb9d14dfadb17c2796bb862fe74907",
-      "score": 0
+      "score": 0,
+      "postTitle": "Quad vault transport"
     },
     {
       "id": "r_d1991d6f9a46",
-      "title": "Graph of Power Grid Statistics",
+      "title": "Power Graph small",
       "base64": "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",
       "author": "__Deric__",
       "authorUrl": "https://www.reddit.com/user/__Deric__",
@@ -1325,11 +1266,12 @@
         "logic",
         "small"
       ],
-      "contentHash": "d1991d6f9a465bfe9a5579fed288324d437417a83ea171e2023afbd3148703b2"
+      "contentHash": "d1991d6f9a465bfe9a5579fed288324d437417a83ea171e2023afbd3148703b2",
+      "postTitle": "Graph of Power Grid Statistics"
     },
     {
       "id": "r_9938644fc567",
-      "title": "Graph of Power Grid Statistics",
+      "title": "Power Graph large",
       "base64": "bXNjaAF4nF2WeTiU7dvHxzJDdpF93zWWIevYSdn3CKHB2BpjGnuyhJAshWTfB5FItshWGXu2sS/ZshbDZEt4p57neH+/9/3jvo7jOo/rvu77j8/5/ZwAKgAFOYAcCfOGAxjNfALhaL6baBjKgw8BQ7vDAVQuPkg/ONLPGIYCkIaEAqhd4b4uaE+Un6cPEgAAgBAwZzjCF3DJfrcwQmI3v8QBCKBH+Lh7ukii0D4ucF9fHzSA6e9Vkv+UXT19UQhYMIDaG+7tgw6WdIEjEAAKb+JJGPFzIN9ATz8XD+LN1MQHQEIHAABtgnLGbQfRswoMbmMlBxvikKzNt+yki8k4SyhydBMz2NSKgXYwu77D6AGFioOgwS/yTgNCo5l/y5/r9qJl67/L1LR0NFJLsLQMs+ZRSE0kfFe0dViI/PCl1tZi9QpYVtMXnTsiP/VWoBBuC6FUEAKL47OHEEOjFZ7U30+elpQT4mvfP28BH6ad9fTsHKJb8lpQV63pIdbiqxMg5XqtsXqt1LpOpHeNJaeqA6eqfnZHlfEiTiTjjTFEP3u4yngDJ5LzxljMy3KUSkjeRa76l2Pz2g+/VIsJ/FNuvu16zegUwKF7OG6WW5Ma9UlsqfkswHD/pY8wPwxfHqT9zijL4OY+RuH7I+1n98EczOAYL2AeAkSn/pydjccH6womvSAHD4tbf46tMpuvmSu7hQZ396SszUmTFM+tgn81lMKF9do2YgMy1MXA6SLj/Y3yvTj+RJehLKV5mebNkGfpOa5pkCdz9tCcR0saCLZZbfdFc4eR5Q+3Ld94hpCHl45X3+ps+pjFZwWU7k0S8vSfLKgaC5wAstrgFoHnBY7tmGWzcd0l8rPwPmOx4zlIO25cfIIvikln8krFk42jLJEiJ4WsuDAyD4EHt/P8KgZlqB/VFBKKJS3IPo0qthkumOJLO7gtF1GjxXG7DuFrA0Xl9YjujSTUZGMm/G2fM7Msu7x2QuLK4JM9mK+V0n0SiqKKhjHqk2jnjdpXUxR7QSTlIpMgY4ryncnuR1KLlwp+6StfllMisdIIuRmJFY3YKjtRGsZoXMGZM94Zqf1ScZK2UsANvukVXup5y11prG4rIN/Tzl8nOauB+lDH8e589e40LRcSBNNukeMoGVlSMdaxaRxPRD5TKJx9Y0jrMB+q2Kw1E41seSLvN64/twHyZGr+kTI5fMsJXcxZYryBjSt2W9N2LO16ow+M91eVTQN5C0Vpc4tcYdt/Mf9tThc7pskcwK54fS8U+sXDgoQ5grIj4kK383Zq/LUKDMPOa4vyzoyVoyB+zXIthB12QJBcR0ttFQjpiHANQdtEHoXetX7BXh2WarJRY7I+0dPAdlubB8IbMzfiUj5aPy3QmnQ503k2bQO7gtfj5TH0ft3cT0pOHYrFADXM1MLEJas0J8F1GMw8Jsnf7UqXGPpe02pZyaxa3h3mcAuGcn9E5rMEm6GhTzumrrcSVuE3ZqDkSRLBzwvYLrNcZXoVUJkNbjCdWbxYCvC4TP2K9nR8aDRnhsXObuox+SK9uABN4ov0Jr23zUNfP65NLvLGhV+nYEtuQu10i5G07c3m21TLuW/nMLz6iZ2oVIgU3Cl8RhHEJjmwpCuxVe83cKfdQKVUVUP3kQruq5MU44VESWcbV+pKzcUL7KGIS0vvs2uwHumy207ip5C5BCqsVrKN+sfUiorYiWR8Se1WIVAox9Em921ktOFvdgO9poTX5UdOZlVj6JfPW5bu0/BKCeGXELy8Jr17Sx/YWyacuy3CNocuzk7zJ2nJ6rjwdOpHJGVnee29o5IOrW5dzSYVdT3tIe9Iw094laLcXSv7BaS3f+jF0p5BKze3Yv3eFaoeCtXBC2Lud0eZvHXyl66XZFdcjbw5ztnMsQC3v4GHqZ8Mpu1R3gtXbM/zpmoQHqVejLZZPs+1yrUPYPg0580nuX2vUr1og3kQQT/vLnsnO+whj2ICMhTjeyQZKIrWWRLEjq2FnfzcYy60dB7QWRHXPmQjBBF339zjyigFwV5H8CzrH0F5ioS8ev2nR9+6kxe6FsMWLBdOmy9m+kKwKlXM+23Lg9Ot4P1LeZShn09NH6sfSpWEdZwWPew5zQuU+RwkdbqqUW1pnvknYAFkxIQltScmrPVgCo6PAWtX/zqYSoqnnnTVB2mXvh36NcKATRGcej1FqWX327YtFf81kEdt+oNpfkvgvPGYhpOiqo7HUSiD4E5Lqlk+866PBtf20da1zh9C3+icRyi3b9Ckcgka5Xz36jKlUKZttF5FQg+DkmPN5ceP97Y/YxqjbjNmefeYgS3XOGUH+lwz+pnC2fBq6ijluGlsKcuPKS6OQgtv2KSL4yTYuTRQJiLPJYUt5vJDY6n7wiVC94Buu8+/qlB0Ei5Dw9SclrX8frd0md+WS14TWXYe+BQXxYxmgNIVnT3+dNrNvQBx5vaOaAeU40dgw/EvIM+Nwujp5aAGPJgaBnz5N9LwO/61lhyj7KU4Mbl35PEXPO2Vza+4H0Nj+Y0bSXJiH1PNrFmSzJ6/g7/NgKwvEp5f+OGNpMpN6fw8UbHcQx/LCas5QBwNJYkfI6mY4E7kCWoU00pREVmToYtxKkjyWIIkLDSfsIz3R0ZmrcZAik9c0mXnKxEx/r47bZQ5b6h6R8FSQJMFt8N2t8T4xqjV4g5oxvN9wUwm1fxsinMKPhSLWd+50IWpslohjT+ra28swo6RNpTnVsda3TR1U8SvJk7YsugFrQwvgKOim+PKy4UaL7aXh5FOooTdX1DNAl2Rg03sPKd5YrPpvakUo2JB6aU21whOOYAGwXPVc1FoJJTjmep8m1w62IAzc9u8OZm9sZJ1el85hHXddi54vqSOwAHUZXt3rOAWgHlpzKn4OpR+YnDY8Fyzw13wd5AOpUMhq6/RyPgQb4DBiKFaqL91bJ7gT+of/Jl8fykD/qHM4S9lSWMQBjo7zXJTGdakghmTnJ8gbYmjUDLw/emIbGbRwhYfbAv/26n7ds7uOS9YpHCvXIcSugmEwamhFFdCcaoa12wqLr9OaSFMyWr3wJ10sAAHcvnDWUDUlqDRFPKqpEmIvF+jyWo/SukjXbPjJPxib5bPqiZKiTGrqsdM1BJ/hX3NVZZhS2hHpSmq1SyXy/s1ePrnQVs6VJ6l4SbDLXlBN82GDgYQRYptTLqziVRBmsHz96CWI76dD6n44Ee5u9PLXPwiJD9WxaX6inufnLD5yizzd6l+/vLJwxQfdNTUDb4x8CkRL0r5jV9dwlHLkLPvRz5jB/a6eMEqHRlJfQYVoM+6fiYCSmZQpa2is9IeFQhXkWvFrUNKNqHRJ7VW5rPaV51nNRokWJjWuB+q71fT8fQq0/ZSO4B+9ufd7IkrVmD4yXJbhY/cEssI/+xUw2Ba2qQfjwPCZFLja66rjcy53G69daZW8VLSwMsM/DFhv1sCXurwnisbNB/24tkXg94Rw0IhxFe3HQ33Azu53Mut5EyDeiQpA08de75RX7BC8CymwI6LnDwMzQGra19sBSc7rVry1bsuM3PCOS65c8mQS6kXMVP0JLTyLknxhoEZ9QmGUY8mZ/cCQ1s1C3REaDcn5jltD0stOadSBgqiWIPcazsc/CIgRMr8F4VHwrkZ8t44cY4JwxNW3ZjPo7C728EKoQsLvcEsgQt+4isftLTaEmwfcr5rGe0vfaEy0Xqpslnl6n3T4TLB8wjDlNWrwTJYufcPjjdL5YI9S6u/bKWs07eHkaHKsucAJAByABkRsz8LMdeIOwA5CeDxbl75f0+1ATJSED5ijcoe4ekNdzBD+7j6u/wZZqH2DnwQKns03NVBxwfp6+/9X0VnhD/c4bqnmxscDUe6wP+tBhMnV59AB0s/H+JL/9Z80DCkO9xBB4aCuXj6Bf+pIv2JAy45AAgAUP35O9DfhgBQ/p1tSe/8pyf4hHBl+MeCYg2ESU7Kt3NHtK8/w8mQl3Oid9rYd0ECCdt1n78o6VGzblnVumNXTk7cvoua151O9D/y+6G/RW/nF7ibNG5/9jzFzcor9u3tCH/wqTkticiTwBcsZVEcpyrgfU/VAFfTX1qT3/Dn/WJpjVF2jOnIHgjY0pVTdq6v5Hp5atBGr5oy5Xj/u0R/4exCdZyF6F3YLKP5LWpnL5N1SkGyCpiHePpqZJqFeDPu7iFPV6vvZXXpGsJLgjIf8+XhL3nLRbYQZX5eHSmQqmtG7FQw2w9Gnt2L73sxjP0owd/s2u+T6aNsijCX4L9Dgmp6O268TLGnCcI5SwEsGirGGdCUKteoBiWwy+2iPn0BCNAraZheijel+7aFrjfhVZz3xVStmVGTL/5bTzv02OhLpqnjZpHMKCGjy3z7EpT6NbdZvNi7yDzZLammZFExZMPNrcj9Z/qPnYqSPHaI2VtxzoHrtxGWr6CFIVfq4eKxAXBfGtrmMwn9WjFhQ+nHKUJhuTMXKfIeIz8NaFLM2IJIRnFP8oYGrc+r7y5KbAiS4DXK3CU/zQFzCYVbN0A6+cAreN+Z73+bIhFykHoRn0VsClx8VPy9wNt1Cfei+KVXCLtrbo81nxqtjSW2NNZyFViSITypNnqoPlxjX3wDjcg/EcJDUSkbbXQe6QgnToIw8IYbhOpIa+XwQDVXw333uyq9Cr0DVQ4F8+p2xuPG++/A75EzTS4/smsqTk2eUMSrc+9R3GHWHSpaX88w+VrWazL9k6lUWmqrlHdkzEluJ3/uL2Zk/xu9TslEwVfLiLhpAKXVvajq6k5LZfJ2j2j1+h8cTDWMTrSeuoUpqoHTdhwLdYy/hNzfFIFcoyGsK5JJF3kcFTOpeWUTFX/Fx0edp59+i/rGAR9R8c8B23Z+Ud/JjJh3Df4o3k/RenUbhRjh8W+tiD8fa3xk6EPRICA0/4zfWsSdUxbXVxLXz9S+O8wNRU0/6cVWMPs7cV8tvOwNGxNwTKd2jtdLEOu4i5UYNIuU7lW+Gp0W9Krzu9q+yrpQUJ7OuvS6r2aNiea1EKqntXfR2uoxd2iC9PjoCwl8M0yqCxfzK7SC6Uug42vRsry8oGq9S0x9x/eDamAzRNBsiaA9lAJYydWaQ+ug30V2xmgSLnhapbMKd/4oXr+Bf2AC84/i86aJnJX74k96wqFBAu6fRav9ltg2gslNlbxUtdxJ6skS+OE0ZjHzwIO9kqfZQpoOdzlkxY8McYyDXDEj9tZfox5sVpSA3vMbVT21T7eYf4NI8o9CIoEGLBjXTeBL0q5di1On2gdd2yb7jnyvKe5EKPkXrftO911cocnpsvwHM505YB6Bv9KOXGcokmojTSHkkruZaKBgwtlqe9camWbxvS6tLoyKhB0W01mguPezpdmOf1gg9dhvZade7MH8K3nE/YqRTnTT/8cMYthQnXiSMnpDVg39FzOJfzCjValuSQtwLOaz75b4kJjl0Asfw3Lf+xoNH69P+eqC36TUWCwSe8Dequ7DFb55UCn+cWVor9Ok9zjk4TEZTjh/6C9nfxXv9J8409b7R/FT/0fxs/8q/oo3avlPnj2NoDa+2kVY/xNn7uZ1Jws9LEkH+lvJdly7C7v9gb+YHumU/TE8YNtaIdeLzChOEcNSlruVRYyz97O8MGrjysqiM3w9U98Yn3V0KZgI2OpD3RjbTOZo6JNY0A5M1ErwJm+lBc+Ml41+Lhv9tmBcbQ6jJZ84JLrzEZZMx1BGdN1MD9Mz97GghfXoi8lxYNKP3WNnMv5SwAEz0fBRXZe62KhkGPi7BD4ffvIIZ9g73Iyzycko41wyZeh7+JAmCCgZa4Vt56FXmDvesJB9SpKcZUoL0K3y8tbMJeXeVwnrun3eiG8ob9EBHwjT6tfSwdoQt3CK+fHHh8lq1N+ilTmdGn5XJt5E3wjd/8jy5HnmTYkkL9Nh27srEQyf2YTjZJalMpJFx+Zcn/4Ewvhfott1uUcGYDQB/Vv2w1L2dVZl1tHs30yD+waaauUVyJrPBfgz61MwrNr6cV9LDjXc6+24OITtLpXKPQIJvUpVy+9n3ZMmxllN1hkd4Hx9XwJe3sJnqWbl/6wTRyggUUgf5PnIrtA7T8PUflzdixcoKFzLLF6GcrsJrkDvLt5SPUciWSjrekrUQymPrFmqMnGgBiH5jUVl9UzQopRIhNOJEEoFFb+xQEdpOpGcuPlM1gRNWN15jM3dtoW2Ju0wq1JT+JSmXVoo4LNfk3iNBVWtVtShsTMqMFv5m8I8lA/8P0ujzJnVkh0dmU95z1x+Og+gwneGDlMPk89OREnpC3sB/wNwbO/g",
       "author": "__Deric__",
       "authorUrl": "https://www.reddit.com/user/__Deric__",
@@ -1350,7 +1292,8 @@
         "logic",
         "small"
       ],
-      "contentHash": "9938644fc5670585cc5410b07385ba13df7345960945f3bc6bf61830e48c0923"
+      "contentHash": "9938644fc5670585cc5410b07385ba13df7345960945f3bc6bf61830e48c0923",
+      "postTitle": "Graph of Power Grid Statistics"
     },
     {
       "id": "r_197c2f5b9cd8",
@@ -1376,14 +1319,12 @@
         "item-void": 2
       },
       "tags": [
-        "logistics",
         "medium",
-        "power",
-        "production",
         "serpulo",
         "surge"
       ],
-      "contentHash": "197c2f5b9cd8be0b1e7844c924c1f2f8390785f43d2e9344226f3fbd1d8787c8"
+      "contentHash": "197c2f5b9cd8be0b1e7844c924c1f2f8390785f43d2e9344226f3fbd1d8787c8",
+      "postTitle": "10 surge from plast belt"
     },
     {
       "id": "r_f3c8e4da2d2f",
@@ -1407,14 +1348,11 @@
       },
       "tags": [
         "cryofluid",
-        "liquids",
-        "logistics",
-        "power",
-        "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "f3c8e4da2d2f7dd74417c00e1424d4ebba42f09d71d89fd4b83ed2454907010c"
+      "contentHash": "f3c8e4da2d2f7dd74417c00e1424d4ebba42f09d71d89fd4b83ed2454907010c",
+      "postTitle": "Might be the most beautiful cryofluid design ever made"
     },
     {
       "id": "r_efcd0d8afefd",
@@ -1450,15 +1388,13 @@
         "micro-processor": 10
       },
       "tags": [
-        "defense",
         "erekir",
         "large",
         "logic",
-        "logistics",
-        "power",
         "serpulo"
       ],
-      "contentHash": "efcd0d8afefd80ca08de3246baba11e3c003ca7876205b6cd55645d63339e97a"
+      "contentHash": "efcd0d8afefd80ca08de3246baba11e3c003ca7876205b6cd55645d63339e97a",
+      "postTitle": "Free Schematic: One Night At Bob 1.1(Copy and paste text export)"
     },
     {
       "id": "r_780b2560d8d8",
@@ -1497,10 +1433,10 @@
         "defense",
         "logic",
         "medium",
-        "power",
         "serpulo"
       ],
-      "contentHash": "780b2560d8d82faaf1fcd94a12540d9bb0f1a63bf7d5d1bcfbc0edadc781e2da"
+      "contentHash": "780b2560d8d82faaf1fcd94a12540d9bb0f1a63bf7d5d1bcfbc0edadc781e2da",
+      "postTitle": "Was it worth the sunday?"
     },
     {
       "id": "r_21455c201655",
@@ -1524,14 +1460,12 @@
         "liquid-router": 1
       },
       "tags": [
-        "liquids",
-        "logistics",
         "plastanium",
-        "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "21455c2016558c0d8b4711056008f52bda7ad231ff0f3af78a6cbb84590a039f"
+      "contentHash": "21455c2016558c0d8b4711056008f52bda7ad231ff0f3af78a6cbb84590a039f",
+      "postTitle": "Mindustry Is Good At Making You Feel Accomplished"
     },
     {
       "id": "r_01b90492d5ed",
@@ -1564,15 +1498,13 @@
       },
       "tags": [
         "cryofluid",
-        "liquids",
         "logic",
-        "logistics",
         "power",
-        "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "01b90492d5ed6988ea19fbef125eb382340233e47fdf3773b0ecf874f9e1a8e0"
+      "contentHash": "01b90492d5ed6988ea19fbef125eb382340233e47fdf3773b0ecf874f9e1a8e0",
+      "postTitle": "Waz’s Mini Modular Reactor"
     },
     {
       "id": "r_d87bb46369a3",
@@ -1601,14 +1533,13 @@
         "micro-processor": 16
       },
       "tags": [
-        "defense",
         "large",
         "liquids",
         "logic",
-        "logistics",
         "serpulo"
       ],
-      "contentHash": "d87bb46369a3b487a386d96393568e762b0bbe1829805d6d7216142fd85b3023"
+      "contentHash": "d87bb46369a3b487a386d96393568e762b0bbe1829805d6d7216142fd85b3023",
+      "postTitle": "I know you need space on your base and stuff but"
     },
     {
       "id": "r_da9e6156b621",
@@ -1642,13 +1573,12 @@
       "tags": [
         "defense",
         "logic",
-        "logistics",
         "medium",
-        "power",
         "serpulo",
         "units"
       ],
-      "contentHash": "da9e6156b6219f3d3bab2f6c4bb08ad5e3e4dadb526ef81d7721300aded22611"
+      "contentHash": "da9e6156b6219f3d3bab2f6c4bb08ad5e3e4dadb526ef81d7721300aded22611",
+      "postTitle": "Made my first Core schematic. What do you think? Any improvements?"
     },
     {
       "id": "r_d08553846374",
@@ -1670,7 +1600,8 @@
         "logic",
         "small"
       ],
-      "contentHash": "d085538463748ae5ff51e1df2ea2bab1518a949c10500ebdb729fc84dddef12c"
+      "contentHash": "d085538463748ae5ff51e1df2ea2bab1518a949c10500ebdb729fc84dddef12c",
+      "postTitle": "So now enemies after death are splitted into lower tier units because of World processor"
     },
     {
       "id": "r_5064893fe6b1",
@@ -1716,19 +1647,13 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
         "graphite",
-        "liquids",
-        "logic",
-        "logistics",
         "medium",
-        "power",
-        "production",
         "serpulo",
-        "silicon",
-        "units"
+        "silicon"
       ],
-      "contentHash": "5064893fe6b19c0d5d59afca83d51f379266a32d2cba88f071ad1377b5cc66d2"
+      "contentHash": "5064893fe6b19c0d5d59afca83d51f379266a32d2cba88f071ad1377b5cc66d2",
+      "postTitle": "Core Schematic Differential by extirpater"
     },
     {
       "id": "r_6f2e2a66dfbe",
@@ -1756,22 +1681,17 @@
         "power-node-large": 1
       },
       "tags": [
-        "defense",
         "graphite",
-        "liquids",
-        "logic",
-        "logistics",
         "mining",
-        "power",
-        "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "6f2e2a66dfbeaff401cea419bd36dd2c959c369824960a8aea99f402a8d0c810"
+      "contentHash": "6f2e2a66dfbeaff401cea419bd36dd2c959c369824960a8aea99f402a8d0c810",
+      "postTitle": "rate sand to graphite"
     },
     {
       "id": "r_b623a2e286e4",
-      "title": "Are these good reactor schematics",
+      "title": "reactor stack end",
       "base64": "bXNjaAF4nEWNMUvDQBiGv7Rpqw2xVjvoFpyEkkZaCv4ESatIKjio0DQ56mGSS+8Sq/4EJ9HVwbE4OLjY2U1QF/9Ju4pnchH8hu+B932+O5ChmAc5sH0EVYpsJyJUY5HtnGkocEFxEXMoDiNMAgAoevYAeQwWj4SK6EkJ1DD2GNIdErgxjkD18CjGrk5JnPRQGVDsDkV9ji4JhWqEIzvAsf8fVaJTQtPk738oh2SMqB4QF0HFxw4lekiJgxhLSgAVxEjZEshlyGeQQUpZyHKpxDm3OP/piT6J5GTJqS3OCglyCxL/Fu/kM39f+MXUWUry4cW94/b7k/reR/3TsHYaj++Hm+Zut/FmNA9CGH1Rs9WbPptMqXVrs1nnWOmsMq2sqtPb+dy8nrGaNV+5o1Zv+UrVbupto/CyMWk2HpS19e3+K+etLQn8sfEEv2p9cnI=",
       "author": "Hamtr",
       "authorUrl": "https://www.reddit.com/user/Hamtr",
@@ -1791,18 +1711,16 @@
         "micro-processor": 1
       },
       "tags": [
-        "liquids",
         "logic",
-        "logistics",
-        "power",
         "serpulo",
         "small"
       ],
-      "contentHash": "b623a2e286e471d1a9791c1ff75c993ed19aaaa9cb87a2a01bb3635629d028ce"
+      "contentHash": "b623a2e286e471d1a9791c1ff75c993ed19aaaa9cb87a2a01bb3635629d028ce",
+      "postTitle": "Are these good reactor schematics"
     },
     {
       "id": "r_4702ed686c90",
-      "title": "Are these good reactor schematics",
+      "title": "reactor stack start",
       "base64": "bXNjaAF4nGNgZmBjZmDJS8xNZRAuSk1MLskvUiguSUzOBpFFJQzcKanFyUWZBSWZ+XkMDAxsOYlJqTnFDJzRYMWpRbFsDIIlmSWJeZmlubrJ+XllqZX5RQz8JRn5RSARqJEMbEX5pUDVDFwF+eWpRbp5+SmpDPxJRZkp6alIunIzk4vydQuK8pNTi4uBAgwMHEDMwAiEQMDEwAhisUCEgJgJIsMMJJg4IBIsIFXsYMUgwAqkmfiAjPSKOckpCQkrtP3Oap/TD/LQW3UmXMPL10fvpL5RSAFD4eUiL+PgHZu8irlFfEQ+ffKO4fYWLlbg4uXdMenzZ6+uT8UiQZ+FJhcFBQtU8SpM0DbVZ92utMJIbwG3hKRFwqH//40NGBlyy/XXMQAAnYpb9g==",
       "author": "Hamtr",
       "authorUrl": "https://www.reddit.com/user/Hamtr",
@@ -1822,16 +1740,15 @@
       },
       "tags": [
         "logic",
-        "logistics",
-        "power",
         "serpulo",
         "small"
       ],
-      "contentHash": "4702ed686c90ef6040fbeab3f110b3557feb3b1fa03b8b166ec036c089701fbd"
+      "contentHash": "4702ed686c90ef6040fbeab3f110b3557feb3b1fa03b8b166ec036c089701fbd",
+      "postTitle": "Are these good reactor schematics"
     },
     {
       "id": "r_c3015814a510",
-      "title": "Are these good reactor schematics",
+      "title": "reactor stack",
       "base64": "bXNjaAF4nEWPz0vDMBzFv926H650m7qD3oYnYXSVDcE/Qbop0gkeVFjXhhlsmy5JnfoneBK9evA4PHjw4s7eBPXif7JdxdqmwgLJSz7vvYSADPksyL7lIVApsmxOaJ1xyz4HxUHMpjjgmPgAkHetAXIZLB2LGKKnRVBdPAqxo1ESxgDUIHQZ0mziOyHmUBlQ7AzF+QJdEQrLHHPLx6G3QBV+RmhC/t+GUkDGiGo+cRCUA9fiyFlc6GGbEi2gxEaMxWGAKqRDElNKJJNKNhVZWJATNqQ2SIUoiswo+u0lsQTJ8SKD2ItukopLGcgUpegn+X4MRTubtg9Eu5BEyzEfXj7YTr8/aex/Nr50c7f59HG0aex1m+966zCA0Tc12r3pi8GUWrc2m3VOlM4qq5dUdXo3nxs3M1Yz5yv31OxVr9X6bWNbz71uTFrNR2Vtfaf/FkXtLQm8sf4Mf8vVdtc=",
       "author": "Hamtr",
       "authorUrl": "https://www.reddit.com/user/Hamtr",
@@ -1852,18 +1769,16 @@
         "micro-processor": 1
       },
       "tags": [
-        "liquids",
         "logic",
-        "logistics",
-        "power",
         "serpulo",
         "small"
       ],
-      "contentHash": "c3015814a510409c8b493c38fb6d8f21ea5233884b82966ef1c2bc6ae0b8302a"
+      "contentHash": "c3015814a510409c8b493c38fb6d8f21ea5233884b82966ef1c2bc6ae0b8302a",
+      "postTitle": "Are these good reactor schematics"
     },
     {
       "id": "r_72b2449691cb",
-      "title": "Are these good reactor schematics",
+      "title": "reactor cooler",
       "base64": "bXNjaAF4nFXQUW7CMAwG4D+N06kgMe0GXIAToT2UNEMRaQMmncbtF8doE0mb1q79ySp6bC1oGeeAHYfRl8x7n3MKjO0U7p7jtcS8AOjTeArpjuHY6gJ/OnyUWMYlrvPB5+U7PDJjd+I4nYMkpjUWvHt+5K+0xukwxx9hU7xJVBsv6Dmvlar8Hm11ph7mTd401tvCwGlUv0nN8F8ja4OOWl7a267XACvJzR9k6uMFl92Opnavaqeq1UhGMPVfyRwSNdwqToqT4vTsJsVJcVKcnjgp7jRyOrJT1Yn6C21eLb8=",
       "author": "Hamtr",
       "authorUrl": "https://www.reddit.com/user/Hamtr",
@@ -1882,13 +1797,11 @@
       },
       "tags": [
         "cryofluid",
-        "liquids",
-        "logistics",
-        "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "72b2449691cbbf2a070200aaf2a0cfb51f66d6ec62be6d3f2acffbe291d4309a"
+      "contentHash": "72b2449691cbbf2a070200aaf2a0cfb51f66d6ec62be6d3f2acffbe291d4309a",
+      "postTitle": "Are these good reactor schematics"
     },
     {
       "id": "r_83f31bc8e3c4",
@@ -1914,13 +1827,12 @@
         "overflow-gate": 1
       },
       "tags": [
-        "logistics",
-        "power",
         "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "83f31bc8e3c41298a116e16b0b388d61cc6ba3a2d8ea25efefb1f327ee2909aa"
+      "contentHash": "83f31bc8e3c41298a116e16b0b388d61cc6ba3a2d8ea25efefb1f327ee2909aa",
+      "postTitle": "First time ever making compact designs for factories, and decided to start with pyratite which has 3 inputs (it was painful), Is this design compact and efficient for a stackable scheme?"
     },
     {
       "id": "r_ee80708df6b8",
@@ -1947,13 +1859,12 @@
       },
       "tags": [
         "large",
-        "liquids",
-        "logistics",
         "power",
         "production",
         "serpulo"
       ],
-      "contentHash": "ee80708df6b8943b4a25a3626c844392d7b017e6497587fe58e110da374eaa83"
+      "contentHash": "ee80708df6b8943b4a25a3626c844392d7b017e6497587fe58e110da374eaa83",
+      "postTitle": "OIL TO ENERGY"
     },
     {
       "id": "r_bfa9324f0916",
@@ -1976,13 +1887,12 @@
         "junction": 18
       },
       "tags": [
-        "logistics",
         "medium",
-        "production",
         "serpulo",
         "silicon"
       ],
-      "contentHash": "bfa9324f0916e553fd4fd6e2fec6983da818d60c42119ca0e162add8a75ec7dc"
+      "contentHash": "bfa9324f0916e553fd4fd6e2fec6983da818d60c42119ca0e162add8a75ec7dc",
+      "postTitle": "Hipity Hopity here's a 2k a min silicone schematic that's now your property"
     },
     {
       "id": "r_383d573372e2",
@@ -2025,18 +1935,13 @@
         "incinerator": 2
       },
       "tags": [
-        "defense",
-        "liquids",
-        "logistics",
         "medium",
-        "mining",
-        "power",
-        "production",
         "serpulo",
         "silicon",
         "units"
       ],
-      "contentHash": "383d573372e280c293b9e2a870321c7599939096c8052c850ce03c4094c75a50"
+      "contentHash": "383d573372e280c293b9e2a870321c7599939096c8052c850ce03c4094c75a50",
+      "postTitle": "Scrap to 5 risso factories"
     },
     {
       "id": "r_134b88dc5a96",
@@ -2058,13 +1963,12 @@
         "titanium-conveyor": 16
       },
       "tags": [
-        "liquids",
-        "logistics",
         "medium",
         "power",
         "serpulo"
       ],
-      "contentHash": "134b88dc5a96426ae21acda2ec966feea1d49d91c42c352accd7bf4dc9657c9e"
+      "contentHash": "134b88dc5a96426ae21acda2ec966feea1d49d91c42c352accd7bf4dc9657c9e",
+      "postTitle": "I did this thorium reactor schematic, idk if isn't compact it just looks cool"
     },
     {
       "id": "r_858c1d1e3776",
@@ -2092,12 +1996,11 @@
       "tags": [
         "defense",
         "logic",
-        "logistics",
-        "power",
         "serpulo",
         "small"
       ],
-      "contentHash": "858c1d1e37763143afc38cdfeca86ca9d7da905f8cc2a41bcac110655acce493"
+      "contentHash": "858c1d1e37763143afc38cdfeca86ca9d7da905f8cc2a41bcac110655acce493",
+      "postTitle": "Last resort defense"
     },
     {
       "id": "r_3a329881810d",
@@ -2148,23 +2051,17 @@
       },
       "tags": [
         "cryofluid",
-        "defense",
-        "liquids",
-        "logic",
-        "logistics",
         "medium",
         "phase",
-        "power",
-        "production",
         "serpulo",
-        "silicon",
-        "units"
+        "silicon"
       ],
-      "contentHash": "3a329881810d0cd2ad0d265c78a3823fee98c091c41789f600f90dc6f3ca8689"
+      "contentHash": "3a329881810d0cd2ad0d265c78a3823fee98c091c41789f600f90dc6f3ca8689",
+      "postTitle": "Scrap reactor with overdrive"
     },
     {
       "id": "r_3b38e75e2e0a",
-      "title": "How to defeat attack sectors",
+      "title": "Core C",
       "base64": "bXNjaAF4nG1RPWgUQRR+u3u7e785EzUoCA5aaOGeQlSwUyJItFBiCi38mZuduxvdm1lmZy+5QgjY2EgEsbOyiWgjiApaBbEQBQtLLewUbASLNAZ8sxdCIu7e3vvmm/fzvfegCU0XSpL2OQTTSnMyDbWYZ0yL1AglAXZAQ5tu1OWSa2qUhrBNjeF6CJM0joURAx5pzpTMjM5Z4dDnWUa7HBrrnlFCNR4DrXI8QvlGLlmRvJqqea4jqWIO5VwmisZ4H2RKW789/TwxIk0Eo/+pUtc8pUJHqRLSQJ2h9kjmLOF5Bv6AYig0+4JpFaVaMVSEMaUeFQmEbMgSJTns5gspWmkETf7J3hRywFFFHK2LCbOUM6M5ALRg9Dj4ucU/eOBaVLEIoFZy4OWpJCG5FCYj8wJhl5oe12SKtBPFbmaEttWAE+TIhrwWmemQocqJ5DwmRpE0oYwTSlI6tKMhKHDAh0pvCt7UAdnSwSF7LTEkHW6tQlAGJpWYrkdld5Rmypaj5FjLK2EbDXB8NK7txim6OXshN1aaxiAlUJTqkA61dYakzRM13yJztohdJ7HrJIzKAwYlUdbDMRiRFJ3FquXZoeEToLEv/nB6IZpa2Rb3CsK+OE3XL85OGY3v48gLFCAKChQiqjgVRGVEnlMFH2q4ACTG7IJKdkXWYDdlNJgPQqhjcQSWGIXVEKF/A3nH8n7BVzCPjzxWCgoiwAN+6AmdhYfR3ZXG4pG69/b2+eVfZX/y+oOT9+7Mzc5VH3256DTPrT771Bif+bqy7+Cu30/OrHybqB1Iy35y7fTSx+OHL12eDpc+H32Tzd7f+7134t1idPXD8uunz1df/LyyJh7ferXzh7P2Z/97FB0WpV1oIhoDdxvKcsAZR201qwx7tz25FpUQVT2L/A2umFXBFbPyAqjarVbQlGxHdmLOBJrRUC0KwduOM8Iq1uD1X7Q1+J4=",
       "author": "Esnardoo",
       "authorUrl": "https://www.reddit.com/user/Esnardoo",
@@ -2199,17 +2096,16 @@
       "tags": [
         "defense",
         "logic",
-        "logistics",
         "medium",
-        "power",
         "serpulo",
         "units"
       ],
-      "contentHash": "3b38e75e2e0a3791b04ac2bc93ab22bc05a8bc7a7003775cf8017c50b2a02ef8"
+      "contentHash": "3b38e75e2e0a3791b04ac2bc93ab22bc05a8bc7a7003775cf8017c50b2a02ef8",
+      "postTitle": "How to defeat attack sectors"
     },
     {
       "id": "r_32b7fa9116a5",
-      "title": "How to defeat attack sectors",
+      "title": "Core B",
       "base64": "bXNjaAF4nG1STYgcRRR+3T39M//ZGNdLwAIRFTJLgob1kkN+QBTxIHpYSMBKd81urT1VTXX1zo540xAC8ZKoJw/iUUQY8OBdRMSLJ0VPuYl4FCXJOmm/qtmDBxlqvq9fvfe+V+89GtM4pI7iM0HJZW0Eu0T9QtS5kZWVWhE9QWldidwaQUNjdye7QgnDrTawi92ZUJbGc26FmYhDa3jubsZTbXIxqYzeF96QNarUvBCGBkZUXJpJpaWLnMncaOeYi7p2OWdAvgutqilrMcm1KhppqbPHZUkJqqpKXF7nFoqLSckNfEeooviP2oaVlivZzFz4gVjA1Kv0HCUqXQga5HjnRDV5KZqasv1G5f6pCQpAVjo9a0orq1Lm3MoDMTECaWprGp88MbpxXpu8KOT/3KfHtRHRNlGAXxiAdygKAckaMooiQI+iDhyGRDFhCjFRGiZgMQUOEgpSQDqC6/7hJ+c/+GH43tkTV36+efXqtx/eY71PP4qfWt7ZeenRla/fSTdevP3CzW092Hhw/+KXz49eFXfffeurWxeeqbLhF+3h9zeaneXy/e3Tn7+ybDb/ml/77ONT0d/3rz25882913765c/vfvzj1zu/r9JR/PRvXjtbl9ClIAP0OgEtX56yhW7YnCt7xrOcK4ZxljwXzO7Jmr3ux8Pm0u4x3GHObOo3YrHFjqMLfYYVohT2OOR6qfO3t9ibStqaPSsOhGJvnK+fY1qVC6aEKNg5NjVCrB2ZVAgTsGhl2UwWBeT0dG1bKzGrGfaXV2Ir7KL0vhtChP6H6LZraQhICfaO6/8AgP4PAUSh96NwBMCkAgwC84kBiZ/NGCzNepS2R23bPmgftSvPVu5Q0B7hrCgERk4ycpEZIruYeep24QT6mrlpJ9SP19uR0ICiDVx7pZRip+SZ80ijMdgoQzVtSwlOBDWn9xA8blfRSST0oZkPDVF1hsdFQ8CQwpMYoVsst1Rd75FEj0ESXYjxfmfoYhd7rk9DAEJOgWMfY0Dirx1LwaLAMfegwLOuy+ZZz/kFjyMahW4ifZ9C11d0dhN/+BrTiPpZB4Uftf8Q4YTtQ1T7LwVXIT8=",
       "author": "Esnardoo",
       "authorUrl": "https://www.reddit.com/user/Esnardoo",
@@ -2246,15 +2142,13 @@
       },
       "tags": [
         "defense",
-        "liquids",
         "logic",
-        "logistics",
         "medium",
-        "power",
         "serpulo",
         "units"
       ],
-      "contentHash": "32b7fa9116a51dfda3b92f8d73826b211deeec07fce3160609f5ee9be2d811fb"
+      "contentHash": "32b7fa9116a51dfda3b92f8d73826b211deeec07fce3160609f5ee9be2d811fb",
+      "postTitle": "How to defeat attack sectors"
     },
     {
       "id": "r_b5c73a022cc3",
@@ -2281,15 +2175,13 @@
       },
       "tags": [
         "cryofluid",
-        "liquids",
         "logic",
-        "logistics",
         "power",
-        "production",
         "serpulo",
         "small"
       ],
-      "contentHash": "b5c73a022cc39dc1a8dca64f85517168abbf11a2ad6cd619c941a1715e9ae65b"
+      "contentHash": "b5c73a022cc39dc1a8dca64f85517168abbf11a2ad6cd619c941a1715e9ae65b",
+      "postTitle": "Expandable Thorium Reactor with Logic Explosion Protection"
     },
     {
       "id": "r_96d1382e5c13",
@@ -2312,7 +2204,8 @@
         "medium",
         "serpulo"
       ],
-      "contentHash": "96d1382e5c139ad63c9a81c5c55522a4a573fe82571cdfa13ad3bbcefe62b787"
+      "contentHash": "96d1382e5c139ad63c9a81c5c55522a4a573fe82571cdfa13ad3bbcefe62b787",
+      "postTitle": "Plastanium conveyors and how to use them."
     },
     {
       "id": "r_8cb2c6736cf4",
@@ -2336,13 +2229,12 @@
         "power-node": 2
       },
       "tags": [
-        "logistics",
         "medium",
-        "power",
         "serpulo",
         "units"
       ],
-      "contentHash": "8cb2c6736cf47a4a7965b78971ec4f4e0f24fe94f6ad25f4094e5e9cf82e8a4f"
+      "contentHash": "8cb2c6736cf47a4a7965b78971ec4f4e0f24fe94f6ad25f4094e5e9cf82e8a4f",
+      "postTitle": "Using Phase Conveyors to Supply Revenant Factories in with one Lane"
     }
   ]
 }

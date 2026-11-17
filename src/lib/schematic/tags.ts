@@ -1,4 +1,4 @@
-import { getBlockSpec } from '../blocks/catalog';
+import { getBlockSize, getBlockSpec } from '../blocks/catalog';
 import { schematicWorldBounds } from './stats';
 import type { Schematic } from './types';
 
@@ -27,6 +27,9 @@ export const TAGS = {
 } as const;
 
 export type AutoTag = (typeof TAGS)[keyof typeof TAGS];
+
+/** Planet + size + a couple of primary-purpose tags. */
+export const MAX_TAGS = 5;
 
 const EREKIR_BLOCKS = new Set([
   'duct',
@@ -217,7 +220,8 @@ const PRODUCT_BLOCKS: Record<string, AutoTag> = {
   'cryofluid-mixer': TAGS.cryofluid,
 };
 
-const POWER_CLASSES = new Set([
+/** Generators / reactors only — not nodes or batteries. */
+const GENERATOR_CLASSES = new Set([
   'ConsumeGenerator',
   'HeaterGenerator',
   'ImpactReactor',
@@ -225,14 +229,9 @@ const POWER_CLASSES = new Set([
   'VariableReactor',
   'SolarGenerator',
   'ThermalGenerator',
-  'Battery',
-  'PowerNode',
-  'BeamNode',
-  'LongPowerNode',
-  'PowerDiode',
 ]);
 
-const DEFENSE_CLASSES = new Set([
+const TURRET_CLASSES = new Set([
   'ItemTurret',
   'PowerTurret',
   'LiquidTurret',
@@ -242,15 +241,6 @@ const DEFENSE_CLASSES = new Set([
   'PointDefenseTurret',
   'TractorBeamTurret',
   'BuildTurret',
-  'ForceProjector',
-  'MendProjector',
-  'OverdriveProjector',
-  'RegenProjector',
-  'ShockwaveTower',
-  'Wall',
-  'ShieldWall',
-  'AutoDoor',
-  'BaseShield',
 ]);
 
 const MINING_CLASSES = new Set(['Drill', 'BeamDrill', 'BurstDrill', 'WallCrafter', 'Fracker']);
@@ -278,13 +268,11 @@ const LOGISTICS_CLASSES = new Set([
   'PayloadMassDriver',
 ]);
 
-const UNIT_CLASSES = new Set([
+const UNIT_FACTORY_CLASSES = new Set([
   'UnitFactory',
   'Reconstructor',
   'UnitAssembler',
   'UnitAssemblerModule',
-  'UnitCargoLoader',
-  'UnitCargoUnloadPoint',
 ]);
 
 const LIQUID_CLASSES = new Set([
@@ -298,23 +286,11 @@ const LIQUID_CLASSES = new Set([
   'SolidPump',
 ]);
 
-const PRODUCTION_CLASSES = new Set([
-  'GenericCrafter',
-  'HeatCrafter',
-  'AttributeCrafter',
-  'Separator',
-  'HeatProducer',
-]);
+const CRAFTER_CLASSES = new Set(['GenericCrafter', 'HeatCrafter', 'AttributeCrafter', 'Separator']);
 
-const LOGIC_CLASSES = new Set([
-  'LogicBlock',
-  'LogicDisplay',
-  'TileableLogicDisplay',
-  'MemoryBlock',
-  'SwitchBlock',
-  'MessageBlock',
-  'CanvasBlock',
-]);
+const PROCESSOR_CLASSES = new Set(['LogicBlock']);
+
+const POWER_SUPPORT_CLASSES = new Set(['Battery', 'PowerNode', 'BeamNode', 'LongPowerNode', 'PowerDiode']);
 
 export function sizeBucket(width: number, height: number): AutoTag {
   const m = Math.max(width, height);
@@ -336,43 +312,207 @@ export function inferPlanetTags(blockNames: Iterable<string>): AutoTag[] {
   return tags;
 }
 
-export function inferCategoryTags(blockNames: Iterable<string>): AutoTag[] {
-  const tags = new Set<AutoTag>();
-  let production = false;
+type PurposeCounts = {
+  products: Set<AutoTag>;
+  generators: number;
+  generatorFoot: number;
+  turrets: number;
+  turretFoot: number;
+  drills: number;
+  drillFoot: number;
+  logistics: number;
+  logisticsFoot: number;
+  unitFactories: number;
+  unitFoot: number;
+  liquids: number;
+  liquidFoot: number;
+  processors: number;
+  processorFoot: number;
+  crafters: number;
+  crafterFoot: number;
+  tiles: number;
+  footprint: number;
+};
+
+function footprintOf(name: string): number {
+  const s = getBlockSize(name);
+  return s * s;
+}
+
+function isGenerator(name: string, cls: string): boolean {
+  if (POWER_SUPPORT_CLASSES.has(cls)) return false;
+  if (/battery|power-node|beam-node|beam-tower|beam-link/.test(name)) return false;
+  if (GENERATOR_CLASSES.has(cls)) return true;
+  return /^(combustion-generator|steam-generator|differential-generator|rtg-generator|solar-panel|thorium-reactor|impact-reactor|turbine-condenser|chemical-combustion-chamber|pyrolysis-generator|flux-reactor|neoplasia-reactor|thermal-generator)/.test(
+    name,
+  );
+}
+
+function isTurret(name: string, cls: string): boolean {
+  if (TURRET_CLASSES.has(cls)) return true;
+  return /-(turret)$/.test(name) || ['duo', 'scatter', 'scorch', 'hail', 'wave', 'lancer', 'arc', 'swarmer', 'salvo', 'tsunami', 'fuse', 'ripple', 'cyclone', 'foreshadow', 'spectre', 'meltdown', 'breach', 'diffuse', 'sublimate', 'titan', 'afflict', 'lustre', 'scathe', 'smite', 'malign', 'disperse'].includes(name);
+}
+
+function isUnitFactory(name: string, cls: string): boolean {
+  if (UNIT_FACTORY_CLASSES.has(cls)) return true;
+  return /factory|reconstructor|assembler|fabricator|refabricator/.test(name);
+}
+
+function isProcessor(name: string, cls: string): boolean {
+  if (PROCESSOR_CLASSES.has(cls)) return true;
+  return /processor$/.test(name);
+}
+
+function isDrill(name: string, cls: string): boolean {
+  if (MINING_CLASSES.has(cls)) return true;
+  return /drill|bore|crusher|fracker/.test(name);
+}
+
+function isCrafter(name: string, cls: string): boolean {
+  if (name in PRODUCT_BLOCKS) return true;
+  return CRAFTER_CLASSES.has(cls);
+}
+
+function isLogistics(name: string, cls: string): boolean {
+  if (LOGISTICS_CLASSES.has(cls)) return true;
+  return /^(duct|armored-duct|conveyor|titanium-conveyor|armored-conveyor|router|junction|sorter|inverted-sorter|overflow-gate|underflow-gate|bridge-conveyor|phase-conveyor|unloader|mass-driver)/.test(
+    name,
+  );
+}
+
+function isLiquid(name: string, cls: string): boolean {
+  if (LIQUID_CLASSES.has(cls)) return true;
+  return /conduit|pump|liquid-tank|liquid-container|water-extractor/.test(name);
+}
+
+function countPurposes(blockNames: Iterable<string>): PurposeCounts {
+  const out: PurposeCounts = {
+    products: new Set(),
+    generators: 0,
+    generatorFoot: 0,
+    turrets: 0,
+    turretFoot: 0,
+    drills: 0,
+    drillFoot: 0,
+    logistics: 0,
+    logisticsFoot: 0,
+    unitFactories: 0,
+    unitFoot: 0,
+    liquids: 0,
+    liquidFoot: 0,
+    processors: 0,
+    processorFoot: 0,
+    crafters: 0,
+    crafterFoot: 0,
+    tiles: 0,
+    footprint: 0,
+  };
   for (const name of blockNames) {
-    const product = PRODUCT_BLOCKS[name];
-    if (product) tags.add(product);
     const spec = getBlockSpec(name);
     const cls = spec?.className ?? '';
-    if (POWER_CLASSES.has(cls) || /generator|reactor|battery|solar|beam-node|power-node/.test(name)) {
-      tags.add(TAGS.power);
+    const foot = footprintOf(name);
+    out.tiles += 1;
+    out.footprint += foot;
+    const product = PRODUCT_BLOCKS[name];
+    if (product) out.products.add(product);
+    if (isGenerator(name, cls)) {
+      out.generators += 1;
+      out.generatorFoot += foot;
     }
-    if (DEFENSE_CLASSES.has(cls) || /turret|wall|projector|mender/.test(name)) {
-      tags.add(TAGS.defense);
+    if (isTurret(name, cls)) {
+      out.turrets += 1;
+      out.turretFoot += foot;
     }
-    if (MINING_CLASSES.has(cls) || /drill|bore|crusher/.test(name)) {
-      tags.add(TAGS.mining);
+    if (isDrill(name, cls)) {
+      out.drills += 1;
+      out.drillFoot += foot;
     }
-    if (LOGISTICS_CLASSES.has(cls) || /duct|conveyor|router|junction|bridge|unloader|sorter/.test(name)) {
-      tags.add(TAGS.logistics);
+    if (isLogistics(name, cls)) {
+      out.logistics += 1;
+      out.logisticsFoot += foot;
     }
-    if (UNIT_CLASSES.has(cls) || /factory|reconstructor|assembler|fabricator|refabricator/.test(name)) {
-      tags.add(TAGS.units);
+    if (isUnitFactory(name, cls)) {
+      out.unitFactories += 1;
+      out.unitFoot += foot;
     }
-    if (LIQUID_CLASSES.has(cls) || /conduit|pump|liquid-tank|liquid-container/.test(name)) {
-      tags.add(TAGS.liquids);
+    if (isLiquid(name, cls)) {
+      out.liquids += 1;
+      out.liquidFoot += foot;
     }
-    if (LOGIC_CLASSES.has(cls) || /processor|logic-display|memory-/.test(name)) {
-      tags.add(TAGS.logic);
+    if (isProcessor(name, cls)) {
+      out.processors += 1;
+      out.processorFoot += foot;
     }
-    if (PRODUCTION_CLASSES.has(cls)) production = true;
+    if (isCrafter(name, cls)) {
+      out.crafters += 1;
+      out.crafterFoot += foot;
+    }
   }
-  if (production && ![TAGS.silicon, TAGS.graphite, TAGS.plastanium, TAGS.phase, TAGS.surge, TAGS.carbide, TAGS.cryofluid].some((t) => tags.has(t))) {
-    tags.add(TAGS.production);
-  } else if (production) {
-    tags.add(TAGS.production);
-  }
-  return [...tags];
+  return out;
+}
+
+function significant(count: number, foot: number, totalFoot: number): boolean {
+  if (count <= 0) return false;
+  if (foot / Math.max(1, totalFoot) >= 0.12) return true;
+  return count >= 3;
+}
+
+/**
+ * Primary-purpose tags from the decoded block set.
+ * Conveyors / power nodes / batteries do not by themselves mean logistics or power.
+ */
+export function inferCategoryTags(blockNames: Iterable<string>): AutoTag[] {
+  const c = countPurposes(blockNames);
+  const tags: AutoTag[] = [...c.products];
+
+  const hasMainCrafter = c.crafters > 0;
+  const hasDrills = c.drills > 0;
+  const hasTurrets = c.turrets > 0;
+  const hasGenerators = c.generators > 0;
+  const hasUnitFactories = c.unitFactories > 0;
+  const hasProcessors = c.processors > 0;
+  const hasProducts = c.products.size > 0;
+
+  if (hasTurrets) tags.push(TAGS.defense);
+  if (hasUnitFactories) tags.push(TAGS.units);
+  if (hasProcessors) tags.push(TAGS.logic);
+
+  const mixedPurpose = hasMainCrafter || hasDrills || hasTurrets || hasUnitFactories || hasProcessors;
+  const powerSignificant =
+    c.generators >= 3 ||
+    (c.generators >= 2 && significant(c.generators, c.generatorFoot, c.footprint)) ||
+    (hasGenerators && !mixedPurpose);
+  if (powerSignificant) tags.push(TAGS.power);
+
+  const miningSignificant =
+    significant(c.drills, c.drillFoot, c.footprint) ||
+    (hasDrills && !hasMainCrafter && !hasTurrets && !hasGenerators && !hasUnitFactories);
+  if (miningSignificant) tags.push(TAGS.mining);
+
+  if (hasMainCrafter && !hasProducts) tags.push(TAGS.production);
+
+  const logisticsOnly =
+    c.logistics > 0 &&
+    !hasMainCrafter &&
+    !hasDrills &&
+    !hasTurrets &&
+    !hasGenerators &&
+    !hasUnitFactories &&
+    !hasProcessors;
+  if (logisticsOnly) tags.push(TAGS.logistics);
+
+  const liquidsOnly =
+    c.liquids > 0 &&
+    !hasMainCrafter &&
+    !hasDrills &&
+    !hasTurrets &&
+    !hasGenerators &&
+    !hasUnitFactories &&
+    !logisticsOnly &&
+    (significant(c.liquids, c.liquidFoot, c.footprint) || c.liquidFoot > c.processorFoot);
+  if (liquidsOnly) tags.push(TAGS.liquids);
+
+  return tags;
 }
 
 export function tagSchematic(schem: Schematic): string[] {
@@ -380,12 +520,17 @@ export function tagSchematic(schem: Schematic): string[] {
   const bounds = schematicWorldBounds(schem.tiles);
   const width = schem.width || bounds.width;
   const height = schem.height || bounds.height;
-  const tags = new Set<string>([
-    ...inferPlanetTags(names),
-    ...inferCategoryTags(names),
-    sizeBucket(width, height),
-  ]);
-  return [...tags].sort();
+  const core = [...inferPlanetTags(names), sizeBucket(width, height)];
+  const purpose = inferCategoryTags(names);
+  const tags: string[] = [];
+  const seen = new Set<string>();
+  for (const t of [...core, ...purpose]) {
+    if (seen.has(t)) continue;
+    seen.add(t);
+    tags.push(t);
+    if (tags.length >= MAX_TAGS) break;
+  }
+  return tags.sort();
 }
 
 export const ALL_AUTO_TAGS: AutoTag[] = Object.values(TAGS);

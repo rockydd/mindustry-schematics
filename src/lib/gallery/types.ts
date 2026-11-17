@@ -1,6 +1,8 @@
 export interface CatalogEntry {
   id: string;
   title: string;
+  /** Original Reddit post title, used when numbering sibling schematics. */
+  postTitle?: string;
   base64: string;
   author: string;
   authorUrl: string;

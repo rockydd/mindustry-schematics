@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { decodeSchematicFromBase64 } from '../lib/schematic/decoder';
 import { encodeSchematicBinary } from '../lib/schematic/encoder';
+import { uniqueByContentHash } from '../lib/gallery/unique';
 import type { CatalogEntry, SchematicCatalog } from '../lib/gallery/types';
 import { SchematicCanvas } from './SchematicCanvas';
 
@@ -72,7 +73,10 @@ export function BrowseGallery({ selectedId }: { selectedId: string | null }) {
     };
   }, []);
 
-  const entries = catalog?.schematics ?? [];
+  const entries = useMemo(
+    () => uniqueByContentHash(catalog?.schematics ?? []),
+    [catalog],
+  );
   const allTags = useMemo(() => {
     const s = new Set<string>();
     for (const e of entries) for (const t of e.tags) s.add(t);

@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { OVERFLOW_GATES } from '../schematic/fixtures';
-import { extractMschUrls, extractSchematicStrings, mergeCatalog, parseRedditAtomFeed } from './ingest';
+import {
+  disambiguateTitles,
+  extractMschUrls,
+  extractSchematicStrings,
+  mergeCatalog,
+  parseRedditAtomFeed,
+  uniqueByContentHash,
+} from './ingest';
 import type { CatalogEntry } from './types';
 
 function stub(partial: Partial<CatalogEntry>): CatalogEntry {
@@ -69,5 +76,47 @@ describe('reddit ingest helpers', () => {
     expect(merged).toHaveLength(1);
     expect(merged[0].score).toBe(20);
     expect(merged[0].permalink).toContain('/aaa/');
+  });
+
+  it('never keeps two entries with the same content hash', () => {
+    const a = stub({ contentHash: 'same' });
+    const b = stub({ id: 'r_b', contentHash: 'same', title: 'Copy' });
+    expect(uniqueByContentHash([a, b])).toHaveLength(1);
+    expect(mergeCatalog([a], [b])).toHaveLength(1);
+  });
+
+  it('uses decoded names when one post has several schematics', () => {
+    const post = 'https://www.reddit.com/r/Mindustry/comments/logic101/';
+    const titled = [
+      stub({
+        id: 'r_1',
+        title: 'Mindustry Logic 101 - Chapter 2',
+        decodedName: 'Example1',
+        contentHash: 'h1',
+        permalink: post,
+      }),
+      stub({
+        id: 'r_2',
+        title: 'Mindustry Logic 101 - Chapter 2',
+        decodedName: 'Example2',
+        contentHash: 'h2',
+        permalink: post,
+      }),
+      stub({
+        id: 'r_3',
+        title: 'Mindustry Logic 101 - Chapter 2',
+        decodedName: 'Untitled',
+        contentHash: 'h3',
+        permalink: post,
+      }),
+    ];
+    const named = disambiguateTitles(titled);
+    expect(named.map((e) => e.title)).toEqual([
+      'Example1',
+      'Example2',
+      'Mindustry Logic 101 - Chapter 2 (3/3)',
+    ]);
+    expect(named.every((e) => e.permalink === post)).toBe(true);
+    expect(named.every((e) => e.author === 'alice')).toBe(true);
   });
 });
